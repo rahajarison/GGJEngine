@@ -1,6 +1,8 @@
 #ifndef PATTERN_H
 #define PATTERN_H
 
+#include <Box2D/Box2D>
+
 class Pattern
 {
     private :
@@ -8,10 +10,12 @@ class Pattern
 
     public:
 
+        int relativeVerticalSlide;
+
         /**
         * Set up the blocks
         */
-        Pattern();
+        Pattern(int relativeVSlide);
         ~Pattern();
 };
 

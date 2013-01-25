@@ -3,11 +3,10 @@
 
 class nutrient : public SpecialCollisionObject
 {
-    private:
-        int points;
     public:
         nutrient(int);
         ~nutrient();
+        int points;
 };
 
 #endif
