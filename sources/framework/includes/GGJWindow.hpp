@@ -18,12 +18,15 @@ namespace GGJ
 		void					clear(void);
 		void					display(void);
 		sf::RenderWindow&		accessRenderWindow(void);
+
 	private:
 		sf::RenderWindow		_window;
 		std::string				_title;
 		unsigned int			_height;
 		unsigned int			_width;
-		
+	
+	public:
+		static const unsigned int	MAX_FPS;
 	};
 };
 
