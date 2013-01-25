@@ -4,7 +4,8 @@
 
 int			main(int ac, char *av[])
 {
-	// Context*	context = Context::getSingleton();
+	GGJ::Context&	context = GGJ::Context::getSingleton();
 
+	context.run();
 	return (EXIT_SUCCESS);
 }

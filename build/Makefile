@@ -113,6 +113,54 @@ Exe/fast:
 	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/build
 .PHONY : Exe/fast
 
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.obj
+
+# target to build an object file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.obj:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.obj
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.i: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.i
+
+# target to preprocess a source file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.i:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.i
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.s: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.s
+
+# target to generate assembly for a file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.s:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.cpp.s
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.obj
+
+# target to build an object file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.obj:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.obj
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.i: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.i
+
+# target to preprocess a source file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.i:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.i
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.s: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.s
+
+# target to generate assembly for a file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.s:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.cpp.s
+
 C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.cpp.obj
 .PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.obj
 
@@ -136,6 +184,78 @@ C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.s: C_/Users/S
 C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.cpp.s:
 	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.cpp.s
 .PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.cpp.s
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.obj
+
+# target to build an object file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.obj:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.obj
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.i: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.i
+
+# target to preprocess a source file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.i:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.i
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.s: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.s
+
+# target to generate assembly for a file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.s:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.cpp.s
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.obj
+
+# target to build an object file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.obj:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.obj
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.i: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.i
+
+# target to preprocess a source file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.i:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.i
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.s: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.s
+
+# target to generate assembly for a file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.s:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.cpp.s
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.obj
+
+# target to build an object file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.obj:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.obj
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.obj
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.i: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.i
+
+# target to preprocess a source file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.i:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.i
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.i
+
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.s: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.s
+
+# target to generate assembly for a file
+C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.s:
+	$(MAKE) -f CMakeFiles\Exe.dir\build.make CMakeFiles/Exe.dir/C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.s
+.PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.cpp.s
 
 C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJWindow.obj: C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJWindow.cpp.obj
 .PHONY : C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJWindow.obj
@@ -194,9 +314,24 @@ help:
 	@echo ... Exe
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.obj
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.i
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJCallback.s
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.obj
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.i
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJContext.s
 	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.obj
 	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.i
 	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJLog.s
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.obj
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.i
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJMap.s
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.obj
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.i
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJObject.s
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.obj
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.i
+	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJResourcesLoader.s
 	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJWindow.obj
 	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJWindow.i
 	@echo ... C_/Users/Seven/Documents/GitHub/GGJEngine/sources/framework/GGJWindow.s

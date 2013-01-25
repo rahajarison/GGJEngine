@@ -13,9 +13,6 @@ Context::~Context(void)
 
 void		Context::run(void)
 {
-	// TODO : implement game cycle
-	// dispatch events
-	// callable
 	while (_isRunning)
 	{
 		update();
