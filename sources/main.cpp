@@ -3,16 +3,19 @@
 #include	<GGJContext.hpp>
 #include	"Game.hpp"
 
+void		registerAll(void)
+{
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+
+	context.registerCallback(GGJ::registeringCallback(&Box2DCallback, 0));
+	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
+}
+
 int			main(int ac, char *av[])
 {
 	GGJ::Context&	context = GGJ::Context::getSingleton();
-	// sf::RenderWindow		window(sf::VideoMode(800, 800, 32), "Growing Leo");
 
-	// window.Clear();
-	// window.Display();
-	// std::cin.ignore();
-	// window.Close();
-	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
+	registerAll();
 	context.run();
 	return (EXIT_SUCCESS);
 }

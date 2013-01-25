@@ -66,10 +66,13 @@ endif()
 
 #Configuration de l'exécutable
 file(
-	GLOB_RECURSE
+	GLOB#_RECURSE
 	source_files
-	../sources/*
+	../sources/framework/*
+	../sources/*.cpp
 )
+#list(REMOVE_ITEM source_files "../sources/engine")
+
 add_executable(
 	Exe
 	${source_files}
