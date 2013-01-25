@@ -6,16 +6,19 @@
 class character
 {
     private:
-        b2BodyDef body;
+        b2Body body;
         int MaxSpeed;
         int MaxAngularRotation;
     public:
         character();
         ~character();
 
-        int getSpeed();
-        int getRotation();
+        b2BodyDef getBody();
+        int getVelocity();
+        double getRotation();
         int getPosition();
+        int getMaxSpeed();
+        int getMaxAngularRotation();
 };
 
 #endif

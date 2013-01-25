@@ -14,6 +14,11 @@ class World
 
     public:
 
+        public enum types 
+        {
+            "character", "nutrient", "block", "bouncingBlock"
+        };
+        
         /**
         * Generate pattern order
         */
