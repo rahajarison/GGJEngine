@@ -1,6 +1,11 @@
-Character::character()
+#include "Character.h"
+#include "World.h"
+#include "Define.h"
+
+Character::Character()
 {
-    b2BodyDef bodyDef= b2_dynamicBody;
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(0.0f, 2.0f);   // the body's origin position.
     bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
     bodyDef.linearDamping = 0.0f;
@@ -14,16 +19,5 @@ Character::character()
     myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
     body.CreateFixture(&myFixtureDef); //add a fixture to the body
 
-    body.setUserData(Define::types.character);
+    body.SetUserData(types.character);
 }
-
-Character::~character();
-        
-b2BodyDef getBody();
-
-int getVelocity();
-int getRotation();
-double getX();
-double getY();
-int getMaxSpeed();
-int getMaxAngularRotation();

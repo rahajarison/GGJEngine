@@ -3,15 +3,17 @@
 
 #include <Box2D/Box2D.h>
 
-class character
+class Character
 {
     private:
         b2Body body;
         int MaxSpeed;
         int MaxAngularRotation;
+
     public:
-        character();
-        ~character();
+
+        Character();
+        ~Character();
 
         b2BodyDef getBody();
         int getVelocity();
