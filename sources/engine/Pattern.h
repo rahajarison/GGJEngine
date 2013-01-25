@@ -15,8 +15,9 @@ class Pattern
         /**
         * Set up the blocks
         */
-        Pattern(int relativeVSlide);
-        ~Pattern();
+        Pattern(int relativeVSlide=0);
+        void create();
+        ~Pattern(){}
 };
 
-#endif;
+#endif

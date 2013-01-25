@@ -13,14 +13,14 @@ class Character
     public:
 
         Character();
-        ~Character();
+        ~Character(){}
 
-        b2BodyDef getBody();
-        int getVelocity();
-        double getRotation();
-        int getPosition();
-        int getMaxSpeed();
-        int getMaxAngularRotation();
+        b2Body* getBody(){return 0;}
+        int getVelocity(){return 0;}
+        double getRotation(){return 0;}
+        int getPosition(){return 0;}
+        int getMaxSpeed(){return 0;}
+        int getMaxAngularRotation(){return 0;}
 };
 
 #endif

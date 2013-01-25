@@ -13,12 +13,15 @@ class World
     public:
 
         static b2World* m_world;
-        vector<Pattern*> paternList;
+        vector<Pattern*> patternList;
 
         /**
         * Generate pattern order
         */
-        World();
+        World(){
+            patternList.push_back(new Pattern());
+            patternList[0]->create();
+        }
         ~World();
 };
 
