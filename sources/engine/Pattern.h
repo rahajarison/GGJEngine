@@ -1,7 +1,7 @@
 #ifndef PATTERN_H
 #define PATTERN_H
 
-#include <Box2D/Box2D>
+#include <Box2D/Box2D.h>
 
 class Pattern
 {

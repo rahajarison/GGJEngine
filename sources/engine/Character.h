@@ -6,7 +6,7 @@
 class Character
 {
     private:
-        b2Body body;
+        b2Body* body;
         int MaxSpeed;
         int MaxAngularRotation;
 
