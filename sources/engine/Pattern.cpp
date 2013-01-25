@@ -1,6 +1,6 @@
 #include "Pattern.h"
 #include "World.h"
-
+//
 Pattern::Pattern(int relativeVSlide)
 : relativeVerticalSlide(relativeVSlide)
 {

@@ -1,7 +1,7 @@
 #include "Character.h"
 #include "World.h"
 #include "Define.h"
-
+//
 Character::Character()
 {
     types type = character;
