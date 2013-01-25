@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/momo/Documents/projet/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp
-Box2D/Box2D.h
--
-cstdio
--
-
 Box2D/Box2D.h
 Box2D/Common/b2Settings.h
 -
@@ -258,5 +252,11 @@ Box2D/Dynamics/b2TimeStep.h
 
 Box2D/Dynamics/b2WorldCallbacks.h
 Box2D/Common/b2Settings.h
+-
+
+C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/HelloWorld/HelloWorld.cpp
+Box2D/Box2D.h
+-
+cstdio
 -
 
