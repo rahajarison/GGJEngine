@@ -3,9 +3,12 @@
 
 namespace GGJ
 {
-Map::Map(const std::string& filename) : _file(filename)
+// Map::Map(const std::string& filename) : _file(filename)
+// {
+//  // load
+// }
+Map::Map(void)
 {
- // load
 }
 Map::~Map(void)
 {

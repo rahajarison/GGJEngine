@@ -6,6 +6,7 @@ Context* Context::_instance = 0;
 const unsigned int Context::NB_POOL_OBJECTS = 20;
 Context::Context(void) : _map(0), _isRunning(false), _isPaused(false)
 {
+	_map = new Map();
 }
 Context::~Context(void)
 {
@@ -98,12 +99,12 @@ void		Context::drawHUD(void)
 }
 
 void		Context::setFramerateLimit(unsigned int limit) {	_window.accessRenderWindow().SetFramerateLimit(limit);	}
-void		Context::loadMap(const std::string& filename)
-{
-	if (_map)
-		delete _map;
-	_map = new Map(filename);
-}
+// void		Context::loadMap(const std::string& filename)
+// {
+	// if (_map)
+		// delete _map;
+	// _map = new Map(filename);
+// }
 void		Context::attachObject(Object& object)
 {
 	if (_map)
