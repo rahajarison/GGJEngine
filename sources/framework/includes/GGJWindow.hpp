@@ -15,7 +15,9 @@ namespace GGJ
 		// Getters
 		unsigned int			getHeight(void) const;
 		unsigned int			getWidth(void) const;
-
+		void					clear(void);
+		void					display(void);
+		sf::RenderWindow&		accessRenderWindow(void);
 	private:
 		sf::RenderWindow		_window;
 		std::string				_title;

@@ -9,14 +9,11 @@ _height(height), _width(width)
 {
 }
 
-void			Window::close(void)
-{
-	_window.Close();
-}
-
-unsigned int	Window::getHeight(void) const
-{	return (_height);	}
-unsigned int	Window::getWidth(void) const
-{	return (_width);	}
+void			Window::close(void)				{	_window.Close();	}
+void			Window::clear(void) 			{	_window.Clear();	}
+void			Window::display(void) 			{	_window.Display();	}
+unsigned int	Window::getHeight(void) const	{	return (_height);	}
+unsigned int	Window::getWidth(void) const	{	return (_width);	}
+sf::RenderWindow& Window::accessRenderWindow()	{	return (_window);	}
 
 };
