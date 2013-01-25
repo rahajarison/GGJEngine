@@ -17,11 +17,14 @@ void		Context::run(void)
 	while (_isRunning)
 	{
 		update();
-		dispatchEvents();
-		_window.clear();
-		drawObjects();
-		drawHUD();
-		_window.display();	
+		if (_isRunning)
+		{
+			dispatchEvents();
+			_window.clear();
+			drawObjects();
+			drawHUD();
+			_window.display();
+		}
 	}
 }
 void		Context::stop(void)
@@ -77,7 +80,8 @@ void		Context::registerCallback(registeringCallback callback)
 void		Context::drawObjects(void)
 {
 	_window.accessRenderWindow().SetView(_view);
-	_map->drawObjects(_window.accessRenderWindow());		
+	// if (_map)
+		// _map->drawObjects(_window.accessRenderWindow());		
 }
 void		Context::drawHUD(void)
 {
