@@ -1,6 +1,6 @@
-The system is: Darwin - 12.2.1 - i386
+The system is: Windows - 6.1 - x86
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/gcc 
+Compiler: C:/MinGW/bin/gcc.exe 
 Build flags: 
 Id flags: 
 
@@ -8,12 +8,12 @@ The output was:
 0
 
 
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.exe"
 
-The C compiler identification is GNU, found in "/Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/2.8.10.1/CompilerIdC/a.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
+Compiler: C:/MinGW/bin/g++.exe 
 Build flags: 
 Id flags: 
 
@@ -21,348 +21,266 @@ The output was:
 0
 
 
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
 
-The CXX compiler identification is Clang, found in "/Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/2.8.10.1/CompilerIdCXX/a.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1737398907/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1737398907.dir/build.make CMakeFiles/cmTryCompileExec1737398907.dir/build
-/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec1737398907.dir/testCCompiler.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1737398907.dir/testCCompiler.c.o   -c /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec1737398907
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1737398907.dir/link.txt --verbose=1
-/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1737398907.dir/testCCompiler.c.o  -o cmTryCompileExec1737398907  
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec585925211/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec585925211.dir\build.make CMakeFiles/cmTryCompileExec585925211.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec585925211.dir/testCCompiler.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec585925211.dir\testCCompiler.c.obj   -c C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\testCCompiler.c
+Linking C executable cmTryCompileExec585925211.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec585925211.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec585925211.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec585925211.dir/objects.a @CMakeFiles\cmTryCompileExec585925211.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe         -Wl,--whole-archive CMakeFiles\cmTryCompileExec585925211.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec585925211.exe -Wl,--out-implib,libcmTryCompileExec585925211.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+mingw32-make.exe[1]: Leaving directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec46529026/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec46529026.dir/build.make CMakeFiles/cmTryCompileExec46529026.dir/build
-/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec46529026
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec46529026.dir/link.txt --verbose=1
-/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec46529026   
-Using built-in specs.
-COLLECT_GCC=/usr/bin/gcc
-COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/lto-wrapper
-Target: x86_64-apple-darwin12
-Configured with: ../gcc-4.7.2/configure --prefix=/opt/local --build=x86_64-apple-darwin12 --enable-languages=c,c++,objc,obj-c++,lto,fortran,java --libdir=/opt/local/lib/gcc47 --includedir=/opt/local/include/gcc47 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-4.7 --with-libiconv-prefix=/opt/local --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-4.7 --with-gxx-include-dir=/opt/local/include/gcc47/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-ppl=/opt/local --with-cloog=/opt/local --enable-cloog-backend=isl --disable-cloog-version-check --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --disable-ppl-version-check --with-pkgversion='MacPorts gcc47 4.7.2_2'
-Thread model: posix
-gcc version 4.7.2 (MacPorts gcc47 4.7.2_2) 
-COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/
-LIBRARY_PATH=/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../../:/usr/lib/
-COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.2' '-v' '-o' 'cmTryCompileExec46529026' '-mtune=core2'
- /opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/collect2 -dynamic -arch x86_64 -macosx_version_min 10.8.2 -weak_reference_mismatches non-weak -o cmTryCompileExec46529026 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
-collect2 version 4.7.2
-/opt/local/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.8.2 -weak_reference_mismatches non-weak -o cmTryCompileExec46529026 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
-@(#)PROGRAM:ld  PROJECT:ld64-134.9
-configured to support archs: i386 x86_64
-Library search paths:
-	/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2
-	/opt/local/lib/gcc47
-	/usr/lib
-	/usr/local/lib
-Framework search paths:
-	/Library/Frameworks/
-	/System/Library/Frameworks/
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec1835193006/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1835193006.dir\build.make CMakeFiles/cmTryCompileExec1835193006.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1835193006.dir/CMakeCCompilerABI.c.obj
+C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1835193006.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"
+Linking C executable cmTryCompileExec1835193006.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1835193006.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1835193006.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1835193006.dir/objects.a @CMakeFiles\cmTryCompileExec1835193006.dir\objects1.rsp
+C:\MinGW\bin\gcc.exe       -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1835193006.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1835193006.exe -Wl,--out-implib,libcmTryCompileExec1835193006.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Utilisation des specs internes.
+COLLECT_GCC=C:\MinGW\bin\gcc.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/lto-wrapper.exe
+Target: mingw32
+Configuré avec: ../gcc-4.6.2/configure --enable-languages=c,c++,ada,fortran,objc,obj-c++ --disable-sjlj-exceptions --with-dwarf2 --enable-shared --enable-libgomp --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --build=mingw32 --prefix=/mingw
+Modèle de thread: win32
+gcc version 4.6.2 (GCC) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.6.2/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../;/mingw/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1835193006.exe' '-mtune=i386' '-march=i386'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe -Bdynamic -o cmTryCompileExec1835193006.exe c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTryCompileExec1835193006.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1835193006.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc_eh -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_eh -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o
+mingw32-make.exe[1]: Leaving directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld.exe|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec46529026/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec46529026.dir/build.make CMakeFiles/cmTryCompileExec46529026.dir/build]
-  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec46529026]
-  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec46529026.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc      -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec46529026   ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/lto-wrapper]
-  ignore line: [Target: x86_64-apple-darwin12]
-  ignore line: [Configured with: ../gcc-4.7.2/configure --prefix=/opt/local --build=x86_64-apple-darwin12 --enable-languages=c,c++,objc,obj-c++,lto,fortran,java --libdir=/opt/local/lib/gcc47 --includedir=/opt/local/include/gcc47 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-4.7 --with-libiconv-prefix=/opt/local --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-4.7 --with-gxx-include-dir=/opt/local/include/gcc47/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-ppl=/opt/local --with-cloog=/opt/local --enable-cloog-backend=isl --disable-cloog-version-check --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --disable-ppl-version-check --with-pkgversion='MacPorts gcc47 4.7.2_2']
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7.2 (MacPorts gcc47 4.7.2_2) ]
-  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/]
-  ignore line: [LIBRARY_PATH=/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../../:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.2' '-v' '-o' 'cmTryCompileExec46529026' '-mtune=core2']
-  link line: [ /opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/collect2 -dynamic -arch x86_64 -macosx_version_min 10.8.2 -weak_reference_mismatches non-weak -o cmTryCompileExec46529026 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v]
-    arg [/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/collect2] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.8.2] ==> ignore
-    arg [-weak_reference_mismatches] ==> ignore
-    arg [non-weak] ==> ignore
+  ignore line: [Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec1835193006/fast"]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1835193006.dir\build.make CMakeFiles/cmTryCompileExec1835193006.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp']
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec1835193006.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [C:\MinGW\bin\gcc.exe    -o CMakeFiles\cmTryCompileExec1835193006.dir\CMakeCCompilerABI.c.obj   -c "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCCompilerABI.c"]
+  ignore line: [Linking C executable cmTryCompileExec1835193006.exe]
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1835193006.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1835193006.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1835193006.dir/objects.a @CMakeFiles\cmTryCompileExec1835193006.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\gcc.exe       -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1835193006.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1835193006.exe -Wl,--out-implib,libcmTryCompileExec1835193006.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Utilisation des specs internes.]
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\gcc.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configuré avec: ../gcc-4.6.2/configure --enable-languages=c,c++,ada,fortran,objc,obj-c++ --disable-sjlj-exceptions --with-dwarf2 --enable-shared --enable-libgomp --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --build=mingw32 --prefix=/mingw]
+  ignore line: [Modèle de thread: win32]
+  ignore line: [gcc version 4.6.2 (GCC) ]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.6.2/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../]
+  ignore line: [/mingw/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1835193006.exe' '-mtune=i386' '-march=i386']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe -Bdynamic -o cmTryCompileExec1835193006.exe c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTryCompileExec1835193006.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1835193006.dll.a --major-image-version 0 --minor-image-version 0 -lmingw32 -lgcc_eh -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_eh -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe] ==> ignore
+    arg [-Bdynamic] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec46529026] ==> ignore
-    arg [-L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2] ==> dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2]
-    arg [-L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../..] ==> dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../..]
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [CMakeFiles/cmTryCompileExec46529026.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-no_compact_unwind] ==> ignore
-    arg [-lSystem] ==> lib [System]
-    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [cmTryCompileExec1835193006.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../..]
+    arg [-L/mingw/lib] ==> dir [/mingw/lib]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTryCompileExec1835193006.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTryCompileExec1835193006.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lSystem] ==> lib [System]
-    arg [-v] ==> ignore
-  remove lib [System]
-  remove lib [gcc_ext.10.5]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_eh] ==> lib [gcc_eh]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o] ==> ignore
+  remove lib [gcc_eh]
   remove lib [gcc]
-  remove lib [System]
-  collapse dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2] ==> [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2]
-  collapse dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../..] ==> [/opt/local/lib/gcc47]
-  implicit libs: []
-  implicit dirs: [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2;/opt/local/lib/gcc47]
+  remove lib [gcc_eh]
+  remove lib [gcc]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2] ==> [c:/MinGW/lib/gcc/mingw32/4.6.2]
+  collapse dir [c:/mingw/bin/../lib/gcc] ==> [c:/MinGW/lib/gcc]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib] ==> [c:/MinGW/mingw32/lib]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../..] ==> [c:/MinGW/lib]
+  collapse dir [/mingw/lib] ==> [/MinGW/lib]
+  implicit libs: [mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/MinGW/lib/gcc/mingw32/4.6.2;c:/MinGW/lib/gcc;c:/MinGW/mingw32/lib;c:/MinGW/lib;/MinGW/lib]
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec1786533007/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1786533007.dir/build.make CMakeFiles/cmTryCompileExec1786533007.dir/build
-/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1786533007.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1786533007.dir/testCXXCompiler.cxx.o -c /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec1786533007
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1786533007.dir/link.txt --verbose=1
-/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1786533007.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1786533007  
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec2630573799/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec2630573799.dir\build.make CMakeFiles/cmTryCompileExec2630573799.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2630573799.dir/testCXXCompiler.cxx.obj
+C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec2630573799.dir\testCXXCompiler.cxx.obj -c C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2630573799.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec2630573799.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec2630573799.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec2630573799.dir/objects.a @CMakeFiles\cmTryCompileExec2630573799.dir\objects1.rsp
+C:\MinGW\bin\g++.exe         -Wl,--whole-archive CMakeFiles\cmTryCompileExec2630573799.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec2630573799.exe -Wl,--out-implib,libcmTryCompileExec2630573799.dll.a -Wl,--major-image-version,0,--minor-image-version,0  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+mingw32-make.exe[1]: Leaving directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp
+Change Dir: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec3024135667/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3024135667.dir/build.make CMakeFiles/cmTryCompileExec3024135667.dir/build
-/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec3024135667
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3024135667.dir/link.txt --verbose=1
-/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3024135667   
-Apple clang version 4.0 (tags/Apple/clang-421.0.60) (based on LLVM 3.1svn)
-Target: x86_64-apple-darwin12.2.1
-Thread model: posix
- "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -o cmTryCompileExec3024135667 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a
+Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec1997765636/fast"
+C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1997765636.dir\build.make CMakeFiles/cmTryCompileExec1997765636.dir/build
+mingw32-make.exe[1]: Entering directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1997765636.dir/CMakeCXXCompilerABI.cpp.obj
+C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec1997765636.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"
+Linking CXX executable cmTryCompileExec1997765636.exe
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1997765636.dir\link.txt --verbose=1
+"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1997765636.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1997765636.dir/objects.a @CMakeFiles\cmTryCompileExec1997765636.dir\objects1.rsp
+C:\MinGW\bin\g++.exe       -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1997765636.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1997765636.exe -Wl,--out-implib,libcmTryCompileExec1997765636.dll.a -Wl,--major-image-version,0,--minor-image-version,0   
+Utilisation des specs internes.
+COLLECT_GCC=C:\MinGW\bin\g++.exe
+COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/lto-wrapper.exe
+Target: mingw32
+Configuré avec: ../gcc-4.6.2/configure --enable-languages=c,c++,ada,fortran,objc,obj-c++ --disable-sjlj-exceptions --with-dwarf2 --enable-shared --enable-libgomp --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --build=mingw32 --prefix=/mingw
+Modèle de thread: win32
+gcc version 4.6.2 (GCC) 
+COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/;c:/mingw/bin/../libexec/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/
+LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.6.2/;c:/mingw/bin/../lib/gcc/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib/;c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../;/mingw/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1997765636.exe' '-shared-libgcc' '-mtune=i386' '-march=i386'
+ c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTryCompileExec1997765636.exe c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTryCompileExec1997765636.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1997765636.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o
+mingw32-make.exe[1]: Leaving directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld.exe|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3024135667/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3024135667.dir/build.make CMakeFiles/cmTryCompileExec3024135667.dir/build]
-  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec3024135667]
-  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3024135667.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3024135667   ]
-  ignore line: [Apple clang version 4.0 (tags/Apple/clang-421.0.60) (based on LLVM 3.1svn)]
-  ignore line: [Target: x86_64-apple-darwin12.2.1]
-  ignore line: [Thread model: posix]
-  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -o cmTryCompileExec3024135667 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a]
-    arg [/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.8.0] ==> ignore
+  ignore line: [Run Build Command:C:/MinGW/bin/mingw32-make.exe "cmTryCompileExec1997765636/fast"]
+  ignore line: [C:/MinGW/bin/mingw32-make.exe -f CMakeFiles\cmTryCompileExec1997765636.dir\build.make CMakeFiles/cmTryCompileExec1997765636.dir/build]
+  ignore line: [mingw32-make.exe[1]: Entering directory `C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/CMakeFiles/CMakeTmp']
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles\CMakeTmp\CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1997765636.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [C:\MinGW\bin\g++.exe     -o CMakeFiles\cmTryCompileExec1997765636.dir\CMakeCXXCompilerABI.cpp.obj -c "C:\Program Files (x86)\CMake 2.8\share\cmake-2.8\Modules\CMakeCXXCompilerABI.cpp"]
+  ignore line: [Linking CXX executable cmTryCompileExec1997765636.exe]
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTryCompileExec1997765636.dir\link.txt --verbose=1]
+  ignore line: ["C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\cmTryCompileExec1997765636.dir/objects.a]
+  ignore line: [C:\MinGW\bin\ar.exe cr CMakeFiles\cmTryCompileExec1997765636.dir/objects.a @CMakeFiles\cmTryCompileExec1997765636.dir\objects1.rsp]
+  ignore line: [C:\MinGW\bin\g++.exe       -v -Wl,--whole-archive CMakeFiles\cmTryCompileExec1997765636.dir/objects.a -Wl,--no-whole-archive  -o cmTryCompileExec1997765636.exe -Wl,--out-implib,libcmTryCompileExec1997765636.dll.a -Wl,--major-image-version,0,--minor-image-version,0   ]
+  ignore line: [Utilisation des specs internes.]
+  ignore line: [COLLECT_GCC=C:\MinGW\bin\g++.exe]
+  ignore line: [COLLECT_LTO_WRAPPER=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/lto-wrapper.exe]
+  ignore line: [Target: mingw32]
+  ignore line: [Configuré avec: ../gcc-4.6.2/configure --enable-languages=c,c++,ada,fortran,objc,obj-c++ --disable-sjlj-exceptions --with-dwarf2 --enable-shared --enable-libgomp --disable-win32-registry --enable-libstdcxx-debug --enable-version-specific-runtime-libs --build=mingw32 --prefix=/mingw]
+  ignore line: [Modèle de thread: win32]
+  ignore line: [gcc version 4.6.2 (GCC) ]
+  ignore line: [COMPILER_PATH=c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/]
+  ignore line: [c:/mingw/bin/../libexec/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/bin/]
+  ignore line: [LIBRARY_PATH=c:/mingw/bin/../lib/gcc/mingw32/4.6.2/]
+  ignore line: [c:/mingw/bin/../lib/gcc/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib/]
+  ignore line: [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../]
+  ignore line: [/mingw/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec1997765636.exe' '-shared-libgcc' '-mtune=i386' '-march=i386']
+  link line: [ c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe -Bdynamic -u ___register_frame_info -u ___deregister_frame_info -o cmTryCompileExec1997765636.exe c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtbegin.o -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2 -Lc:/mingw/bin/../lib/gcc -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib -Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../.. -L/mingw/lib --whole-archive CMakeFiles\cmTryCompileExec1997765636.dir/objects.a --no-whole-archive --out-implib libcmTryCompileExec1997765636.dll.a --major-image-version 0 --minor-image-version 0 -lstdc++ -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt -ladvapi32 -lshell32 -luser32 -lkernel32 -lmingw32 -lgcc_s -lgcc -lmoldname -lmingwex -lmsvcrt c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o]
+    arg [c:/mingw/bin/../libexec/gcc/mingw32/4.6.2/collect2.exe] ==> ignore
+    arg [-Bdynamic] ==> ignore
+    arg [-u] ==> ignore
+    arg [___register_frame_info] ==> ignore
+    arg [-u] ==> ignore
+    arg [___deregister_frame_info] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec3024135667] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [CMakeFiles/cmTryCompileExec3024135667.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTryCompileExec1997765636.exe] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../crt2.o] ==> ignore
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtbegin.o] ==> ignore
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2]
+    arg [-Lc:/mingw/bin/../lib/gcc] ==> dir [c:/mingw/bin/../lib/gcc]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib]
+    arg [-Lc:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../..] ==> dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../..]
+    arg [-L/mingw/lib] ==> dir [/mingw/lib]
+    arg [--whole-archive] ==> ignore
+    arg [CMakeFiles\cmTryCompileExec1997765636.dir/objects.a] ==> ignore
+    arg [--no-whole-archive] ==> ignore
+    arg [--out-implib] ==> ignore
+    arg [libcmTryCompileExec1997765636.dll.a] ==> ignore
+    arg [--major-image-version] ==> ignore
+    arg [0] ==> ignore
+    arg [--minor-image-version] ==> ignore
+    arg [0] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
-    arg [-lSystem] ==> lib [System]
-    arg [/usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a]
-  remove lib [System]
-  implicit libs: [stdc++;/usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a]
-  implicit dirs: []
-
-
-The system is: Darwin - 12.2.1 - i386
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/gcc 
-Build flags: 
-Id flags: 
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-
-The C compiler identification is GNU, found in "/Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/2.8.10/CompilerIdC/a.out"
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
-Build flags: 
-Id flags: 
-
-The output was:
-0
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-
-The CXX compiler identification is Clang, found in "/Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/2.8.10/CompilerIdCXX/a.out"
-
-Detecting C compiler ABI info compiled with the following output:
-Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec4256074502/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4256074502.dir/build.make CMakeFiles/cmTryCompileExec4256074502.dir/build
-/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk   -o CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec4256074502
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4256074502.dir/link.txt --verbose=1
-/usr/bin/gcc      -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec4256074502   
-Using built-in specs.
-COLLECT_GCC=/usr/bin/gcc
-COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/lto-wrapper
-Target: x86_64-apple-darwin12
-Configured with: ../gcc-4.7.2/configure --prefix=/opt/local --build=x86_64-apple-darwin12 --enable-languages=c,c++,objc,obj-c++,lto,fortran,java --libdir=/opt/local/lib/gcc47 --includedir=/opt/local/include/gcc47 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-4.7 --with-libiconv-prefix=/opt/local --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-4.7 --with-gxx-include-dir=/opt/local/include/gcc47/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-ppl=/opt/local --with-cloog=/opt/local --enable-cloog-backend=isl --disable-cloog-version-check --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --disable-ppl-version-check --with-pkgversion='MacPorts gcc47 4.7.2_2'
-Thread model: posix
-gcc version 4.7.2 (MacPorts gcc47 4.7.2_2) 
-COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/
-LIBRARY_PATH=/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../../:/usr/lib/
-COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.2' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk' '-v' '-o' 'cmTryCompileExec4256074502' '-mtune=core2'
- /opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/collect2 -dynamic -arch x86_64 -macosx_version_min 10.8.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -weak_reference_mismatches non-weak -o cmTryCompileExec4256074502 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
-collect2 version 4.7.2
-/opt/local/bin/ld -dynamic -arch x86_64 -macosx_version_min 10.8.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -weak_reference_mismatches non-weak -o cmTryCompileExec4256074502 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v
-@(#)PROGRAM:ld  PROJECT:ld64-134.9
-configured to support archs: i386 x86_64
-Library search paths:
-	/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2
-	/opt/local/lib/gcc47
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/usr/lib
-Framework search paths:
-	/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/
-
-
-Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec4256074502/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec4256074502.dir/build.make CMakeFiles/cmTryCompileExec4256074502.dir/build]
-  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc   -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk   -o CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec4256074502]
-  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4256074502.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc      -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec4256074502   ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/lto-wrapper]
-  ignore line: [Target: x86_64-apple-darwin12]
-  ignore line: [Configured with: ../gcc-4.7.2/configure --prefix=/opt/local --build=x86_64-apple-darwin12 --enable-languages=c,c++,objc,obj-c++,lto,fortran,java --libdir=/opt/local/lib/gcc47 --includedir=/opt/local/include/gcc47 --infodir=/opt/local/share/info --mandir=/opt/local/share/man --datarootdir=/opt/local/share/gcc-4.7 --with-libiconv-prefix=/opt/local --with-local-prefix=/opt/local --with-system-zlib --disable-nls --program-suffix=-mp-4.7 --with-gxx-include-dir=/opt/local/include/gcc47/c++/ --with-gmp=/opt/local --with-mpfr=/opt/local --with-mpc=/opt/local --with-ppl=/opt/local --with-cloog=/opt/local --enable-cloog-backend=isl --disable-cloog-version-check --enable-stage1-checking --disable-multilib --enable-lto --enable-libstdcxx-time --with-as=/opt/local/bin/as --with-ld=/opt/local/bin/ld --with-ar=/opt/local/bin/ar --with-bugurl=https://trac.macports.org/newticket --disable-ppl-version-check --with-pkgversion='MacPorts gcc47 4.7.2_2']
-  ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.7.2 (MacPorts gcc47 4.7.2_2) ]
-  ignore line: [COMPILER_PATH=/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/libexec/gcc/x86_64-apple-darwin12/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/]
-  ignore line: [LIBRARY_PATH=/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/:/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../../:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mmacosx-version-min=10.8.2' '-isysroot' '/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk' '-v' '-o' 'cmTryCompileExec4256074502' '-mtune=core2']
-  link line: [ /opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/collect2 -dynamic -arch x86_64 -macosx_version_min 10.8.2 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -weak_reference_mismatches non-weak -o cmTryCompileExec4256074502 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2 -L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../.. -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o -no_compact_unwind -lSystem -lgcc_ext.10.5 -lgcc -lSystem -v]
-    arg [/opt/local/libexec/gcc/x86_64-apple-darwin12/4.7.2/collect2] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.8.2] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk] ==> ignore
-    arg [-weak_reference_mismatches] ==> ignore
-    arg [non-weak] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTryCompileExec4256074502] ==> ignore
-    arg [-L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2] ==> dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2]
-    arg [-L/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../..] ==> dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../..]
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [CMakeFiles/cmTryCompileExec4256074502.dir/CMakeCCompilerABI.c.o] ==> ignore
-    arg [-no_compact_unwind] ==> ignore
-    arg [-lSystem] ==> lib [System]
-    arg [-lgcc_ext.10.5] ==> lib [gcc_ext.10.5]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [-lSystem] ==> lib [System]
-    arg [-v] ==> ignore
-  remove lib [System]
-  remove lib [gcc_ext.10.5]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [-ladvapi32] ==> lib [advapi32]
+    arg [-lshell32] ==> lib [shell32]
+    arg [-luser32] ==> lib [user32]
+    arg [-lkernel32] ==> lib [kernel32]
+    arg [-lmingw32] ==> lib [mingw32]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lmoldname] ==> lib [moldname]
+    arg [-lmingwex] ==> lib [mingwex]
+    arg [-lmsvcrt] ==> lib [msvcrt]
+    arg [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/crtend.o] ==> ignore
+  remove lib [gcc_s]
   remove lib [gcc]
-  remove lib [System]
-  collapse dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2] ==> [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2]
-  collapse dir [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2/../../..] ==> [/opt/local/lib/gcc47]
-  implicit libs: []
-  implicit dirs: [/opt/local/lib/gcc47/gcc/x86_64-apple-darwin12/4.7.2;/opt/local/lib/gcc47]
-
-
-Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp
-
-Run Build Command:/usr/bin/make "cmTryCompileExec1973148011/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1973148011.dir/build.make CMakeFiles/cmTryCompileExec1973148011.dir/build
-/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk   -o CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec1973148011
-/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1973148011.dir/link.txt --verbose=1
-/usr/bin/c++       -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1973148011   
-Apple clang version 4.0 (tags/Apple/clang-421.0.60) (based on LLVM 3.1svn)
-Target: x86_64-apple-darwin12.2.1
-Thread model: posix
- "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -o cmTryCompileExec1973148011 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a
-
-
-Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp]
-  ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec1973148011/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec1973148011.dir/build.make CMakeFiles/cmTryCompileExec1973148011.dir/build]
-  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/momo/Documents/projet/Box2D_v2.2.1/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++    -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk   -o CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec1973148011]
-  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1973148011.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++       -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec1973148011   ]
-  ignore line: [Apple clang version 4.0 (tags/Apple/clang-421.0.60) (based on LLVM 3.1svn)]
-  ignore line: [Target: x86_64-apple-darwin12.2.1]
-  ignore line: [Thread model: posix]
-  link line: [ "/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.8.0 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk -o cmTryCompileExec1973148011 -search_paths_first -headerpad_max_install_names CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lSystem /usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a]
-    arg [/usr/bin/ld] ==> ignore
-    arg [-demangle] ==> ignore
-    arg [-dynamic] ==> ignore
-    arg [-arch] ==> ignore
-    arg [x86_64] ==> ignore
-    arg [-macosx_version_min] ==> ignore
-    arg [10.8.0] ==> ignore
-    arg [-syslibroot] ==> ignore
-    arg [/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk] ==> ignore
-    arg [-o] ==> ignore
-    arg [cmTryCompileExec1973148011] ==> ignore
-    arg [-search_paths_first] ==> ignore
-    arg [-headerpad_max_install_names] ==> ignore
-    arg [CMakeFiles/cmTryCompileExec1973148011.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
-    arg [-lSystem] ==> lib [System]
-    arg [/usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a] ==> lib [/usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a]
-  remove lib [System]
-  implicit libs: [stdc++;/usr/bin/../lib/clang/4.0/lib/darwin/libclang_rt.osx.a]
-  implicit dirs: []
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2] ==> [c:/MinGW/lib/gcc/mingw32/4.6.2]
+  collapse dir [c:/mingw/bin/../lib/gcc] ==> [c:/MinGW/lib/gcc]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../../../mingw32/lib] ==> [c:/MinGW/mingw32/lib]
+  collapse dir [c:/mingw/bin/../lib/gcc/mingw32/4.6.2/../../..] ==> [c:/MinGW/lib]
+  collapse dir [/mingw/lib] ==> [/MinGW/lib]
+  implicit libs: [stdc++;mingw32;moldname;mingwex;msvcrt;advapi32;shell32;user32;kernel32;mingw32;moldname;mingwex;msvcrt]
+  implicit dirs: [c:/MinGW/lib/gcc/mingw32/4.6.2;c:/MinGW/lib/gcc;c:/MinGW/mingw32/lib;c:/MinGW/lib;/MinGW/lib]
 
 

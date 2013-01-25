@@ -13,6 +13,7 @@ Context::~Context(void)
 
 void		Context::run(void)
 {
+	_isRunning = true;
 	while (_isRunning)
 	{
 		update();

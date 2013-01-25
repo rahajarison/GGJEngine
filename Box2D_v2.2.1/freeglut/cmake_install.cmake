@@ -1,8 +1,8 @@
-# Install script for directory: /Users/momo/Documents/projet/Box2D_v2.2.1/freeglut
+# Install script for directory: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "/usr/local")
+  SET(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Box2D")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
