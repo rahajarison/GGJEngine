@@ -12,7 +12,8 @@ namespace GGJ
 class		Map
 {
 public:
-	Map(const std::string& filename);
+	// Map(const std::string& filename);
+	Map(void);
 	~Map(void); // desallocate every objects
 
 	void		attachObject(Object& object);
@@ -20,7 +21,7 @@ public:
 
 	void		drawObjects(sf::RenderWindow& window);
 private:
-	std::string	_file;
+	// std::string	_file;
 	double		_beginPosX;
 	double		_beginPosY;
 	double		_endAPosX;

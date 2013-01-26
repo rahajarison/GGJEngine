@@ -17,7 +17,7 @@ namespace GGJ
 		static void		deleteSingleton(void);
 	
 		void			setFramerateLimit(unsigned int limit);
-		void			loadMap(const std::string& filename);
+		// void			loadMap(const std::string& filename);
 		Window&			getWindow(void);
 
 		void			run(void);
