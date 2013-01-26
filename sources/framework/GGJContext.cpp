@@ -19,7 +19,7 @@ Context::Context(void) : _map(0), _isRunning(false), _isPaused(false)
 			_hudElements.push_back(sprite);
 		}
 	}
-	
+	// _view.Zoom(0.1f);
 }
 Context::~Context(void)
 {
@@ -33,8 +33,8 @@ void		Context::run(void)
 		update();
 		if (_isRunning)
 		{
-			dispatchEvents();
 			_window.clear();
+			dispatchEvents();
 			drawBackground();
 			drawObjects();
 			drawHUD();

@@ -22,7 +22,7 @@ class World
         */
         World()
         {
-            patternList.push_back(new PatternFall1());
+            patternList.push_back(new PatternFall1(0, 0));
             patternList[0]->create();
             car = new Character();
         }

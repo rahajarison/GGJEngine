@@ -23,6 +23,7 @@ ObjCell::ObjCell(b2Body* body) : _body(body)
 		this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
 		std::cout << "Fin Load" << std::endl;
 	}
+	update();
 	addTag(std::pair<std::string, std::string>("cell", "cell"));
 }
 ObjCell::~ObjCell(void)

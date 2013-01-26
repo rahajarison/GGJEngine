@@ -7,6 +7,8 @@
 #include	"engine/Character.h"
 #include	"ObjDebug.hpp"
 #include	"ObjCell.hpp"
+#include	"ObjBumper.hpp"
+#include	"Gameplay.hpp"
 
 void		registerAll(void)
 {
@@ -14,11 +16,8 @@ void		registerAll(void)
 
 	context.registerCallback(GGJ::registeringCallback(&Box2DCallback, 0));
 	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
-	sf::Event event;
-	event.Type = sf::Event::KeyPressed;
-	event.Key.Code = sf::Key::D;
-	GGJ::registeringCallback callback(&OnDivideEvent, &context);
-	context.registerOnEvent(event, callback);
+	registerImpulse();
+	registerDivide();
 }
 
 void		initDebug(void)
@@ -29,7 +28,7 @@ void		initDebug(void)
 	while (body != NULL)
 	{
 		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug(body)));
+			context.attachObject(*(new ObjBumper(body)));
 		else
 			context.attachObject(*(new ObjCell(body)));
 		body = body->GetNext();
