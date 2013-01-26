@@ -2,6 +2,7 @@
 #define WORLD_H
 //
 #include "Pattern.h"
+#include "Character.h"
 #include <vector>
 #include <Box2D/Box2D.h>
 
@@ -14,11 +15,13 @@ class World
 
         static b2World* m_world;
         vector<Pattern*> patternList;
+        Character cell;
 
         /**
         * Generate pattern order
         */
-        World(){
+        World() : cell()
+        {
 
             patternList.push_back(new Pattern());
             patternList[0]->create();
