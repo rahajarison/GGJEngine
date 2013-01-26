@@ -2,7 +2,7 @@
 #include			<GGJResourcesLoader.hpp>
 #include			"ObjMusic.hpp"
 
-const std::string ObjMusic::MUSIC_NAME = "Devolute1-.mp3";
+const std::string ObjMusic::MUSIC_NAME = "Devolute1-.ogg";
 
 ObjMusic::ObjMusic(void)
 {

@@ -9,6 +9,7 @@
 #include	"ObjCell.hpp"
 #include	"ObjBumper.hpp"
 #include	"Gameplay.hpp"
+#include	"ObjMusic.hpp"
 
 void		registerAll(void)
 {
@@ -31,6 +32,7 @@ void		initDebug(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
 
+	context.attachObject(*(new ObjMusic()));
 	context.accessView().Zoom(0.3f);
 	// reloadCells(&context);
 	// loadLevelDesign();
