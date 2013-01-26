@@ -2,6 +2,7 @@
 # define		GGJ_RESOURCE_LOADER
 
 # include		<map>
+# include		<string>
 # include		<SFML/Audio.hpp>
 # include		<SFML/Graphics.hpp>
 
@@ -28,6 +29,12 @@ private:
 	std::map<std::string, sf::Music*>	_musics;
 	std::map<std::string, sf::SoundBuffer*>	_soundBuffer;
 	std::map<std::string, sf::Image*>	_images;
+
+public:
+	static const std::string BASE_DIR;
+	static const std::string SOUNDS_DIR;
+	static const std::string MUSICS_DIR;
+	static const std::string IMAGE_DIR;
 };
 
 };

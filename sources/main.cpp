@@ -2,6 +2,7 @@
 #include	<iostream>
 #include	<GGJContext.hpp>
 #include	"Game.hpp"
+#include	"testJohnny.hpp"
 
 void		registerAll(void)
 {
@@ -16,6 +17,7 @@ int			main(int ac, char *av[])
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
 	registerAll();
+	test();
 	context.run();
 	return (EXIT_SUCCESS);
 }
