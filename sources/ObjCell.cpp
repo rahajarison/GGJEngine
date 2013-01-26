@@ -12,20 +12,19 @@ ObjCell::ObjCell(b2Body* body) : _body(body)
 	sf::Image *		image;
 	sf::Image *		image2;
 	
-	std::cout << "begin..." << std::endl;
 	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME), GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
 	{
-		std::cout << "load..." << std::endl;
 		image = GGJ::ResourcesLoader::getImage(IMAGE_NAME);
 		image2 = GGJ::ResourcesLoader::getImage(IMAGE2_NAME);
 		this->skin.SetImage(*image); 
 		this->light.SetImage(*image2);
 		this->skin.SetCenter(image->GetWidth() / 2, image->GetHeight() / 2);
 		this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
-		std::cout << "Fin Load" << std::endl;
+		update();
+		addTag(std::pair<std::string, std::string>("cell", "cell"));
 	}
-	update();
-	addTag(std::pair<std::string, std::string>("cell", "cell"));
+	else
+		std::cerr << "Impossible d afficher les Cell" << std::endl;
 }
 ObjCell::~ObjCell(void)
 {
@@ -40,7 +39,6 @@ void ObjCell::update(void)
 	light.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
 
 	float angle = _body->GetAngle() * RADTODEG;
-	std::cout << _body->GetAngle() <<std::endl;
 	skin.SetRotation(angle);
 	light.SetRotation(angle);
 }

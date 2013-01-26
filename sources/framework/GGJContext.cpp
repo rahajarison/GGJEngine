@@ -60,15 +60,15 @@ void		Context::update(void)
 	std::vector<Object*>::const_iterator itObj = objects.begin();
 	std::vector<Object*>::const_iterator endObj = objects.end();
 
-	while (itObj != endObj)
-	{
-		(*itObj)->update();
-		++itObj;
-	}
 	while (it != end)
 	{
 		(*(it->function))(it->params);
 		++it;
+	}
+	while (itObj != endObj)
+	{
+		(*itObj)->update();
+		++itObj;
 	}
 }
 void		Context::dispatchEvents(void)

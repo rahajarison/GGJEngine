@@ -11,18 +11,17 @@ ObjBumper::ObjBumper(b2Body* body) : _body(body)
 	sf::Image *		image;
 	sf::Image *		image2;
 	
-	std::cout << "begin objbumper..." << std::endl;
 	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME), GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
 	{
-		std::cout << "load..." << std::endl;
 		image = GGJ::ResourcesLoader::getImage(IMAGE_NAME);
 		image2 = GGJ::ResourcesLoader::getImage(IMAGE2_NAME);
 		this->skin.SetImage(*image); 
 		this->light.SetImage(*image2);
 		this->skin.SetCenter(image->GetWidth() / 2, image->GetHeight() / 2);
 		this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
-		std::cout << "Fin Load" << std::endl;
 	}
+	else
+		std::cerr << "Impossible d afficher Bumper" << std::endl;
 	addTag(std::pair<std::string, std::string>("bumper", "bumper"));
 }
 ObjBumper::~ObjBumper(void)

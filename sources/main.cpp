@@ -19,6 +19,7 @@ void		registerAll(void)
 	context.registerCallback(GGJ::registeringCallback(&cameraCallback, &context));
 	registerImpulse();
 	registerDivide();
+	registerFusion();
 }
 
 void		initDebug(void)
@@ -26,15 +27,20 @@ void		initDebug(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
 
-	context.accessView().Zoom(0.5f);
+	// context.accessView().Zoom(0.3f);
 	while (body != NULL)
 	{
-		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjBumper(body)));
-		else
-			context.attachObject(*(new ObjCell(body)));
-		body = body->GetNext();
+		body->GetNext();
 	}
+	reloadCells(&context);
+	// while (body != NULL)
+	// {
+	// 	if (!Character::isCharacter(body))
+	// 		context.attachObject(*(new ObjBumper(body)));
+	// 	else
+	// 		context.attachObject(*(new ObjCell(body)));
+	// 	body = body->GetNext();
+	// }
 }
 
 int			main(int ac, char *av[])

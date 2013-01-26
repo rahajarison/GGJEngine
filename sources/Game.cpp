@@ -12,20 +12,23 @@ void				Box2DCallback(void*)
   GGJ::Context::getSingleton()._world.m_world->Step( timeStep, velocityIterations, positionIterations);
 }
 
+void				reloadCells(GGJ::Context* context)
+{
+	b2Body*	body = context->_world.m_world->GetBodyList();
+	while (body != NULL)
+	{
+		if (Character::isCharacter(body))
+			context->attachObject(*(new ObjCell(body)));
+		body = body->GetNext();
+	}
+}
 void				OnDivideEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 
-	std::cout << "Event !" << std::endl;
 	context->removeObjectsWithTag("cell");
 	context->_world.car->divide();	
-	b2Body*	body = context->_world.m_world->GetBodyList();
-
-	while (body != NULL)
-	{
-		context->attachObject(*(new ObjCell(body)));
-		body = body->GetNext();
-	}
+	reloadCells(context);
 }
 void				OnImpulseEvent(void* params)
 {
@@ -33,12 +36,27 @@ void				OnImpulseEvent(void* params)
 
 	context->_world.car->beat();
 }
-void				cameraCallback(void* params)
+void				OnFusionEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 
+	context->removeObjectsWithTag("cell");
+	context->_world.car->fusion();
+	reloadCells(context);
+}
+void				cameraCallback(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 	b2Body* body = context->_world.car->bodies[0];
-	context->accessView().SetCenter(400, body->GetPosition().y * COEF_DISPLAY);
+	sf::View& camera =	context->accessView();
+
+	// std::cout << "Position: " << body->GetPosition().y * COEF_DISPLAY << " et Camera: " << camera.GetCenter().y << std::endl;
+	// if (body->GetPosition().y * COEF_DISPLAY >= camera.GetCenter().y - 200)
+	// {
+		// camera.SetCenter(body->GetPosition().x * COEF_DISPLAY, body->GetPosition().y * COEF_DISPLAY - 200);
+	camera.SetCenter(body->GetPosition().x * COEF_DISPLAY, body->GetPosition().y * COEF_DISPLAY + 400);
+	// }
+	// camera.SetCenter(400, body->GetPosition().y * COEF_DISPLAY);
 }
 void				mainCallback(void*)
 {

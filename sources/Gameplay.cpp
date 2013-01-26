@@ -17,6 +17,16 @@ void		registerImpulse(void)
 	GGJ::registeringCallback callback(&OnImpulseEvent, &context);
 	context.registerOnEvent(event, callback);	
 }
+void		registerFusion(void)
+{
+	sf::Event event;
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::F;
+	GGJ::registeringCallback callback(&OnFusionEvent, &context);
+	context.registerOnEvent(event, callback);
+}
 void		registerDivide(void)
 {
 	sf::Event event;
