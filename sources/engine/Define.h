@@ -4,7 +4,7 @@
 //
 
 #define COEF_DISPLAY	(20)
-#define FORCE 50
+#define FORCE 5
 #define DIVIDE 9
 #define BOUNCING 80
 #define IMPULSE 60
