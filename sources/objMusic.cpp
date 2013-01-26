@@ -1,20 +1,23 @@
 #include			<iostream>
 #include			<GGJResourcesLoader.hpp>
-#include			"objMusic.hpp"
+#include			"ObjMusic.hpp"
 
+const std::string ObjCell::MUSIC_NAME = "Devolute1-.mp3";
 
 ObjMusic::ObjMusic(void)
 {
-	if (GGJ::ResourcesLoader::loadMusic("music.ogg"))
+	std::cout << "begin" << std::endl;
+	if (GGJ::ResourcesLoader::loadMusic(MUSIC_NAME))
 	{
-		std::cout << "Play music ?" << std::endl;
-		GGJ::ResourcesLoader::getMusic("music.ogg")->Play();
+		std::cout << "load" << std::endl;
+		GGJ::ResourcesLoader::getMusic(MUSIC_NAME)->Play();
+		std::cout << "load end" << std::endl;
+
 	}
-	else
-		std::cerr << "Pas de musique" << std::endl;
 }
 ObjMusic::~ObjMusic(void)
 {
+	std::cout << "end" << std::endl;
 }
 
 void			ObjMusic::update(void)
@@ -22,5 +25,8 @@ void			ObjMusic::update(void)
 	std::cout << "Update !" << std::endl;
 }
 void			ObjMusic::draw(sf::RenderWindow&)
-{ }
-void			ObjMusic::call(Object&) { }
+{
+}
+void			ObjMusic::call(Object&)
+{
+}

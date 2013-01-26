@@ -12,6 +12,8 @@ public:
 	virtual void	update(void);	
 	virtual void	draw(sf::RenderWindow& window);
 	virtual	void	call(Object& otherObject);
+
+	static const std::string	MUSIC_NAME;
 };
 
 #endif /* !OBJ_MUSIC */
