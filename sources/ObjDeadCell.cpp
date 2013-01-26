@@ -5,7 +5,7 @@
 const std::string ObjDeadCell::IMAGE_NAME = "cellule_morte.png";
 const std::string ObjDeadCell::IMAGE2_NAME = "cellule_lueur.png";
 
-ObjCell::ObjCell(b2Body* body) : _body(body)
+ObjDeadCell::ObjDeadCell(b2Body* body) : _body(body)
 {
 	sf::Image *		image;
 	sf::Image *		image2;

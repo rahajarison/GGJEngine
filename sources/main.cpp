@@ -31,7 +31,7 @@ void		initDebug(void)
 		if (!Character::isCharacter(body))
 			context.attachObject(*(new ObjDebug(body)));
 		else
-			context.attachObject(*(new Cell(body)));
+			context.attachObject(*(new ObjCell(body)));
 		body = body->GetNext();
 	}
 }

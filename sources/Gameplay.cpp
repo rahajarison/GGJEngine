@@ -4,7 +4,7 @@
 #include	"Game.hpp"
 #include	"engine/Character.h"
 #include	"ObjDebug.hpp"
-#include	"Cell.hpp"
+#include	"ObjCell.hpp"
 #include	"Gameplay.hpp"
 
 void		registerImpulse(void)

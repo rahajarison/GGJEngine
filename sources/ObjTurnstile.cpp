@@ -2,8 +2,8 @@
 #include	<GGJResourcesLoader.hpp>
 #include	"ObjTurnstile.hpp"
 
-const std::string Cell::IMAGE_NAME = "cellule.png";
-const std::string Cell::IMAGE2_NAME = "cellule_lueur.png";
+const std::string ObjTurnstile::IMAGE_NAME = "cellule.png";
+const std::string ObjTurnstile::IMAGE2_NAME = "cellule_lueur.png";
 
 ObjTurnstile::ObjTurnstile(b2Body* body) : _body(body)
 {
