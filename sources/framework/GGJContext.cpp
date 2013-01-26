@@ -21,7 +21,7 @@ void		Context::run(void)
 		update();
 		if (_isRunning)
 		{
-			// dispatchEvents();
+			dispatchEvents();
 			_window.clear();
 			drawObjects();
 			// drawHUD();
@@ -63,6 +63,11 @@ void		Context::dispatchEvents(void)
 
 	while (_window.accessRenderWindow().GetEvent(event))
 	{
+		if (event.Type == sf::Event::Closed)
+		{
+        	stop();
+        	return;
+        }
 		std::vector<std::pair<sf::Event, registeringCallback> >::iterator it = _callbacksEvent.begin();
 		std::vector<std::pair<sf::Event, registeringCallback> >::iterator end = _callbacksEvent.end();
 

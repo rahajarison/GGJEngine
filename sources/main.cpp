@@ -14,11 +14,11 @@ void		registerAll(void)
 
 	context.registerCallback(GGJ::registeringCallback(&Box2DCallback, 0));
 	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
-	// sf::Event event;
-	// event.Type = sf::Event::KeyPressed;
-	// event.Key.Code = sf::Key::D;
-	// GGJ::registeringCallback callback(&OnDivideEvent, &context);
-	// context.registerOnEvent(event, callback);
+	sf::Event event;
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::D;
+	GGJ::registeringCallback callback(&OnDivideEvent, &context);
+	context.registerOnEvent(event, callback);
 }
 
 void		initDebug(void)
@@ -28,10 +28,9 @@ void		initDebug(void)
 
 	while (body != NULL)
 	{
-		// if (!Character::isCharacter(body))
-			// context.attachObject(*(new ObjDebug(body)));
-		// else
-		// std::cout << "Back to the cell" << std::endl;
+		if (!Character::isCharacter(body))
+			context.attachObject(*(new ObjDebug(body)));
+		else
 			context.attachObject(*(new Cell(body)));
 		body = body->GetNext();
 	}
@@ -41,7 +40,7 @@ int			main(int ac, char *av[])
 {
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
-	// registerAll();
+	registerAll();
 	initDebug();
 	context.run();
 	return (EXIT_SUCCESS);
