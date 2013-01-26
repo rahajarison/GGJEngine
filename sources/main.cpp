@@ -10,6 +10,7 @@
 #include	"ObjBumper.hpp"
 #include	"Gameplay.hpp"
 #include	"ObjMusic.hpp"
+#include	"ObjPattern.hpp"
 
 void		registerAll(void)
 {
@@ -22,11 +23,10 @@ void		registerAll(void)
 	registerDivide();
 	registerFusion();
 
-		// registerFront();
-		// registerBack();
-		// registerLeft();
-		// registerRight();
-
+	// registerFront();
+	// registerBack();
+	// registerLeft();
+	// registerRight();
 }
 
 // void		loadLevelDesign(void)
@@ -39,8 +39,8 @@ void		initDebug(void)
 	b2Body*	body = context._world.m_world->GetBodyList();
 
 	context.attachObject(*(new ObjMusic()));
-	context.accessView().Zoom(0.2f);
-	// reloadCells(&context);
+	context.accessView().Zoom(0.3f);
+	context.attachObject(*(new ObjPattern("Untitled.png", 0, 0)));
 	// loadLevelDesign();
 	
 	while (body != NULL)
