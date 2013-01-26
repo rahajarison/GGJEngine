@@ -22,17 +22,17 @@ void PatternFall5::create(){
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(0+relativeHorizontalSlide, 15+relativeVerticalSlide);
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 25+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
 
 
-    createTriangle2(b2Vec2(10+relativeHorizontalSlide,15+relativeVerticalSlide));
-    createTriangle2(b2Vec2(20+relativeHorizontalSlide,15+relativeVerticalSlide));
+    createTriangle2(b2Vec2(10+relativeHorizontalSlide,25+relativeVerticalSlide));
+    createTriangle2(b2Vec2(20+relativeHorizontalSlide,25+relativeVerticalSlide));
 
-    myBodyDef.position.Set(15+relativeHorizontalSlide, 15+relativeVerticalSlide);
+    myBodyDef.position.Set(25+relativeHorizontalSlide, 25+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 1, 10, b2Vec2(0, 0), 0);//pillier
     staticBody->CreateFixture(&myFixtureDef);

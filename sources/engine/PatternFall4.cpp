@@ -22,14 +22,14 @@ void PatternFall4::create(){
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(0+relativeHorizontalSlide, 15+relativeVerticalSlide);
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 25+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
 
 
-    createCassis(b2Vec2(20+relativeHorizontalSlide,15+relativeVerticalSlide));
+    createCassis(b2Vec2(20+relativeHorizontalSlide,25+relativeVerticalSlide));
 
     World::m_world->SetContactListener(nc);
     //new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);

@@ -17,19 +17,19 @@ void PatternFall3::create(){
     myFixtureDef.density = 1;
 
     myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(0+relativeHorizontalSlide, 15+relativeVerticalSlide);
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 25+relativeVerticalSlide);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(15+relativeHorizontalSlide, 0+relativeVerticalSlide);
+    myBodyDef.position.Set(25+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 25, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 1, 16, b2Vec2(0, 0), 0);//left wall
+    polygonShape.SetAsBox( 1, 2s6, b2Vec2(0, 0), 0);//left wall
     staticBody->CreateFixture(&myFixtureDef);
 
     //createJump2(b2Vec2(0+relativeHorizontalSlide,30+relativeVerticalSlide));

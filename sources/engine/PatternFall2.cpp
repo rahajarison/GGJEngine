@@ -22,7 +22,7 @@ void PatternFall2::create(){
     polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(15+relativeHorizontalSlide, 0+relativeVerticalSlide);
+    myBodyDef.position.Set(25+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);

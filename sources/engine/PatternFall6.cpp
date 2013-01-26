@@ -22,12 +22,12 @@ void PatternFall6::create(){
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(0+relativeHorizontalSlide, 15+relativeVerticalSlide);
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 25+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    createJump1(b2Vec2(15+relativeHorizontalSlide,15+relativeVerticalSlide));
+    createJump1(b2Vec2(25+relativeHorizontalSlide,25+relativeVerticalSlide));
     createBar(b2Vec2(20+relativeHorizontalSlide,7+relativeVerticalSlide));
 
     World::m_world->SetContactListener(nc);
