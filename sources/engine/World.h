@@ -19,6 +19,7 @@ class World
         * Generate pattern order
         */
         World(){
+
             patternList.push_back(new Pattern());
             patternList[0]->create();
         }
