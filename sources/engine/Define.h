@@ -3,6 +3,8 @@
 //
 
 #define FORCE 50
+#define DIVIDE 10
+#define BOUNCING 13
 
 enum types 
 {

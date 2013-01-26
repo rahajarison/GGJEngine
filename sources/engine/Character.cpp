@@ -38,5 +38,27 @@ void Character::update()
 
 void Character::divide()
 {
-    
+    if(!isDivided)
+    {
+        if(nutris <= DIVIDE)
+        {
+            b2Vec2 posIni = bodies[0]->GetPosition();
+            b2Vec2 speed = bodies[0]->GetLinearVelocity();
+            for(int i = 0; i < nutris; ++i)
+            {
+
+            }
+        }
+        else
+        {
+            for(int i = 0; i < DIVIDE; ++i)
+            {
+
+            }
+        }
+    }   
 }
+
+
+
+

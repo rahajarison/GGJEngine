@@ -17,6 +17,8 @@ class Character
         std::vector <b2Body*> bodies;
         int MaxSpeed;
         int MaxAngularRotation;
+        int nutris;
+        bool isDivided;
 
         b2Body* getBody(){return 0;}
         int getVelocity(){return 0;}
