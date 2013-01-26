@@ -126,7 +126,7 @@ void Pattern::createJump3(b2Vec2 pos){
     b2Vec2 newPos=*new b2Vec2(pos.x,pos.y);
     b2BodyDef bodyDef;
     bodyDef.type = b2_staticBody;
-    bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.
+    bodyDef.position.Set(newPos.x-12, newPos.y);   // the body's origin position.
     b2Body* body= World::m_world->CreateBody(&bodyDef);
 
     b2PolygonShape rect;
