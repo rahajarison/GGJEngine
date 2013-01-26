@@ -35,6 +35,7 @@ class Character
         void update();
         void divide();
         void fusion();
+        void beat();
 };
 
 #endif

@@ -8,7 +8,7 @@ Character::Character() : bodies()
     long int type = character;
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(0.0f, 2.0f);   // the body's origin position.
+    bodyDef.position.Set(50.0f, 400.0f);   // the body's origin position.
     bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
     bodyDef.linearDamping = 0.0f;
     bodyDef.angularDamping = 0.01f;
@@ -45,6 +45,7 @@ void Character::divide()
     b2Vec2 speed = bodies[0]->GetLinearVelocity();
     float grav = bodies[0]->GetGravityScale();
     float scale = bodies[0]->GetFixtureList()->GetAABB(0).GetExtents().x * 2;
+    bodies.clear();
     if(!isDivided)
     {
         if(nutris <= DIVIDE)
@@ -125,6 +126,14 @@ void Character::fusion()
     }
 }
 
+void Character::beat()
+{
+    for(int i = 0; i < bodies.size(); ++i)
+    {
+        bodies[i]->ApplyLinearImpulse( b2Vec2(0,50), bodies[i]->GetWorldCenter() );
+    }   
+}
 
+void angle
 
 
