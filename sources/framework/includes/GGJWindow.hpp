@@ -8,7 +8,7 @@ namespace GGJ
 	class		Window
 	{
 	public:
-		Window(unsigned int height = 800, unsigned int width = 800,
+		Window(unsigned int height = 1024, unsigned int width = 1024,
 				const std::string& title = "Growing Leo");
 		void		close(void);
 		

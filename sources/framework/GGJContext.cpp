@@ -1,3 +1,4 @@
+#include		<iostream>
 #include		<GGJContext.hpp>
 
 namespace GGJ
@@ -20,10 +21,10 @@ void		Context::run(void)
 		update();
 		if (_isRunning)
 		{
-			dispatchEvents();
+			// dispatchEvents();
 			_window.clear();
 			drawObjects();
-			drawHUD();
+			// drawHUD();
 			_window.display();
 		}
 	}

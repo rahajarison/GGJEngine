@@ -1,10 +1,12 @@
 #include	<cstdlib>
 #include	<iostream>
 #include	<GGJContext.hpp>
+#include	"engine/World.h"
 #include	"Game.hpp"
 #include	"testJohnny.hpp"
 #include	"engine/Character.h"
 #include	"ObjDebug.hpp"
+#include	"Cell.hpp"
 
 void		registerAll(void)
 {
@@ -12,6 +14,11 @@ void		registerAll(void)
 
 	context.registerCallback(GGJ::registeringCallback(&Box2DCallback, 0));
 	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
+	// sf::Event event;
+	// event.Type = sf::Event::KeyPressed;
+	// event.Key.Code = sf::Key::D;
+	// GGJ::registeringCallback callback(&OnDivideEvent, &context);
+	// context.registerOnEvent(event, callback);
 }
 
 void		initDebug(void)
@@ -19,15 +26,14 @@ void		initDebug(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
 
-	if (body)
+	while (body != NULL)
 	{
-		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug(body)));
-	}
-	while (body = body->GetNext())
-	{
-		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug()));
+		// if (!Character::isCharacter(body))
+			// context.attachObject(*(new ObjDebug(body)));
+		// else
+		// std::cout << "Back to the cell" << std::endl;
+			context.attachObject(*(new Cell(body)));
+		body = body->GetNext();
 	}
 }
 
@@ -35,9 +41,8 @@ int			main(int ac, char *av[])
 {
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
-	registerAll();
-	// test();
-	// test("cellule.png");
+	// registerAll();
+	initDebug();
 	context.run();
 	return (EXIT_SUCCESS);
 }

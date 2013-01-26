@@ -31,7 +31,7 @@ private:
 	double		_endAPosY;
 	double		_endBPosY;
 
-	std::vector<sf::Sprite>		_sprites;
+	std::vector<sf::Sprite*>		_sprites;
 	std::vector<Object*>		_objects;
 	sf::Music					_music;
 

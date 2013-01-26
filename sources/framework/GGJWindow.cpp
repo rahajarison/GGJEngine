@@ -8,7 +8,7 @@ Window::Window(unsigned int height, unsigned int width,
 _window(sf::VideoMode(height, width, 32), title), _title(title),
 _height(height), _width(width)
 {
-
+	_window.SetFramerateLimit(Window::MAX_FPS);
 }
 
 void			Window::close(void)				{	_window.Close();	}
