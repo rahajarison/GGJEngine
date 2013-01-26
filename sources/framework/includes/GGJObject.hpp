@@ -22,6 +22,7 @@ namespace GGJ
 		void			setPosY(double posY);
 		void			setPos(double posX, double posY);
 		void			translate(double posX, double posY);
+		// void			applyToSprite(void);
 		// void			rotate(?);
 
 		double			getPosX(void) const;

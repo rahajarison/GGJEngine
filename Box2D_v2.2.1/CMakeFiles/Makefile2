@@ -274,8 +274,8 @@ Testbed/preinstall:
 
 # All Build rule for target.
 Testbed/CMakeFiles/Testbed.dir/all: Box2D/CMakeFiles/Box2D.dir/all
-Testbed/CMakeFiles/Testbed.dir/all: freeglut/CMakeFiles/freeglut_static.dir/all
 Testbed/CMakeFiles/Testbed.dir/all: glui/CMakeFiles/glui.dir/all
+Testbed/CMakeFiles/Testbed.dir/all: freeglut/CMakeFiles/freeglut_static.dir/all
 	$(MAKE) -f Testbed\CMakeFiles\Testbed.dir\build.make Testbed/CMakeFiles/Testbed.dir/depend
 	$(MAKE) -f Testbed\CMakeFiles\Testbed.dir\build.make Testbed/CMakeFiles/Testbed.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report C:\Users\Seven\Documents\GitHub\GGJEngine\Box2D_v2.2.1\CMakeFiles  44 45 46 47

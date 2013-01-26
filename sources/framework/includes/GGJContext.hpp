@@ -7,6 +7,7 @@
 #include		<GGJCallback.hpp>
 #include		<GGJObject.hpp>
 #include		<GGJMap.hpp>
+#include		"engine/World.h"
 
 namespace GGJ
 {
@@ -38,6 +39,7 @@ namespace GGJ
 		void			addHUDElement(sf::Sprite* sprite);
 		sf::View&		accessView(void);
 	
+		World							_world;
 	private:
 		Context(void);
 		~Context(void);

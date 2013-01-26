@@ -39,6 +39,7 @@ void		Context::setPause(bool status)	{	_isPaused = status;		}
 
 void		Context::update(void)
 {
+	// TODO appeller les update des objets
 	std::vector<registeringCallback>::iterator it = _callbacksUpdate.begin();
 	std::vector<registeringCallback>::iterator end = _callbacksUpdate.end();
 
@@ -60,6 +61,7 @@ void		Context::dispatchEvents(void)
 		while (it != end)
 		{
 			// what about copying all the datas ? ;)
+			// Check fermeture de fenetre
 			std::pair<sf::Event, registeringCallback> value = *it;
 			if (it->first.Type == event.Type &&
 				it->first.Key.Code == event.Key.Code)

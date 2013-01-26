@@ -23,7 +23,7 @@ class World
             patternList.push_back(new Pattern());
             patternList[0]->create();
         }
-        ~World();
+        ~World() { }
 };
 
 #endif

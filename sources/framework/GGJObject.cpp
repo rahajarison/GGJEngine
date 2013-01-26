@@ -45,6 +45,10 @@ void		Object::setPos(double posX, double posY)
 	_posX = posX;
 	_posY = posY;
 }
+// void		Object::applyToSprite(void)
+// {
+// 	_
+// }
 bool		Object::ABBAcollide(const Object& a, const Object& b)
 {
 	if ( (a.getPosX() >= b.getPosX() + b.getWidth()) ||
