@@ -23,7 +23,7 @@ void		registerFusion(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
 	event.Type = sf::Event::KeyPressed;
-	event.Key.Code = sf::Key::F;
+	event.Key.Code = sf::Key::O;
 	GGJ::registeringCallback callback(&OnFusionEvent, &context);
 	context.registerOnEvent(event, callback);
 }
@@ -33,7 +33,47 @@ void		registerDivide(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
 	event.Type = sf::Event::KeyPressed;
-	event.Key.Code = sf::Key::D;
+	event.Key.Code = sf::Key::P;
 	GGJ::registeringCallback callback(&OnDivideEvent, &context);
+	context.registerOnEvent(event, callback);
+}
+void		registerFront(void)
+{
+	sf::Event event;
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::W;
+	GGJ::registeringCallback callback(&OnFrontEvent, &context);
+	context.registerOnEvent(event, callback);
+}
+void		registerBack(void)
+{
+	sf::Event event;
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::W;
+	GGJ::registeringCallback callback(&OnBackEvent, &context);
+	context.registerOnEvent(event, callback);
+}
+void		registerLeft(void)
+{
+	sf::Event event;
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::W;
+	GGJ::registeringCallback callback(&OnLeftEvent, &context);
+	context.registerOnEvent(event, callback);
+}
+void		registerRight(void)
+{
+	sf::Event event;
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::W;
+	GGJ::registeringCallback callback(&OnRightEvent, &context);
 	context.registerOnEvent(event, callback);
 }

@@ -44,6 +44,27 @@ void				OnFusionEvent(void* params)
 	context->_world.car->fusion();
 	reloadCells(context);
 }
+
+void				OnRightEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+
+	context->_world.car->up();
+}
+void				OnLeftEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+}
+void				OnFrontEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+}
+void				OnBackEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+}
+
+
 void				cameraCallback(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);

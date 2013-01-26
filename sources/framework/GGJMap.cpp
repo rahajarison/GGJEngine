@@ -19,17 +19,17 @@ Map::Map(void)
 				_sprites.push_back(new sf::Sprite(*iBackground_rose));
 		}
 	
-		{
-			sf::Image*	iPattern1= GGJ::ResourcesLoader::getImage("background_rose.png");
-			if (iPattern1)
-			{
-				sf::Sprite*	pattern1 = new sf::Sprite(*iPattern1);
-				pattern1->SetPosition(0, 0);
-				_sprites.push_back(pattern1);
-			}
-			else
-				std::cerr << "Va tfaire floute" << std::endl;
-		}
+		// {
+		// 	sf::Image*	iPattern1= GGJ::ResourcesLoader::getImage("background_rose.png");
+		// 	if (iPattern1)
+		// 	{
+		// 		sf::Sprite*	pattern1 = new sf::Sprite(*iPattern1);
+		// 		pattern1->SetPosition(0, 0);
+		// 		_sprites.push_back(pattern1);
+		// 	}
+		// 	else
+		// 		std::cerr << "Va tfaire floute" << std::endl;
+		// }
 
 	
 		// {

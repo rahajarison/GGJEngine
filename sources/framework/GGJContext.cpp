@@ -34,7 +34,7 @@ void		Context::run(void)
 		update();
 		if (_isRunning)
 		{
-			_window.clear();
+			// _window.clear();
 			dispatchEvents();
 			drawBackground();
 			drawObjects();

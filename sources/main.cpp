@@ -33,13 +33,13 @@ void		initDebug(void)
 	b2Body*	body = context._world.m_world->GetBodyList();
 
 	context.attachObject(*(new ObjMusic()));
-	context.accessView().Zoom(0.3f);
+	context.accessView().Zoom(0.2f);
 	// reloadCells(&context);
 	// loadLevelDesign();
 	
 	while (body != NULL)
 	{
-		if (Character::isCharacter(body))
+		if (!Character::isCharacter(body))
 			context.attachObject(*(new ObjBumper(body)));
 		else
 			context.attachObject(*(new ObjCell(body)));
