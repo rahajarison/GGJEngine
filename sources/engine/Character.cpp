@@ -8,7 +8,7 @@ Character::Character() : bodies()
     long int type = character;
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(50.0f, 400.0f);   // the body's origin position.
+    bodyDef.position.Set(7.0f, 0.0f);   // the body's origin position.
     bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
     bodyDef.linearDamping = 0.0f;
     bodyDef.angularDamping = 0.01f;
@@ -36,7 +36,7 @@ void Character::update()
             force =  FORCE;
 
         bodies[i]->ApplyForce( b2Vec2(force,0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
-        bodies[i]->SetAngularVelocity(0.1f);
+        bodies[i]->ApplyTorque( 10 );
     }
 }
 
