@@ -21,6 +21,12 @@ void		registerAll(void)
 	registerImpulse();
 	registerDivide();
 	registerFusion();
+
+		// registerFront();
+		// registerBack();
+		// registerLeft();
+		// registerRight();
+
 }
 
 // void		loadLevelDesign(void)

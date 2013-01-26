@@ -49,19 +49,23 @@ void				OnRightEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 
-	context->_world.car->up();
+	context->_world.car->right();
 }
 void				OnLeftEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+
+	context->_world.car->left();
 }
 void				OnFrontEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+	context->_world.car->up();
 }
 void				OnBackEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+	context->_world.car->down();
 }
 
 
@@ -83,5 +87,6 @@ void				mainCallback(void*)
 {
 	GGJ::Context* context =	&GGJ::Context::getSingleton();
 
+	context->_world.car->right();
 	// context->_world.car->update();
 }

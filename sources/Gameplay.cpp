@@ -53,7 +53,7 @@ void		registerBack(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
 	event.Type = sf::Event::KeyPressed;
-	event.Key.Code = sf::Key::W;
+	event.Key.Code = sf::Key::S;
 	GGJ::registeringCallback callback(&OnBackEvent, &context);
 	context.registerOnEvent(event, callback);
 }
@@ -63,7 +63,7 @@ void		registerLeft(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
 	event.Type = sf::Event::KeyPressed;
-	event.Key.Code = sf::Key::W;
+	event.Key.Code = sf::Key::A;
 	GGJ::registeringCallback callback(&OnLeftEvent, &context);
 	context.registerOnEvent(event, callback);
 }
@@ -73,7 +73,7 @@ void		registerRight(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
 	event.Type = sf::Event::KeyPressed;
-	event.Key.Code = sf::Key::W;
+	event.Key.Code = sf::Key::D;
 	GGJ::registeringCallback callback(&OnRightEvent, &context);
 	context.registerOnEvent(event, callback);
 }
