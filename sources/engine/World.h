@@ -15,7 +15,7 @@ class World
 
         static b2World* m_world;
         vector<Pattern*> patternList;
-
+        Character* car;
         /**
         * Generate pattern order
         */
@@ -23,7 +23,7 @@ class World
         {
             patternList.push_back(new Pattern());
             patternList[0]->create();
-            new Character();
+            car = new Character();
         }
         ~World() { }
 };

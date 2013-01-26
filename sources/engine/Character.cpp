@@ -57,7 +57,7 @@ void Character::divide()
                 bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
                 bodyDef.linearDamping = 0.0f;
                 bodyDef.angularDamping = 0.01f;
-                bodies[i] = World::m_world->CreateBody(&bodyDef);
+                bodies.push_back(World::m_world->CreateBody(&bodyDef));
 
                 b2CircleShape circleShape;
                 circleShape.m_p.Set(0, 0);          //position, relative to body position
@@ -79,7 +79,7 @@ void Character::divide()
                 bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
                 bodyDef.linearDamping = 0.0f;
                 bodyDef.angularDamping = 0.01f;
-                bodies[i] = World::m_world->CreateBody(&bodyDef);
+                bodies.push_back(World::m_world->CreateBody(&bodyDef));
 
                 b2CircleShape circleShape;
                 circleShape.m_p.Set(0, 0);          //position, relative to body position
