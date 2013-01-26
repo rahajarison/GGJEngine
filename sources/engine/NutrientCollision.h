@@ -3,6 +3,7 @@
 //
 #include "Define.h"
 #include <iostream>
+#include "World.h"
 
 class NutrientCollision : public b2ContactListener
 {
@@ -21,11 +22,13 @@ class NutrientCollision : public b2ContactListener
                 std::cout<<a<<"\n";
                 std::cout<<b<<"\n";
                 if(a==nutrient){
-                    //m_world->destroyBody(contact->GetFixtureA()->GetBody());
+                    World::m_world->DestroyBody(contact->GetFixtureA()->GetBody());
+                    World::car->nutris+=nutrisPoints;
                     return;
                 } 
                 if (b==nutrient){
-                    //m_world->destroyBody(contact->GetFixtureB()->GetBody());
+                    World::m_world->DestroyBody(contact->GetFixtureB()->GetBody());
+                    World::car->nutris+=nutrisPoints;
                     return;
                 }
                 if (a==bouncingBlockTop){
