@@ -30,5 +30,5 @@ void PatternFall1::create(){
     createJump2(b2Vec2(0,30));
 
     World::m_world->SetContactListener(nc);
-    new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
+    //new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
 }

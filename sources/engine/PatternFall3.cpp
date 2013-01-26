@@ -17,18 +17,23 @@ void PatternFall3::create(){
     myFixtureDef.density = 1;
 
     myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 15+relativeVerticalSlide);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(15+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 25, 1, b2Vec2(15, 0), 0);//ground
+    polygonShape.SetAsBox( 25, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
 
-    createJump3(b2Vec2(15,30));
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
+    staticBody = World::m_world->CreateBody(&myBodyDef);
+    polygonShape.SetAsBox( 1, 16, b2Vec2(0, 0), 0);//left wall
+    staticBody->CreateFixture(&myFixtureDef);
+
+    createJump2(b2Vec2(0+relativeHorizontalSlide,30+relativeVerticalSlide));
 
     World::m_world->SetContactListener(nc);
-    new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
+    //new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
 }

@@ -27,8 +27,8 @@ void PatternFall2::create(){
     polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    createJump3(b2Vec2(15,30));
+    createJump3(b2Vec2(15+relativeHorizontalSlide,30+relativeVerticalSlide));
 
     World::m_world->SetContactListener(nc);
-    new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
+    //new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
 }
