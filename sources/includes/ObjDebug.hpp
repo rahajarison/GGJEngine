@@ -9,7 +9,6 @@ class			ObjDebug : public GGJ::Object
 {
 public:
 	ObjDebug(b2Body* body);
-	ObjDebug(void);
 	virtual ~ObjDebug(void);
 
 	void			applyToSprite(void);
@@ -20,6 +19,10 @@ public:
 private:
 	sf::Shape		_sprite;
 	b2Body*			_body;
+
+public:
+	static const unsigned int	WIDTH;
+	static const unsigned int	HEIGHT;
 };
 
 #endif

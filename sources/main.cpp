@@ -5,6 +5,7 @@
 #include	"testJohnny.hpp"
 #include	"engine/Character.h"
 #include	"ObjDebug.hpp"
+#include	"Cell.hpp"
 
 void		registerAll(void)
 {
@@ -21,13 +22,19 @@ void		initDebug(void)
 
 	if (body)
 	{
-		if (!Character::isCharacter(body))
+		// if (!Character::isCharacter(body))
+			std::cout << "attachObject" << std::endl;
 			context.attachObject(*(new ObjDebug(body)));
+			std::cout << "fin attachObject" << std::endl;
+		// else
+			// context.attachObject(*(new Cell(body)));
 	}
 	while (body = body->GetNext())
 	{
-		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug()));
+		// if (!Character::isCharacter(body))
+			context.attachObject(*(new ObjDebug(body)));
+		// else
+			// context.attachObject(*(new Cell(body)));
 	}
 }
 
@@ -35,9 +42,10 @@ int			main(int ac, char *av[])
 {
 	GGJ::Context&	context = GGJ::Context::getSingleton();
 
-	registerAll();
-	// test();
-	// test("cellule.png");
-	context.run();
+	// std::cout << "Hey" << std::endl;
+	// registerAll();
+	// initDebug();
+	// std::cout << "Salut" << std::endl;
+	// context.run();
 	return (EXIT_SUCCESS);
 }
