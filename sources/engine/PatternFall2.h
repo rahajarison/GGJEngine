@@ -1,5 +1,5 @@
-#ifndef PATTERN_FALL_1_H
-#define PATTERN_FALL_1_H
+#ifndef PATTERN_FALL_2_H
+#define PATTERN_FALL_2_H
 
 #include "Pattern.h"
 
