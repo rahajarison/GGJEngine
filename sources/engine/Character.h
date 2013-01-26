@@ -32,7 +32,10 @@ class Character
             return type==character;
         }
         
-        void update();
+        void up();
+        void down();
+        void left();
+        void right();
         void divide();
         void fusion();
         void beat();

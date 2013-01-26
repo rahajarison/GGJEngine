@@ -11,7 +11,9 @@ namespace GGJ
 // }
 Map::Map(void)
 {
-	if (GGJ::ResourcesLoader::loadImage("background_rose.png"))
+	if (GGJ::ResourcesLoader::loadImage("background_rose.png") &&
+			GGJ::ResourcesLoader::loadImage("pattern1.png") &&
+			GGJ::ResourcesLoader::loadImage("pattern2.png"))
 	{
 		{
 			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
@@ -19,30 +21,20 @@ Map::Map(void)
 				_sprites.push_back(new sf::Sprite(*iBackground_rose));
 		}
 	
-		// {
-		// 	sf::Image*	iPattern1= GGJ::ResourcesLoader::getImage("background_rose.png");
-		// 	if (iPattern1)
-		// 	{
-		// 		sf::Sprite*	pattern1 = new sf::Sprite(*iPattern1);
-		// 		pattern1->SetPosition(0, 0);
-		// 		_sprites.push_back(pattern1);
-		// 	}
-		// 	else
-		// 		std::cerr << "Va tfaire floute" << std::endl;
-		// }
-
+		{
+			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern1.png");
+			if (iBackground_rose)
+				_sprites.push_back(new sf::Sprite(*iBackground_rose));
+			// else
+				// std::cerr << "Fuck" << std::endl;
+		}
 	
-		// {
-		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern2.png");
-		// 	if (iBackground_rose)
-		// 	{
-		// 		sf::Sprite*	sprite = new sf::Sprite(*iBackground_rose);
-		// 		sprite->SetPosition(0, 1024);
-		// 		_sprites.push_back(sprite);
-		// 	}
-		// }
+		{
+			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern2.png");
+			if (iBackground_rose)
+				_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		}
 	
-		// std::cout << "Allo" << std::endl;
 		// {
 		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
 		// 	if (iBackground_rose)
@@ -82,13 +74,10 @@ void		Map::drawBackground(sf::RenderWindow& window)
 {	
 	std::vector<sf::Sprite*>::iterator it = _sprites.begin();
 	std::vector<sf::Sprite*>::iterator end = _sprites.end();
-	unsigned int i = 0;
 
 	while (it != end)
 	{
-		std::cout << " Tu es content de toi  " << i << std::endl;
 		window.Draw(**it);
-		++i;
 		++it;
 	}
 }
