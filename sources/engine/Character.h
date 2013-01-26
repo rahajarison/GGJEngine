@@ -2,6 +2,7 @@
 #define CHARACTER_H
 //
 #include <Box2D/Box2D.h>
+#include <vector>
 
 class Character
 {
@@ -13,7 +14,7 @@ class Character
         Character();
         ~Character(){}
 
-        b2Body* body;
+        std::vector <b2Body*> bodies;
         int MaxSpeed;
         int MaxAngularRotation;
 
@@ -22,7 +23,8 @@ class Character
         double getRotation(){return 0;}
         int getMaxSpeed(){return 0;}
         int getMaxAngularRotation(){return 0;}
-        void start();
+        void update();
+        void divide();
 };
 
 #endif
