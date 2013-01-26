@@ -154,7 +154,7 @@ void Pattern::createBar(b2Vec2 pos){
     b2Vec2 newPos=*new b2Vec2(pos.x,pos.y);
     b2BodyDef bodyDef;
     bodyDef.type = b2_staticBody;
-    bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.
+    bodyDef.position.Set(newPos.x, newPos.y); // the body's origin position.
     b2Body* body= World::m_world->CreateBody(&bodyDef);
 
     b2PolygonShape rect;
@@ -167,6 +167,45 @@ void Pattern::createBar(b2Vec2 pos){
     body->CreateFixture(&myFixtureDef);
     body->SetUserData((void*)block);
 
+}
+
+void Pattern::createSensor(b2Vec2 pos)
+{
+    b2Vec2 newPos=*new b2Vec2(pos.x,pos.y);
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_staticBody;
+    bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.
+    b2Body* body= World::m_world->CreateBody(&bodyDef);
+
+    b2PolygonShape rect;
+    rect.SetAsBox(0.05f, 10, b2Vec2(0,0), 0);
+    b2FixtureDef myFixtureDef;
+    myFixtureDef.shape=&rect;
+
+    body->CreateFixture(&myFixtureDef);
+
+    myFixtureDef.shape=&rect;
+    body->CreateFixture(&myFixtureDef);
+    body->SetUserData((void*)block);
+}
+
+void Patern::bubbles()
+{
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_kinematicBody;
+    bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.
+    b2Body* body= World::m_world->CreateBody(&bodyDef);
+
+    b2CircleShape circleShape;
+    circleShape.m_p.Set(0, 0);          //position, relative to body position
+    circleShape.m_radius = 1;           //radius
+    b2FixtureDef myFixtureDef;
+    myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
+    bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
+    bodies[0]->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
+    bodies[0]->SetUserData((void*) type);
+    
+    body->SetUserData((void*)block);
 }
 
 //
