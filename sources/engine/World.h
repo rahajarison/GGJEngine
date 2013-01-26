@@ -23,8 +23,8 @@ class World
         World()
         {
             patternList.push_back(new PatternFall1(0, 0));
-            patternList.push_back(new PatternFall1(0, 40));
-            patternList.push_back(new PatternFall1(0, 80));
+            patternList.push_back(new PatternFall2(0, 40));
+            patternList.push_back(new PatternFall3(0, 80));
             patternList[0]->create();
             patternList[1]->create();
             patternList[2]->create();
