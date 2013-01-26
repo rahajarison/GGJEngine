@@ -9,7 +9,7 @@ void createTriangle(b2Vec2 init)
     b2BodyDef myBodyDef;
     myBodyDef.type = b2_staticBody;
     myBodyDef.position.Set(init.x, init.y);
-    b2Body* staticBody = m_world->CreateBody(&myBodyDef);
+    b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     //shape definition
     b2PolygonShape polygonShape;
 

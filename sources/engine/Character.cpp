@@ -134,6 +134,4 @@ void Character::beat()
     }   
 }
 
-void angle
-
 
