@@ -17,7 +17,7 @@ void PatternFall1::create(){
     myFixtureDef.density = 1;
 
     myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(0+relativeHSlide, 0+relativeVSlide);
+    myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
@@ -29,5 +29,5 @@ void PatternFall1::create(){
 
 
     World::m_world->SetContactListener(nc);
-    new Nutrient(12, 3+relativeHSlide,2+relativeVSlide);
+    new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
 }
