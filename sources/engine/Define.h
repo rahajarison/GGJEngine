@@ -3,6 +3,7 @@
 #include <Box2D/Box2D.h>
 //
 
+#define COEF_DISPLAY	(20)
 #define FORCE 50
 #define DIVIDE 9
 #define BOUNCING 80
