@@ -1,9 +1,9 @@
-#include "PatternFall1.h"
+#include "PatternFall2.h"
 #include "NutrientCollision.h"
 #include "World.h"
 #include "Nutrient.h"
 
-void PatternFall1::create(){
+void PatternFall3::create(){
     NutrientCollision* nc=new NutrientCollision();
     b2BodyDef myBodyDef;
 
@@ -19,15 +19,15 @@ void PatternFall1::create(){
     myBodyDef.type = b2_staticBody;
     myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
+    polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(15+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
+    polygonShape.SetAsBox( 25, 1, b2Vec2(15, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    createJump2(b2Vec2(0,30));
+    createJump3(b2Vec2(15,30));
 
     World::m_world->SetContactListener(nc);
     new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);
