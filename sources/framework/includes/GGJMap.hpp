@@ -16,6 +16,8 @@ public:
 	Map(void);
 	~Map(void); // desallocate every objects
 
+	const std::vector<Object*>& getObjects(void) const;
+
 	void		attachObject(Object& object);
 	void		detachObject(Object& object);
 
