@@ -6,8 +6,7 @@
 #include	"testJohnny.hpp"
 #include	"engine/Character.h"
 #include	"ObjDebug.hpp"
-#include	"Cell.hpp"
-#include	"Gameplay.hpp"
+#include	"ObjCell.hpp"
 
 void		registerAll(void)
 {
@@ -15,8 +14,11 @@ void		registerAll(void)
 
 	context.registerCallback(GGJ::registeringCallback(&Box2DCallback, 0));
 	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
-	registerDivide();
-	registerImpulse();
+	sf::Event event;
+	event.Type = sf::Event::KeyPressed;
+	event.Key.Code = sf::Key::D;
+	GGJ::registeringCallback callback(&OnDivideEvent, &context);
+	context.registerOnEvent(event, callback);
 }
 
 void		initDebug(void)

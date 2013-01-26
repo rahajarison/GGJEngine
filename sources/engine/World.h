@@ -5,6 +5,7 @@
 #include "Character.h"
 #include <vector>
 #include <Box2D/Box2D.h>
+#include "PatternFall1.h"
 
 using namespace std;
 
@@ -21,7 +22,7 @@ class World
         */
         World()
         {
-            patternList.push_back(new Pattern());
+            patternList.push_back(new PatternFall1());
             patternList[0]->create();
             car = new Character();
         }

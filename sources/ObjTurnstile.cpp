@@ -1,11 +1,11 @@
 #include	<iostream>
 #include	<GGJResourcesLoader.hpp>
-#include	"Cell.hpp"
+#include	"ObjTurnstile.hpp"
 
 const std::string Cell::IMAGE_NAME = "cellule.png";
 const std::string Cell::IMAGE2_NAME = "cellule_lueur.png";
 
-Cell::Cell(b2Body* body) : _body(body)
+ObjTurnstile::ObjTurnstile(b2Body* body) : _body(body)
 {
 	sf::Image *		image;
 	sf::Image *		image2;
@@ -24,12 +24,12 @@ Cell::Cell(b2Body* body) : _body(body)
 	}
 	addTag(std::pair<std::string, std::string>("cell", "cell"));
 }
-Cell::~Cell(void)
+ObjTurnstile::~ObjTurnstile(void)
 {
 	std::cout << "end..." << std::endl;
 }
 
-void Cell::update(void)
+void ObjTurnstile::update(void)
 {
 	// std::cout << "update cell" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
@@ -37,13 +37,13 @@ void Cell::update(void)
 	light.SetPosition(vector.x, vector.y);
 }
 
-void Cell::draw(sf::RenderWindow& window)
+void ObjTurnstile::draw(sf::RenderWindow& window)
 {
 	// std::cout << "Draw" << std::endl;
 	window.Draw(this->skin);
 	window.Draw(this->light);
 }
 
-void Cell::call(Object& otherObject)
+void ObjTurnstile::call(Object& otherObject)
 {
 }

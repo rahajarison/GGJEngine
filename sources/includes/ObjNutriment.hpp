@@ -1,16 +1,15 @@
-#ifndef				CELL_H_
-# define			CELL_H_
+#ifndef			OBJNUTRIMENT_H_
+# define		OBJNUTRIMENT_H_
 
-#include	<Box2D/Box2D.h>
-#include	<GGJObject.hpp>
+#include		<Box2D/Box2D.h>
+#include		<GGJObject.hpp>
 
 
-class 				Cell : public GGJ::Object
+class 				ObjNutriment : public GGJ::Object
 {
 public:
-	Cell(b2Body* body);
-	// Cell(const std::string& filename);
-	~Cell(void);
+	ObjNutriment(b2Body* body);
+	~ObjNutriment(void);
 
 	// Callbacks
 	virtual void	update(void);
@@ -27,4 +26,4 @@ public:
 	static const std::string	IMAGE2_NAME;
 };
 
-#endif /* CELL_H_ */
+#endif	/* OBJNUTRIMENT_H_ */
