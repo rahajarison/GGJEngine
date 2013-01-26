@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/Box2D
+# Install script for directory: /Users/momo/Downloads/Box2D_v2.2.1/Box2D
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  SET(CMAKE_INSTALL_PREFIX "C:/Program Files (x86)/Box2D")
+  SET(CMAKE_INSTALL_PREFIX "/usr/local")
 ENDIF(NOT DEFINED CMAKE_INSTALL_PREFIX)
 STRING(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -26,4 +26,117 @@ IF(NOT CMAKE_INSTALL_COMPONENT)
     SET(CMAKE_INSTALL_COMPONENT)
   ENDIF(COMPONENT)
 ENDIF(NOT CMAKE_INSTALL_COMPONENT)
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D" TYPE FILE FILES "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Box2D.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Collision" TYPE FILE FILES
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/b2BroadPhase.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/b2Collision.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/b2Distance.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/b2DynamicTree.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/b2TimeOfImpact.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Collision/Shapes" TYPE FILE FILES
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/Shapes/b2CircleShape.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/Shapes/b2EdgeShape.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/Shapes/b2ChainShape.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/Shapes/b2PolygonShape.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Collision/Shapes/b2Shape.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Common" TYPE FILE FILES
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2BlockAllocator.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2Draw.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2GrowableStack.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2Math.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2Settings.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2StackAllocator.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Common/b2Timer.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Dynamics" TYPE FILE FILES
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2Body.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2ContactManager.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2Fixture.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2Island.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2TimeStep.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2World.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/b2WorldCallbacks.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Dynamics/Contacts" TYPE FILE FILES
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2CircleContact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2Contact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2ContactSolver.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2PolygonAndCircleContact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2EdgeAndCircleContact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2EdgeAndPolygonContact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2ChainAndCircleContact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2ChainAndPolygonContact.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Contacts/b2PolygonContact.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Dynamics/Joints" TYPE FILE FILES
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2DistanceJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2FrictionJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2GearJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2Joint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2MouseJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2PrismaticJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2PulleyJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2RevoluteJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2RopeJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2WeldJoint.h"
+    "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Dynamics/Joints/b2WheelJoint.h"
+    )
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/Box2D/Rope" TYPE FILE FILES "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Rope/b2Rope.h")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/libBox2D.a")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libBox2D.a" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libBox2D.a")
+    EXECUTE_PROCESS(COMMAND "/usr/bin/ranlib" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libBox2D.a")
+  ENDIF()
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  IF(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/Box2D/Box2D-targets.cmake")
+    FILE(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/Box2D/Box2D-targets.cmake"
+         "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/CMakeFiles/Export/lib/Box2D/Box2D-targets.cmake")
+    IF(EXPORT_FILE_CHANGED)
+      FILE(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/Box2D/Box2D-targets-*.cmake")
+      IF(OLD_CONFIG_FILES)
+        MESSAGE(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/Box2D/Box2D-targets.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        FILE(REMOVE ${OLD_CONFIG_FILES})
+      ENDIF(OLD_CONFIG_FILES)
+    ENDIF(EXPORT_FILE_CHANGED)
+  ENDIF()
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/Box2D" TYPE FILE FILES "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/CMakeFiles/Export/lib/Box2D/Box2D-targets.cmake")
+  IF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/Box2D" TYPE FILE FILES "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/CMakeFiles/Export/lib/Box2D/Box2D-targets-noconfig.cmake")
+  ENDIF("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+
+IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+  FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/Box2D" TYPE FILE FILES "/Users/momo/Downloads/Box2D_v2.2.1/Box2D/Box2DConfig.cmake")
+ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

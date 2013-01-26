@@ -1,12 +1,10 @@
 FILE(REMOVE_RECURSE
-  "CMakeFiles/Testbed.dir/Framework/Main.cpp.obj"
-  "CMakeFiles/Testbed.dir/Framework/Render.cpp.obj"
-  "CMakeFiles/Testbed.dir/Framework/Test.cpp.obj"
-  "CMakeFiles/Testbed.dir/Tests/TestEntries.cpp.obj"
+  "CMakeFiles/Testbed.dir/Framework/Main.o"
+  "CMakeFiles/Testbed.dir/Framework/Render.o"
+  "CMakeFiles/Testbed.dir/Framework/Test.o"
+  "CMakeFiles/Testbed.dir/Tests/TestEntries.o"
   "Testbed.pdb"
-  "Testbed.exe"
-  "Testbed.exe.manifest"
-  "libTestbed.dll.a"
+  "Testbed"
 )
 
 # Per-language clean rules from dependency scanning.

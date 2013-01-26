@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\HelloWorld.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\HelloWorld.dir/objects.a @CMakeFiles\HelloWorld.dir\objects1.rsp
-C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\HelloWorld.dir/objects.a -Wl,--no-whole-archive  -o HelloWorld.exe -Wl,--out-implib,libHelloWorld.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ..\Box2D\libBox2D.a -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/HelloWorld.dir/HelloWorld.cpp.o  -o HelloWorld  ../Box2D/libBox2D.a 

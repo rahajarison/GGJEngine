@@ -74,15 +74,8 @@ using namespace std;
 #include "VerticalStack.h"
 #include "Web.h"
 
-//User entries
-
-#include "Pong.h"
-
 TestEntry g_testEntries[] =
 {
-	//User entries
-	{"Pong Game", Pong::Create},
-	//library entries
 	{"Tumbler", Tumbler::Create},
 	{"Tiles", Tiles::Create},
 	{"Dump Shell", DumpShell::Create},
