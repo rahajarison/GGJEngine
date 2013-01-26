@@ -46,7 +46,7 @@ void Pattern::createTriangle2(b2Vec2 pos)
 
 void Pattern::createCassis(b2Vec2 pos){
     int radius=60;
-    b2Vec2 newPos=*new b2Vec2(pos.x,pos.y-(radius*2/3));
+    b2Vec2 newPos=*new b2Vec2(pos.x,pos.y+(radius*9.0f/10.0f));
     b2BodyDef bodyDef;
     bodyDef.type = b2_staticBody;
     bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.

@@ -24,7 +24,7 @@ void PatternFall3::create(){
 
     myBodyDef.position.Set(25+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 25, 1, b2Vec2(0, 0), 0);//ceilling
+    polygonShape.SetAsBox( 10, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
@@ -32,7 +32,7 @@ void PatternFall3::create(){
     polygonShape.SetAsBox( 1, 26, b2Vec2(0, 0), 0);//left wall
     staticBody->CreateFixture(&myFixtureDef);
 
-    //createJump2(b2Vec2(0+relativeHorizontalSlide,30+relativeVerticalSlide));
+    createJump2(b2Vec2(0+relativeHorizontalSlide,30+relativeVerticalSlide));
 
     World::m_world->SetContactListener(nc);
     //new Nutrient(12, 3+relativeHorizontalSlide,2+relativeVerticalSlide);

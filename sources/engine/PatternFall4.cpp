@@ -19,9 +19,9 @@ void PatternFall4::create(){
     myBodyDef.type = b2_staticBody;
     myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ceilling
+    polygonShape.SetAsBox( 20, 1, b2Vec2(0, 0), 0);//ceilling
     staticBody->CreateFixture(&myFixtureDef);
-
+    
     myBodyDef.position.Set(0+relativeHorizontalSlide, 25+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 40, 1, b2Vec2(0, 0), 0);//ground
