@@ -42,6 +42,7 @@ namespace GGJ
 		void			removeObjectsWithTag(const std::string& tag);
 
 		World							_world;
+
 	private:
 		Context(void);
 		~Context(void);

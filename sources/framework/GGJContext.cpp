@@ -1,6 +1,7 @@
 #include		<iostream>
 #include		<GGJContext.hpp>
 #include		<GGJResourcesLoader.hpp>
+#include		"engine/Define.h"
 
 namespace GGJ
 {
@@ -113,7 +114,6 @@ void		Context::drawBackground(void)
 }
 void		Context::drawObjects(void)
 {
-	_view.SetCenter(400, 0);
 	_window.accessRenderWindow().SetView(_view);
 	if (_map)
 		_map->drawObjects(_window.accessRenderWindow());		

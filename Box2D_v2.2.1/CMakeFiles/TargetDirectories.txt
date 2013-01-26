@@ -1,0 +1,5 @@
+/Users/momo/Downloads/Box2D_v2.2.1/Box2D/CMakeFiles/Box2D.dir
+/Users/momo/Downloads/Box2D_v2.2.1/HelloWorld/CMakeFiles/HelloWorld.dir
+/Users/momo/Downloads/Box2D_v2.2.1/Testbed/CMakeFiles/Testbed.dir
+/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir
+/Users/momo/Downloads/Box2D_v2.2.1/glui/CMakeFiles/glui.dir

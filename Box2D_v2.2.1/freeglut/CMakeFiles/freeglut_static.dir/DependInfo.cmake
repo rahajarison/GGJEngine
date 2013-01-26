@@ -4,30 +4,30 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_callbacks.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_callbacks.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_cursor.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_cursor.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_display.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_display.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_ext.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_ext.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_font.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_font.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_font_data.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_font_data.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_gamemode.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_gamemode.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_geometry.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_geometry.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_glutfont_definitions.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_glutfont_definitions.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_init.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_init.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_input_devices.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_input_devices.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_joystick.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_joystick.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_main.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_main.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_menu.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_menu.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_misc.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_misc.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_overlay.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_overlay.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_spaceball.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_spaceball.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_state.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_state.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_stroke_mono_roman.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_stroke_mono_roman.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_stroke_roman.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_stroke_roman.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_structure.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_structure.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_teapot.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_teapot.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_videoresize.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_videoresize.c.obj"
-  "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/freeglut_window.c" "C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_window.c.obj"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_callbacks.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_callbacks.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_cursor.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_cursor.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_display.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_display.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_ext.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_ext.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_font.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_font.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_font_data.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_font_data.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_gamemode.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_gamemode.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_geometry.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_geometry.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_glutfont_definitions.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_glutfont_definitions.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_init.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_init.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_input_devices.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_input_devices.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_joystick.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_joystick.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_main.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_main.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_menu.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_menu.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_misc.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_misc.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_overlay.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_overlay.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_spaceball.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_spaceball.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_state.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_state.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_stroke_mono_roman.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_stroke_mono_roman.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_stroke_roman.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_stroke_roman.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_structure.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_structure.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_teapot.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_teapot.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_videoresize.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_videoresize.c.o"
+  "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/freeglut_window.c" "/Users/momo/Downloads/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir/freeglut_window.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
@@ -36,9 +36,15 @@ SET(CMAKE_TARGET_DEFINITIONS
   "FREEGLUT_EXPORTS"
   "FREEGLUT_STATIC"
   "_CRT_SECURE_NO_WARNINGS"
+  "__unix__"
+  "HAVE_FCNTL_H"
+  "HAVE_GETTIMEOFDAY"
   "FREEGLUT_EXPORTS"
   "FREEGLUT_STATIC"
   "_CRT_SECURE_NO_WARNINGS"
+  "__unix__"
+  "HAVE_FCNTL_H"
+  "HAVE_GETTIMEOFDAY"
   )
 
 # Targets to which this target links.
@@ -47,6 +53,8 @@ SET(CMAKE_TARGET_LINKED_INFO_FILES
 
 # The include file search paths:
 SET(CMAKE_C_TARGET_INCLUDE_PATH
+  "/usr/X11/include"
+  "/System/Library/Frameworks/OpenGL.framework"
   "freeglut/."
   )
 SET(CMAKE_CXX_TARGET_INCLUDE_PATH ${CMAKE_C_TARGET_INCLUDE_PATH})

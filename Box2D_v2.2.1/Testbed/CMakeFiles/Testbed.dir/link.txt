@@ -1,3 +1,1 @@
-"C:\Program Files (x86)\CMake 2.8\bin\cmake.exe" -E remove -f CMakeFiles\Testbed.dir/objects.a
-C:\MinGW\bin\ar.exe cr CMakeFiles\Testbed.dir/objects.a @CMakeFiles\Testbed.dir\objects1.rsp
-C:\MinGW\bin\g++.exe      -Wl,--whole-archive CMakeFiles\Testbed.dir/objects.a -Wl,--no-whole-archive  -o Testbed.exe -Wl,--out-implib,libTestbed.dll.a -Wl,--major-image-version,0,--minor-image-version,0  ..\Box2D\libBox2D.a ..\freeglut\libfreeglut_static.a ..\glui\libglui.a -lwinmm -lglu32 -lopengl32 -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 
+/usr/bin/c++    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/Testbed.dir/Framework/Main.o CMakeFiles/Testbed.dir/Framework/Render.o CMakeFiles/Testbed.dir/Framework/Test.o CMakeFiles/Testbed.dir/Tests/TestEntries.o  -o Testbed  -L/usr/X11/lib  -lBox2D -lfreeglut_static -lglui -lGL -lGLU -lGLUT -lX11 
