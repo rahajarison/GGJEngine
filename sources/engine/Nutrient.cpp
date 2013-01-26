@@ -18,6 +18,7 @@ Nutrient::Nutrient(int point, double x, double y)
     circleShape.m_radius = 1;           //radius
     b2FixtureDef myFixtureDef;
     myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
+    myFixtureDef.isSensor=true; //sensor
     body->CreateFixture(&myFixtureDef); //add a fixture to the body
 
     body->SetUserData(&type);

@@ -39,10 +39,17 @@ void		Context::setPause(bool status)	{	_isPaused = status;		}
 
 void		Context::update(void)
 {
-	// TODO appeller les update des objets
 	std::vector<registeringCallback>::iterator it = _callbacksUpdate.begin();
 	std::vector<registeringCallback>::iterator end = _callbacksUpdate.end();
+	std::vector<Object*> objects = _map->getObjects();
+	std::vector<Object*>::const_iterator itObj = objects.begin();
+	std::vector<Object*>::const_iterator endObj = objects.end();
 
+	while (itObj != endObj)
+	{
+		(*itObj)->update();
+		++itObj;
+	}
 	while (it != end)
 	{
 		(*(it->function))(it->params);

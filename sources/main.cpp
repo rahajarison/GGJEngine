@@ -22,7 +22,7 @@ void		initDebug(void)
 	if (body)
 	{
 		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug()));
+			context.attachObject(*(new ObjDebug(body)));
 	}
 	while (body = body->GetNext())
 	{

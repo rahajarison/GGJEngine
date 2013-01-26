@@ -20,3 +20,11 @@ void			test(const std::string& filename)
 
 	context.attachObject(*cell);
 }
+
+void			test(const std::string& filename, const std::string& filename2)
+{
+	GGJ::Context&	context = GGJ::Context::getSingleton();
+	Cell*		cell = new Cell(filename, filename2);
+
+	context.attachObject(*cell);
+}

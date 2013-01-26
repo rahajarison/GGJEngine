@@ -19,6 +19,10 @@ Map::~Map(void)
 		it = _objects.erase(it);
 	}
 }
+const std::vector<Object*>& Map::getObjects(void) const
+{
+	return (_objects);
+}
 void		Map::attachObject(Object& object)
 {
 	_objects.push_back(&object);
