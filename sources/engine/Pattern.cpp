@@ -35,5 +35,5 @@ void Pattern::create(){
     staticBody->CreateFixture(&myFixtureDef);
 
 
-    new nutrient(12, 3,2);
+    new Nutrient(12, 3,2);
 }

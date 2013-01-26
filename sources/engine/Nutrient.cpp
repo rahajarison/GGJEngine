@@ -2,9 +2,9 @@
 #include "World.h"
 #include "Define.h"
 
-nutrient::nutrient(int point, double x, double y)
+Nutrient::Nutrient(int point, double x, double y)
 :   points(point) {
-    types t = 1;
+    types type = nutrient;
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(x, y);   // the body's origin position.
@@ -23,6 +23,7 @@ nutrient::nutrient(int point, double x, double y)
     body->SetUserData(&type);
 }
 
-nutrient::~nutrient(){
+
+Nutrient::~Nutrient(){
 
 }
