@@ -31,6 +31,17 @@ class NutrientCollision : public b2ContactListener
                     World::car->nutris+=nutrisPoints;
                     return;
                 }
+
+                if(a==sensor || b==sensor)
+                {
+                    if(World::m_world->GetGravity().x > 0)
+                        World::m_world->SetGravity(b2Vec2(0.0f,9.8f));
+                    else
+                        World::m_world->SetGravity(b2Vec2(9.8f,0.0f));
+
+                    return;
+                }
+
                 if (a==bouncingBlockTop){
                     contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(0,-BOUNCING), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
