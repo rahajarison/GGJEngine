@@ -27,15 +27,12 @@ void		initDebug(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
 
-	// context.accessView().Zoom(0.3f);
-	while (body != NULL)
-	{
-		body->GetNext();
-	}
+	context.accessView().Zoom(0.3f);
 	reloadCells(&context);
+
 	// while (body != NULL)
 	// {
-	// 	if (!Character::isCharacter(body))
+	// 	if (Character::isCharacter(body))
 	// 		context.attachObject(*(new ObjBumper(body)));
 	// 	else
 	// 		context.attachObject(*(new ObjCell(body)));

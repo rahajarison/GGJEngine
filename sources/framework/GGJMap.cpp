@@ -20,7 +20,13 @@ Map::Map(void)
 		}
 	
 		// {
-		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern1.png");
+		// 	if (iBackground_rose)
+		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		// }
+	
+		// {
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern2.png");
 		// 	if (iBackground_rose)
 		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
 		// }
@@ -31,13 +37,7 @@ Map::Map(void)
 		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
 		// }
 	
-		// {
-		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
-		// 	if (iBackground_rose)
-		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
-		// }
-	
-		
+
 	}
 	else
 		std::cerr << "Impossible d'afficher le background" << std::endl;

@@ -54,7 +54,7 @@ void				cameraCallback(void* params)
 	// if (body->GetPosition().y * COEF_DISPLAY >= camera.GetCenter().y - 200)
 	// {
 		// camera.SetCenter(body->GetPosition().x * COEF_DISPLAY, body->GetPosition().y * COEF_DISPLAY - 200);
-	camera.SetCenter(body->GetPosition().x * COEF_DISPLAY, body->GetPosition().y * COEF_DISPLAY + 400);
+	// camera.SetCenter(body->GetPosition().x * COEF_DISPLAY, body->GetPosition().y * COEF_DISPLAY + 400);
 	// }
 	// camera.SetCenter(400, body->GetPosition().y * COEF_DISPLAY);
 }
