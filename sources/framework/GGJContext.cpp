@@ -1,5 +1,6 @@
 #include		<iostream>
 #include		<GGJContext.hpp>
+#include		<GGJResourcesLoader.hpp>
 
 namespace GGJ
 {
@@ -8,6 +9,17 @@ const unsigned int Context::NB_POOL_OBJECTS = 20;
 Context::Context(void) : _map(0), _isRunning(false), _isPaused(false)
 {
 	_map = new Map();
+	if (GGJ::ResourcesLoader::loadImage("contours_noirs.png"))
+	{
+		sf::Image* iContours_noirs = GGJ::ResourcesLoader::getImage("contours_noirs.png");
+		if (iContours_noirs)
+		{
+			sf::Sprite*		sprite = new sf::Sprite(*iContours_noirs);
+
+			_hudElements.push_back(sprite);
+		}
+	}
+	
 }
 Context::~Context(void)
 {
@@ -23,8 +35,9 @@ void		Context::run(void)
 		{
 			dispatchEvents();
 			_window.clear();
+			drawBackground();
 			drawObjects();
-			// drawHUD();
+			drawHUD();
 			_window.display();
 		}
 	}
@@ -93,9 +106,14 @@ void		Context::registerCallback(registeringCallback callback)
 {
 	_callbacksUpdate.push_back(callback);
 }
-void		Context::drawObjects(void)
+void		Context::drawBackground(void)
 {
 	_window.accessRenderWindow().SetView(_view);
+	if (_map)
+		_map->drawBackground(_window.accessRenderWindow());
+}
+void		Context::drawObjects(void)
+{
 	if (_map)
 		_map->drawObjects(_window.accessRenderWindow());		
 }
@@ -168,5 +186,10 @@ void		Context::addHUDElement(sf::Sprite* sprite)
 	_hudElements.push_back(sprite);
 }
 sf::View&	Context::accessView(void)	{	return (_view);		}
+
+void		Context::removeObjectsWithTag(const std::string& tag)
+{
+	_map->removeObjectsWithTag(tag);
+}
 
 };
