@@ -15,16 +15,15 @@ class World
 
         static b2World* m_world;
         vector<Pattern*> patternList;
-        Character cell;
 
         /**
         * Generate pattern order
         */
-        World() : cell()
+        World()
         {
-
             patternList.push_back(new Pattern());
             patternList[0]->create();
+            new Character();
         }
         ~World() { }
 };

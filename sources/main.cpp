@@ -17,25 +17,25 @@ void		registerAll(void)
 
 void		initDebug(void)
 {
-	GGJ::Context&	context = GGJ::Context::getSingleton();	
-	b2Body*	body = context._world.m_world->GetBodyList();
+	// GGJ::Context&	context = GGJ::Context::getSingleton();	
+	// b2Body*	body = context._world.m_world->GetBodyList();
 
-	if (body)
-	{
-		// if (!Character::isCharacter(body))
-			std::cout << "attachObject" << std::endl;
-			context.attachObject(*(new ObjDebug(body)));
-			std::cout << "fin attachObject" << std::endl;
-		// else
-			// context.attachObject(*(new Cell(body)));
-	}
-	while (body = body->GetNext())
-	{
-		// if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug(body)));
-		// else
-			// context.attachObject(*(new Cell(body)));
-	}
+	// if (body)
+	// {
+	// 	// if (!Character::isCharacter(body))
+	// 		std::cout << "attachObject" << std::endl;
+	// 		context.attachObject(*(new ObjDebug(body)));
+	// 		std::cout << "fin attachObject" << std::endl;
+	// 	// else
+	// 		// context.attachObject(*(new Cell(body)));
+	// }
+	// while (body = body->GetNext())
+	// {
+	// 	// if (!Character::isCharacter(body))
+	// 		context.attachObject(*(new ObjDebug(body)));
+	// 	// else
+	// 		// context.attachObject(*(new Cell(body)));
+	// }
 }
 
 int			main(int ac, char *av[])

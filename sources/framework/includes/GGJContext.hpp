@@ -39,7 +39,7 @@ namespace GGJ
 		void			addHUDElement(sf::Sprite* sprite);
 		sf::View&		accessView(void);
 	
-		World							_world;
+		// World							_world;
 	private:
 		Context(void);
 		~Context(void);
