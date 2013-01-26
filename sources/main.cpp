@@ -16,6 +16,7 @@ void		registerAll(void)
 
 	context.registerCallback(GGJ::registeringCallback(&Box2DCallback, 0));
 	context.registerCallback(GGJ::registeringCallback(&mainCallback, 0));
+	context.registerCallback(GGJ::registeringCallback(&cameraCallback, &context));
 	registerImpulse();
 	registerDivide();
 }
@@ -25,6 +26,7 @@ void		initDebug(void)
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
 
+	context.accessView().Zoom(0.5f);
 	while (body != NULL)
 	{
 		if (!Character::isCharacter(body))

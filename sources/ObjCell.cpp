@@ -35,7 +35,6 @@ ObjCell::~ObjCell(void)
 void ObjCell::update(void)
 {
 	// std::cout << "update cell" << std::endl;
-	std::cout << "LinearVelocity: " << _body->GetLinearVelocity().x << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
 	skin.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
 	light.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
