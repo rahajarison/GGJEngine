@@ -17,17 +17,17 @@ void PatternFall1::create(){
     myFixtureDef.density = 1;
 
     myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(0, 0);
+    myBodyDef.position.Set(0+relativeHSlide, 0+relativeVSlide);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(15, 0);
+    myBodyDef.position.Set(15+relativeHSlide, 0+relativeVSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 1, 40, b2Vec2(0, 0), 0);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
 
     World::m_world->SetContactListener(nc);
-    new Nutrient(12, 3,2);
+    new Nutrient(12, 3+relativeHSlide,2+relativeVSlide);
 }
