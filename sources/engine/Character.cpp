@@ -25,7 +25,19 @@ Character::Character() : bodies()
     MaxSpeed = 10;
 }
 
-void Character::update()
+void Character::up()
+{
+    for(int i = 0; i < bodies.size(); ++i)
+    {
+        b2Vec2 vel = bodies[i]->GetLinearVelocity();
+        float force = 0;
+        if(vel.x <  MaxSpeed ) 
+            force =  FORCE;
+
+        bodies[i]->ApplyForce( b2Vec2(-force,0), bodies[i]->GetWorldPoint(b2Vec2(0,0)) );
+    }
+}
+void Character::down()
 {
     for(int i = 0; i < bodies.size(); ++i)
     {
@@ -35,6 +47,30 @@ void Character::update()
             force =  FORCE;
 
         bodies[i]->ApplyForce( b2Vec2(force,0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
+    }
+}
+void Character::right()
+{
+    for(int i = 0; i < bodies.size(); ++i)
+    {
+        b2Vec2 vel = bodies[i]->GetLinearVelocity();
+        float force = 0;
+        if(vel.x <  MaxSpeed ) 
+            force =  FORCE;
+
+        bodies[i]->ApplyForce( b2Vec2(0,force), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
+    }
+}
+void Character::left()
+{
+    for(int i = 0; i < bodies.size(); ++i)
+    {
+        b2Vec2 vel = bodies[i]->GetLinearVelocity();
+        float force = 0;
+        if(vel.x <  MaxSpeed ) 
+            force =  FORCE;
+
+        bodies[i]->ApplyForce( b2Vec2(0, -force), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
     }
 }
 
