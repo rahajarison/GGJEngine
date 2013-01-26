@@ -7,6 +7,7 @@
 class 				Cell : public GGJ::Object
 {
 public:
+	Cell(const std::string& filename, const std::string& filename2);
 	Cell(const std::string& filename);
 	~Cell(void);
 
@@ -17,6 +18,8 @@ public:
 
 private:
 	sf::Sprite		skin;
+	sf::Sprite		light;
+
 };
 
 #endif /* CELL_H_ */
