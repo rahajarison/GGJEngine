@@ -1,11 +1,11 @@
 #include	<iostream>
 #include	<GGJResourcesLoader.hpp>
-#include	"ObjCell.hpp"
+#include	"ObjBubble.hpp"
 
-const std::string Cell::IMAGE_NAME = "bulle.png";
-const std::string Cell::IMAGE2_NAME = "cellule_lueur.png";
+const std::string ObjBubble::IMAGE_NAME = "bulle.png";
+const std::string ObjBubble::IMAGE2_NAME = "cellule_lueur.png";
 
-ObjCell::ObjCell(b2Body* body) : _body(body)
+ObjBubble::ObjBubble(b2Body* body) : _body(body)
 {
 	sf::Image *		image;
 	sf::Image *		image2;
@@ -24,12 +24,12 @@ ObjCell::ObjCell(b2Body* body) : _body(body)
 	}
 	addTag(std::pair<std::string, std::string>("cell", "cell"));
 }
-Cell::~Cell(void)
+ObjBubble::~ObjBubble(void)
 {
 	std::cout << "end..." << std::endl;
 }
 
-void Cell::update(void)
+void ObjBubble::update(void)
 {
 	// std::cout << "update cell" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
@@ -37,13 +37,13 @@ void Cell::update(void)
 	light.SetPosition(vector.x, vector.y);
 }
 
-void Cell::draw(sf::RenderWindow& window)
+void ObjBubble::draw(sf::RenderWindow& window)
 {
 	// std::cout << "Draw" << std::endl;
 	window.Draw(this->skin);
 	window.Draw(this->light);
 }
 
-void Cell::call(Object& otherObject)
+void ObjBubble::call(Object& otherObject)
 {
 }

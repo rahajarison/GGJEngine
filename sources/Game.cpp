@@ -1,6 +1,6 @@
 #include		<iostream>
 #include		<GGJContext.hpp>
-#include		"Cell.hpp"
+#include		"ObjCell.hpp"
 #include		"Game.hpp"
 
 void				Box2DCallback(void*)
@@ -23,7 +23,7 @@ void				OnDivideEvent(void* params)
 
 	while (body != NULL)
 	{
-		context->attachObject(*(new Cell(body)));
+		context->attachObject(*(new ObjCell(body)));
 		body = body->GetNext();
 	}
 }

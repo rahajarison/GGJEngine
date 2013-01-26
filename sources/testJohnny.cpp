@@ -3,7 +3,7 @@
 #include	<GGJContext.hpp>
 #include	"testJohnny.hpp"
 #include	"objMusic.hpp"
-#include	"Cell.hpp"
+#include	"ObjCell.hpp"
 
 // void			test(void)
 // {

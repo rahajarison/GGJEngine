@@ -2,8 +2,8 @@
 #include	<GGJResourcesLoader.hpp>
 #include	"ObjNutriment.hpp"
 
-const std::string Cell::IMAGE_NAME = "nutriment.png";
-const std::string Cell::IMAGE2_NAME = "cellule_lueur.png";
+const std::string ObjNutriment::IMAGE_NAME = "nutriment.png";
+const std::string ObjNutriment::IMAGE2_NAME = "cellule_lueur.png";
 
 ObjNutriment::ObjNutriment(b2Body* body) : _body(body)
 {
