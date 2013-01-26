@@ -34,7 +34,7 @@ void Character::up()
         if(vel.x <  MaxSpeed ) 
             force =  FORCE;
 
-        bodies[i]->ApplyForce( b2Vec2(-force,0), bodies[i]->GetWorldPoint(b2Vec2(0,0)) );
+        bodies[i]->ApplyForce( b2Vec2(0, -force), bodies[i]->GetWorldPoint(b2Vec2(0,0)) );
     }
 }
 void Character::down()
@@ -46,7 +46,7 @@ void Character::down()
         if(vel.x <  MaxSpeed ) 
             force =  FORCE;
 
-        bodies[i]->ApplyForce( b2Vec2(force,0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
+        bodies[i]->ApplyForce( b2Vec2(0, force), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
     }
 }
 void Character::right()
@@ -58,7 +58,7 @@ void Character::right()
         if(vel.x <  MaxSpeed ) 
             force =  FORCE;
 
-        bodies[i]->ApplyForce( b2Vec2(0,force), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
+        bodies[i]->ApplyForce( b2Vec2(force, 0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
     }
 }
 void Character::left()
@@ -70,7 +70,7 @@ void Character::left()
         if(vel.x <  MaxSpeed ) 
             force =  FORCE;
 
-        bodies[i]->ApplyForce( b2Vec2(0, -force), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
+        bodies[i]->ApplyForce( b2Vec2(-force, 0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
     }
 }
 
