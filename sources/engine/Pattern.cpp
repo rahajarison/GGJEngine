@@ -4,6 +4,28 @@
 #include "Define.h"
 #include "NutrientCollision.h"
 
+void createTriangle(b2Vec2 init)
+{
+    b2BodyDef myBodyDef;
+    myBodyDef.type = b2_staticBody;
+    myBodyDef.position.Set(init.x, init.y);
+    b2Body* staticBody = m_world->CreateBody(&myBodyDef);
+    //shape definition
+    b2PolygonShape polygonShape;
+
+    //fixture definition
+    b2FixtureDef myFixtureDef;
+    myFixtureDef.shape = &polygonShape;
+
+    //add four walls to the static body
+    polygonShape.SetAsBox( 32, 1, b2Vec2(init.x, init.y), 0);//ground
+    staticBody->CreateFixture(&myFixtureDef);
+    polygonShape.SetAsBox( 8, 1, b2Vec2(init.x, init.y), 80 * DEGTORAD);//left border
+    staticBody->CreateFixture(&myFixtureDef);
+    polygonShape.SetAsBox( 31, 1, b2Vec2(8, 1), DEGTORAD * 90);//right border
+    staticBody->CreateFixture(&myFixtureDef);
+}
+
 void createCassis(b2Vec2 pos){
     int radius=60;
     b2Vec2 newPos=*new b2Vec2(pos.x,pos.y-(radius*2/3));
