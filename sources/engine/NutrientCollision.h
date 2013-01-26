@@ -21,12 +21,12 @@ class NutrientCollision : public b2ContactListener
                 long int b=(long int)(bodyBUserData);
                 std::cout<<a<<"\n";
                 std::cout<<b<<"\n";
-                if(a==nutrient){
+                if(a==nutrient && b==character){
                     World::m_world->DestroyBody(contact->GetFixtureA()->GetBody());
                     World::car->nutris+=nutrisPoints;
                     return;
                 } 
-                if (b==nutrient){
+                if (b==nutrient && a==character){
                     World::m_world->DestroyBody(contact->GetFixtureB()->GetBody());
                     World::car->nutris+=nutrisPoints;
                     return;
