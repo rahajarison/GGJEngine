@@ -22,3 +22,13 @@ Character::Character()
 
     body->SetUserData(&type);
 }
+
+void Character::update()
+{
+    b2Vec2 vel = body->GetLinearVelocity();
+    float force = 0;
+    if(vel.x <  MaxSpeed ) 
+        force =  FORCE;
+
+    body->ApplyForce( b2Vec2(force,0), body->GetWorldPoint(0,1) );
+}

@@ -4,8 +4,8 @@ ALL = Run.exe
 
 
 
-Run.exe :   Pattern.o World.o 
-	-g++ -lBox2D -o Run.exe   Pattern.o World.o 
+Run.exe :   Pattern.o World.o Nutrient.o main.o
+	-g++ -o Run.exe Pattern.o World.o Nutrient.o main.o -I/usr/local/include/Box2D/ -lBox2D
 	-[ -e "Build" ] || mkdir "Build"
 	-mv *.o *.exe Build
 
@@ -20,7 +20,7 @@ Nutrient.o: Nutrient.cpp
 
 
 
-Pattern.o: Pattern.cpp Pattern.h
+Pattern.o: Pattern.cpp Pattern.h World.h
 
 	-g++ -c  Pattern.cpp 
 
@@ -28,6 +28,11 @@ Pattern.o: Pattern.cpp Pattern.h
 World.o: World.cpp World.h Pattern.h
 
 	-g++ -c  World.cpp 
+
+
+main.o: main.cpp World.h Pattern.h
+
+	-g++ -c  main.cpp 
 
 
 clean : 
