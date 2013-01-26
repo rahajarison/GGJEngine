@@ -23,5 +23,6 @@
 #define bouncingBlockBottomLeft 10
 #define bouncingBlockBottomRight 11
 #define nutrisPoints 1
+#define sensor 12
 
 #endif
