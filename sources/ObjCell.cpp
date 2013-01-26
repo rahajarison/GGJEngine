@@ -42,8 +42,8 @@ void ObjCell::update(void)
 
 	float angle = _body->GetAngle() * RADTODEG;
 	std::cout << _body->GetAngle() <<std::endl;
-	skin.SetRotation(angle * COEF_DISPLAY);
-	light.SetRotation(angle * COEF_DISPLAY);
+	skin.SetRotation(angle);
+	light.SetRotation(angle);
 }
 
 void ObjCell::draw(sf::RenderWindow& window)

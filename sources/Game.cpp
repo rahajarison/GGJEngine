@@ -37,5 +37,5 @@ void				mainCallback(void*)
 {
 	GGJ::Context* context =	&GGJ::Context::getSingleton();
 
-	// context->_world.car->update();
+	context->_world.car->update();
 }
