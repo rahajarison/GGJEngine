@@ -10,6 +10,7 @@ class Pattern
 
     public:
 
+        int relativeHorizontalSlide;
         int relativeVerticalSlide;
 
         /**

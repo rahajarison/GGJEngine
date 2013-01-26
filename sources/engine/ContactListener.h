@@ -8,10 +8,6 @@
 //Uses : Sensor check, background collision check and some other weird stuff
 class ContactListener : public b2ContactListener
 {
-    private :
-
-
-
     public : 
     
         void BeginContact(b2Contact* contact);
