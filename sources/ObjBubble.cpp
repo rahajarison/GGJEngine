@@ -1,6 +1,7 @@
 #include	<iostream>
 #include	<GGJResourcesLoader.hpp>
 #include	"ObjBubble.hpp"
+#include	"engine/Define.h"
 
 const std::string ObjBubble::IMAGE_NAME = "bulle.png";
 const std::string ObjBubble::IMAGE2_NAME = "cellule_lueur.png";
@@ -33,8 +34,8 @@ void ObjBubble::update(void)
 {
 	// std::cout << "update cell" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
-	skin.SetPosition(vector.x, vector.y);
-	light.SetPosition(vector.x, vector.y);
+	skin.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
+	light.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
 }
 
 void ObjBubble::draw(sf::RenderWindow& window)

@@ -35,4 +35,7 @@ void				OnImpulseEvent(void* params)
 }
 void				mainCallback(void*)
 {
+	GGJ::Context* context =	&GGJ::Context::getSingleton();
+
+	// context->_world.car->update();
 }

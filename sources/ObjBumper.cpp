@@ -1,6 +1,7 @@
 #include	<iostream>
 #include	<GGJResourcesLoader.hpp>
 #include	"ObjBumper.hpp"
+#include	"engine/Define.h"
 
 const std::string ObjBumper::IMAGE_NAME = "bumper.png";
 const std::string ObjBumper::IMAGE2_NAME = "cellule_lueur.png";
@@ -33,9 +34,9 @@ void ObjBumper::update(void)
 {
 	// std::cout << "update cell" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
-	skin.SetPosition(vector.x, vector.y);
-	light.SetPosition(vector.x, vector.y);
-	std::cout << "PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
+	skin.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
+	light.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
+	// std::cout << "PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
 }
 
 void ObjBumper::draw(sf::RenderWindow& window)
