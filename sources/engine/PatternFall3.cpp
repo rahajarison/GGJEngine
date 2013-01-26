@@ -29,7 +29,7 @@ void PatternFall3::create(){
 
     myBodyDef.position.Set(0+relativeHorizontalSlide, 0+relativeVerticalSlide);
     staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 1, 2s6, b2Vec2(0, 0), 0);//left wall
+    polygonShape.SetAsBox( 1, 26, b2Vec2(0, 0), 0);//left wall
     staticBody->CreateFixture(&myFixtureDef);
 
     //createJump2(b2Vec2(0+relativeHorizontalSlide,30+relativeVerticalSlide));

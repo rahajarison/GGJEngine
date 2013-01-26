@@ -22,22 +22,27 @@ void		registerAll(void)
 	registerFusion();
 }
 
+// void		loadLevelDesign(void)
+// {
+	
+// }
 void		initDebug(void)
 {
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
 
 	context.accessView().Zoom(0.3f);
-	reloadCells(&context);
-
-	// while (body != NULL)
-	// {
-	// 	if (Character::isCharacter(body))
-	// 		context.attachObject(*(new ObjBumper(body)));
-	// 	else
-	// 		context.attachObject(*(new ObjCell(body)));
-	// 	body = body->GetNext();
-	// }
+	// reloadCells(&context);
+	// loadLevelDesign();
+	
+	while (body != NULL)
+	{
+		if (Character::isCharacter(body))
+			context.attachObject(*(new ObjBumper(body)));
+		else
+			context.attachObject(*(new ObjCell(body)));
+		body = body->GetNext();
+	}
 }
 
 int			main(int ac, char *av[])
