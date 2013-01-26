@@ -2,89 +2,94 @@
 #define NUTRIMENT_COLISION_H
 //
 #include "Define.h"
+#include <iostream>
 
-class NutrientCollision : ContactListener
+class NutrientCollision : public b2ContactListener
 {
     public:
-        NutrientCollision();
-        ~NutrientCollision();
+
+        NutrientCollision(){}
+        ~NutrientCollision(){}
 
         void BeginContact(b2Contact* contact){
             void* bodyAUserData = contact->GetFixtureA()->GetBody()->GetUserData();
             void* bodyBUserData = contact->GetFixtureB()->GetBody()->GetUserData();
             if ( bodyAUserData && bodyBUserData ){
-                Types a=static_cast<Define::Types*>(bodyAUserData);
-                Types b=static_cast<Define::Types*>(bodyBUserData);
-                if(a==Types.nutriment){
-                    World::m_world->destroyBody(contact->GetFixtureA()->GetBody());
+                std::cout<<"fiuck ya\n";
+                long int a=(long int)(bodyAUserData);
+                long int b=(long int)(bodyBUserData);
+                std::cout<<a<<"\n";
+                std::cout<<b<<"\n";
+                if(a==nutrient){
+                    //m_world->destroyBody(contact->GetFixtureA()->GetBody());
                     return;
                 } 
-                if (b==Types.nutrient){
-                    World::m_world->destroyBody(contact->GetFixtureB()->GetBody());
+                if (b==nutrient){
+                    //m_world->destroyBody(contact->GetFixtureB()->GetBody());
                     return;
                 }
-                if (a==Types.bouncingBlockTop){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(0,-BOUNCING), body->GetWorldCenter() );
+                if (a==bouncingBlockTop){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(0,-BOUNCING), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockTop){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(0,-BOUNCING), body->GetWorldCenter() );
+                if (b==bouncingBlockTop){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(0,-BOUNCING), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockBottom){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(0,BOUNCING), body->GetWorldCenter() );
+                if (a==bouncingBlockBottom){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(0,BOUNCING), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockBottom){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(0,BOUNCING), body->GetWorldCenter() );
+                if (b==bouncingBlockBottom){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(0,BOUNCING), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockLeft){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING, 0), body->GetWorldCenter() );
+                if (a==bouncingBlockLeft){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING, 0), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockLeft){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING, 0), body->GetWorldCenter() );
+                if (b==bouncingBlockLeft){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING, 0), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockRight){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING, 0), body->GetWorldCenter() );
+                if (a==bouncingBlockRight){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING, 0), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockRight){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING, 0), body->GetWorldCenter() );
+                if (b==bouncingBlockRight){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING, 0), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockTopLeft){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,-BOUNCING/2), body->GetWorldCenter() );
+                if (a==bouncingBlockTopLeft){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,-BOUNCING/2), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockTopLeft){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,-BOUNCING/2), body->GetWorldCenter() );
+                if (b==bouncingBlockTopLeft){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,-BOUNCING/2), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockTopRight){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,-BOUNCING/2), body->GetWorldCenter() );
+                if (a==bouncingBlockTopRight){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,-BOUNCING/2), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockTopRight){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,-BOUNCING/2), body->GetWorldCenter() );
+                if (b==bouncingBlockTopRight){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,-BOUNCING/2), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockBottomLeft){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,BOUNCING/2), body->GetWorldCenter() );
+                if (a==bouncingBlockBottomLeft){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,BOUNCING/2), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockBottomLeft){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,BOUNCING/2), body->GetWorldCenter() );
+                if (b==bouncingBlockBottomLeft){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(BOUNCING/2,BOUNCING/2), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (a==Types.bouncingBlockBottomRight){
-                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,BOUNCING/2), body->GetWorldCenter() );
+                if (a==bouncingBlockBottomRight){
+                    contact->GetFixtureB()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,BOUNCING/2), contact->GetFixtureB()->GetBody()->GetWorldCenter() );
                     return;
                 }
-                if (b==Types.bouncingBlockBottomRight){
-                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,BOUNCING/2), body->GetWorldCenter() );
+                if (b==bouncingBlockBottomRight){
+                    contact->GetFixtureA()->GetBody()->ApplyLinearImpulse( b2Vec2(-BOUNCING/2,BOUNCING/2), contact->GetFixtureA()->GetBody()->GetWorldCenter() );
                     return;
                 }
             }
@@ -94,3 +99,5 @@ class NutrientCollision : ContactListener
 
         }
 };
+
+#endif

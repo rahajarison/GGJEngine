@@ -5,7 +5,7 @@
 //
 Character::Character() : bodies()
 {
-    types type = character;
+    long int type = character;
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(0.0f, 2.0f);   // the body's origin position.
@@ -21,7 +21,7 @@ Character::Character() : bodies()
     myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
     bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
 
-    bodies[0]->SetUserData(&type);
+    bodies[0]->SetUserData((void*) type);
     isDivided = false;
 }
 
@@ -40,7 +40,7 @@ void Character::update()
 
 void Character::divide()
 {
-    types type = character;
+    long int type = character;
     b2Vec2 posIni = bodies[0]->GetPosition();
     b2Vec2 speed = bodies[0]->GetLinearVelocity();
     float grav = bodies[0]->GetGravityScale();
@@ -66,7 +66,7 @@ void Character::divide()
                 myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
                 bodies[i]->CreateFixture(&myFixtureDef); //add a fixture to the body
 
-                bodies[i]->SetUserData(&type);
+                bodies[i]->SetUserData((void*)type);
             }
         }
         else
@@ -88,7 +88,7 @@ void Character::divide()
                 myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
                 bodies[i]->CreateFixture(&myFixtureDef); //add a fixture to the body
 
-                bodies[i]->SetUserData(&type);
+                bodies[i]->SetUserData((void *)type);
             }
         }
         isDivided = !isDivided;
@@ -97,7 +97,7 @@ void Character::divide()
 
 void Character::fusion()
 {
-    types type = character;
+    long int type = character;
     b2Vec2 posIni = bodies[0]->GetPosition();
     b2Vec2 speed = bodies[0]->GetLinearVelocity();
     
@@ -119,7 +119,7 @@ void Character::fusion()
         myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
         bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
 
-        bodies[0]->SetUserData(&type);
+        bodies[0]->SetUserData((void*)type);
 
         isDivided = !isDivided;
     }

@@ -4,7 +4,7 @@
 
 Nutrient::Nutrient(int point, double x, double y)
 :   points(point) {
-    types type = nutrient;
+    long int type = nutrient;
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(x, y);   // the body's origin position.
@@ -21,7 +21,7 @@ Nutrient::Nutrient(int point, double x, double y)
     myFixtureDef.isSensor=true; //sensor
     body->CreateFixture(&myFixtureDef); //add a fixture to the body
 
-    body->SetUserData(&type);
+    body->SetUserData((void*)type);
 }
 
 

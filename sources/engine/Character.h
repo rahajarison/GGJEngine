@@ -28,8 +28,8 @@ class Character
         int getMaxAngularRotation(){return 0;}
         static bool isCharacter(b2Body* body){
             void* userData = body->GetUserData();
-            types* type=static_cast<types*>(userData);
-            return *type==character;
+            long int type=(long int)(userData);
+            return type==character;
         }
         
         void update();
