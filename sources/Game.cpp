@@ -38,7 +38,7 @@ void				cameraCallback(void* params)
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 
 	b2Body* body = context->_world.car->bodies[0];
-	context->accessView().SetCenter(400, body.GetPosition().y);
+	context->accessView().SetCenter(400, body->GetPosition().y);
 }
 void				mainCallback(void*)
 {

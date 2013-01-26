@@ -6,6 +6,8 @@
 #include <vector>
 #include <Box2D/Box2D.h>
 #include "PatternFall1.h"
+#include "PatternFall2.h"
+#include "PatternFall3.h"
 
 using namespace std;
 

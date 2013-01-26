@@ -114,6 +114,7 @@ void		Context::drawBackground(void)
 }
 void		Context::drawObjects(void)
 {
+	// _view.Zoom(0.99f); // MOTHAFUCKABEST FEATURE
 	_window.accessRenderWindow().SetView(_view);
 	if (_map)
 		_map->drawObjects(_window.accessRenderWindow());		
