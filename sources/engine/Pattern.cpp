@@ -4,26 +4,44 @@
 #include "Define.h"
 #include "NutrientCollision.h"
 
-void createTriangle(b2Vec2 init)
+void createTriangle1(b2Vec2 pos)
 {
-    b2BodyDef myBodyDef;
-    myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(init.x, init.y);
-    b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
-    //shape definition
-    b2PolygonShape polygonShape;
+    b2Vec2 newPos=*new b2Vec2(pos.x,pos.y);
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_staticBody;
+    bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.
+    b2Body* body= World::m_world->CreateBody(&bodyDef);
 
-    //fixture definition
+    b2PolygonShape rect;
+    rect.SetAsBox(8, 1, b2Vec2(1, 3), 160*DEGTORAD);
     b2FixtureDef myFixtureDef;
-    myFixtureDef.shape = &polygonShape;
+    myFixtureDef.shape=&rect;
+    body->CreateFixture(&myFixtureDef);
 
-    //add four walls to the static body
-    polygonShape.SetAsBox( 32, 1, b2Vec2(init.x, init.y), 0);//ground
-    staticBody->CreateFixture(&myFixtureDef);
-    polygonShape.SetAsBox( 8, 1, b2Vec2(init.x, init.y), 80 * DEGTORAD);//left border
-    staticBody->CreateFixture(&myFixtureDef);
-    polygonShape.SetAsBox( 31, 1, b2Vec2(8, 1), DEGTORAD * 90);//right border
-    staticBody->CreateFixture(&myFixtureDef);
+    rect.SetAsBox(1, 3, b2Vec2(-6.5, 3), 160*DEGTORAD);
+    myFixtureDef.shape=&rect;
+    body->CreateFixture(&myFixtureDef);
+    body->SetUserData((void*)block);
+}
+
+void createTriangle2(b2Vec2 pos)
+{
+    b2Vec2 newPos=*new b2Vec2(pos.x,pos.y);
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_staticBody;
+    bodyDef.position.Set(newPos.x, newPos.y);   // the body's origin position.
+    b2Body* body= World::m_world->CreateBody(&bodyDef);
+
+    b2PolygonShape rect;
+    rect.SetAsBox(8, 1, b2Vec2(1, 2), 15*DEGTORAD);
+    b2FixtureDef myFixtureDef;
+    myFixtureDef.shape=&rect;
+    body->CreateFixture(&myFixtureDef);
+
+    rect.SetAsBox(1, 3, b2Vec2(8.5, 0), 190*DEGTORAD);
+    myFixtureDef.shape=&rect;
+    body->CreateFixture(&myFixtureDef);
+    body->SetUserData((void*)block);
 }
 
 void createCassis(b2Vec2 pos){
@@ -137,7 +155,7 @@ void createBar(b2Vec2 pos){
     b2Body* body= World::m_world->CreateBody(&bodyDef);
 
     b2PolygonShape rect;
-    rect.SetAsBox(8, 1, b2Vec2(0,0), 45*DEGTORAD);
+    rect.SetAsBox(14, 2, b2Vec2(0,0), 0*DEGTORAD);
     b2FixtureDef myFixtureDef;
     myFixtureDef.shape=&rect;
     body->CreateFixture(&myFixtureDef);
@@ -161,11 +179,11 @@ void Pattern::create(){
     b2BodyDef myBodyDef;
     myBodyDef.type = b2_dynamicBody;
 
-    //shape definition
+    //shape defposion
     b2PolygonShape polygonShape;
     polygonShape.SetAsBox(1, 1); //a 2x2 rectangle
   
-    //fixture definition
+    //fixture defposion
     b2FixtureDef myFixtureDef;
     myFixtureDef.shape = &polygonShape;
     myFixtureDef.density = 1;
