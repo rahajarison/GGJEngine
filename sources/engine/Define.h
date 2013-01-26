@@ -3,7 +3,10 @@
 //
 enum types 
 {
-    character, nutrient, block, bouncingBlock
+    character,
+    nutrient, 
+    block,
+    bouncingBlock
 };
 
 #endif
