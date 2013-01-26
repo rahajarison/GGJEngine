@@ -1,5 +1,0 @@
-C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/Box2D/CMakeFiles/Box2D.dir
-C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/HelloWorld/CMakeFiles/HelloWorld.dir
-C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/Testbed/CMakeFiles/Testbed.dir
-C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/freeglut/CMakeFiles/freeglut_static.dir
-C:/Users/Seven/Documents/GitHub/GGJEngine/Box2D_v2.2.1/glui/CMakeFiles/glui.dir
