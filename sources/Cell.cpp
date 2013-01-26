@@ -22,6 +22,7 @@ Cell::Cell(b2Body* body) : _body(body)
 		this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
 		std::cout << "Fin Load" << std::endl;
 	}
+	addTag(std::pair<std::string, std::string>("cell", "cell"));
 }
 Cell::~Cell(void)
 {
@@ -30,7 +31,7 @@ Cell::~Cell(void)
 
 void Cell::update(void)
 {
-	std::cout << "update cell" << std::endl;
+	// std::cout << "update cell" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
 	skin.SetPosition(vector.x, vector.y);
 	light.SetPosition(vector.x, vector.y);
@@ -38,7 +39,7 @@ void Cell::update(void)
 
 void Cell::draw(sf::RenderWindow& window)
 {
-	std::cout << "Draw" << std::endl;
+	// std::cout << "Draw" << std::endl;
 	window.Draw(this->skin);
 	window.Draw(this->light);
 }
