@@ -22,7 +22,7 @@ Character::Character() : bodies()
     bodies[0]->SetUserData((void*) type);
     isDivided = false;
     nutris = 0;
-    MaxSpeed = 2;
+    MaxSpeed = 10;
 }
 
 void Character::update()
@@ -35,7 +35,6 @@ void Character::update()
             force =  FORCE;
 
         bodies[i]->ApplyForce( b2Vec2(force,0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
-        bodies[i]->ApplyTorque( 60 );
     }
 }
 
