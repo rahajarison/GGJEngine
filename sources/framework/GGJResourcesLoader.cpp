@@ -3,11 +3,16 @@
 namespace GGJ
 {
 
+const std::string	ResourcesLoader::BASE_DIR =		"Data/";
+const std::string	ResourcesLoader::SOUNDS_DIR =	"Sounds/";
+const std::string	ResourcesLoader::MUSICS_DIR =	"Musics/";
+const std::string	ResourcesLoader::IMAGE_DIR =	"Image/";
+
 bool				ResourcesLoader::loadMusic(const std::string& filename)
 {
 	sf::Music*		music = new sf::Music();
 
-	if (music->OpenFromFile(filename))
+	if (music->OpenFromFile(BASE_DIR + MUSICS_DIR + filename))
 	{
 		getSingleton()->_musics[filename] = music;
 		return (true);
@@ -18,7 +23,7 @@ bool				ResourcesLoader::loadSoundBuffer(const std::string& filename)
 {
 	sf::SoundBuffer*		sound = new sf::SoundBuffer();
 
-	if (sound->LoadFromFile(filename))
+	if (sound->LoadFromFile(BASE_DIR + SOUNDS_DIR + filename))
 	{
 		getSingleton()->_soundBuffer[filename] = sound;
 		return (true);
@@ -29,7 +34,7 @@ bool				ResourcesLoader::loadImage(const std::string& filename)
 {
 	sf::Image*		image = new sf::Image();
 
-	if (image->LoadFromFile(filename))
+	if (image->LoadFromFile(BASE_DIR + IMAGE_DIR + filename))
 	{
 		getSingleton()->_images[filename] = image;
 		return (true);

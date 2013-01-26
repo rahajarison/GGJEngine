@@ -5,6 +5,9 @@ namespace GGJ
 {
 const std::string	Object::EMPTY_TAG = "";
 const std::string	Object::EXTENSION = ".prop";
+Object::~Object(void)
+{
+}
 
 void		Object::load(void)
 {

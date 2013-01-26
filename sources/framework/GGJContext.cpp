@@ -81,8 +81,8 @@ void		Context::registerCallback(registeringCallback callback)
 void		Context::drawObjects(void)
 {
 	_window.accessRenderWindow().SetView(_view);
-	// if (_map)
-		// _map->drawObjects(_window.accessRenderWindow());		
+	if (_map)
+		_map->drawObjects(_window.accessRenderWindow());		
 }
 void		Context::drawHUD(void)
 {

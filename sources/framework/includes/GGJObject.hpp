@@ -10,6 +10,8 @@ namespace GGJ
 	class		Object
 	{
 	public:
+		virtual ~Object(void);
+		
 		void			init(const std::string& name);
 		// Callbacks
 		virtual void	update(void) = 0;
@@ -33,7 +35,7 @@ namespace GGJ
 		const std::string&	getTag(const std::string& tag) const;
 		static bool			ABBAcollide(const Object& a, const Object& b);
 		
-	private:
+	protected:
 		std::string				_name; // TODO Charger dans un fichier les images et leur positions
 		double					_posX;
 		double					_posY;
