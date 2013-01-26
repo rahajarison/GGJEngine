@@ -11,7 +11,6 @@ public:
 	ObjDebug(b2Body* body);
 	virtual ~ObjDebug(void);
 
-	void			applyToSprite(void);
 	virtual void	update(void);	
 	virtual void	draw(sf::RenderWindow& window);
 	virtual	void	call(Object& otherObject);	

@@ -7,7 +7,6 @@ Context* Context::_instance = 0;
 const unsigned int Context::NB_POOL_OBJECTS = 20;
 Context::Context(void) : _map(0), _isRunning(false), _isPaused(false)
 {
-	std::cout << "Context" << std::endl;
 	_map = new Map();
 }
 Context::~Context(void)
@@ -22,10 +21,10 @@ void		Context::run(void)
 		update();
 		if (_isRunning)
 		{
-			dispatchEvents();
+			// dispatchEvents();
 			_window.clear();
 			drawObjects();
-			drawHUD();
+			// drawHUD();
 			_window.display();
 		}
 	}

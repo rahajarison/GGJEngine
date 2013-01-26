@@ -14,14 +14,8 @@ ObjDebug::~ObjDebug(void)
 {
 }
 
-void			ObjDebug::applyToSprite(void)
-{
-	_sprite.SetX(this->_posX);
-	_sprite.SetY(this->_posY);
-}
 void			ObjDebug::update(void)
 { 
-	std::cout << "Update !" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
 	_sprite.SetPosition(vector.x, vector.y);
 }
