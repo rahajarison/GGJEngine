@@ -1,5 +1,6 @@
 #include	<iostream>
 #include	<GGJResourcesLoader.hpp>
+#include	"engine/Define.h"
 #include	"ObjCell.hpp"
 
 const std::string ObjCell::IMAGE_NAME = "cellule.png";
@@ -35,6 +36,11 @@ void ObjCell::update(void)
 	const b2Vec2& vector = _body->GetPosition();
 	skin.SetPosition(vector.x, vector.y);
 	light.SetPosition(vector.x, vector.y);
+
+	float angle = _body->GetAngle() * RADTODEG;
+	std::cout << _body->GetAngle() <<std::endl;
+	skin.SetRotation(angle);
+	light.SetRotation(angle);
 }
 
 void ObjCell::draw(sf::RenderWindow& window)
