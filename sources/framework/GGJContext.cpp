@@ -16,10 +16,10 @@ Context::Context(void) : _map(0), _isRunning(false), _isPaused(false)
 		{
 			sf::Sprite*		sprite = new sf::Sprite(*iContours_noirs);
 
+			sprite->SetScale(0.78f, 0.78f);
 			_hudElements.push_back(sprite);
 		}
 	}
-	// _view.Zoom(0.1f);
 }
 Context::~Context(void)
 {
@@ -86,8 +86,6 @@ void		Context::dispatchEvents(void)
 
 		while (it != end)
 		{
-			// what about copying all the datas ? ;)
-			// Check fermeture de fenetre
 			std::pair<sf::Event, registeringCallback> value = *it;
 			if (it->first.Type == event.Type &&
 				it->first.Key.Code == event.Key.Code)
@@ -108,12 +106,15 @@ void		Context::registerCallback(registeringCallback callback)
 }
 void		Context::drawBackground(void)
 {
-	_window.accessRenderWindow().SetView(_view);
+	_window.accessRenderWindow().SetView(_window.
+		accessRenderWindow().GetDefaultView());
 	if (_map)
 		_map->drawBackground(_window.accessRenderWindow());
 }
 void		Context::drawObjects(void)
 {
+	_view.SetCenter(400, 0);
+	_window.accessRenderWindow().SetView(_view);
 	if (_map)
 		_map->drawObjects(_window.accessRenderWindow());		
 }

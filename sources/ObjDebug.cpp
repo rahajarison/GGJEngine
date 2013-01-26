@@ -1,6 +1,7 @@
 #include			<iostream>
 #include			<GGJResourcesLoader.hpp>
 #include			"ObjDebug.hpp"
+#include	"engine/Define.h"
 
 const unsigned int		ObjDebug::WIDTH = 40;
 const unsigned int		ObjDebug::HEIGHT = 40;
@@ -18,7 +19,7 @@ ObjDebug::~ObjDebug(void)
 void			ObjDebug::update(void)
 { 
 	const b2Vec2& vector = _body->GetPosition();
-	_sprite.SetPosition(vector.x, vector.y);
+	_sprite.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
 }
 void			ObjDebug::draw(sf::RenderWindow& window)
 { 
