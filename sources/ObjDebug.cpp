@@ -9,6 +9,7 @@ ObjDebug::ObjDebug(b2Body* body) : _body(body),
 _sprite(sf::Shape::Rectangle(0, 40, ObjDebug::WIDTH, ObjDebug::HEIGHT, sf::Color::Red))
 {
 	_sprite.SetCenter(WIDTH / 2, HEIGHT / 2);
+	std::cout << "Creation"<< std::endl;
 }
 ObjDebug::~ObjDebug(void)
 {

@@ -10,7 +10,7 @@ ObjBumper::ObjBumper(b2Body* body) : _body(body)
 	sf::Image *		image;
 	sf::Image *		image2;
 	
-	std::cout << "begin..." << std::endl;
+	std::cout << "begin objbumper..." << std::endl;
 	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME), GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
 	{
 		std::cout << "load..." << std::endl;
@@ -35,6 +35,7 @@ void ObjBumper::update(void)
 	const b2Vec2& vector = _body->GetPosition();
 	skin.SetPosition(vector.x, vector.y);
 	light.SetPosition(vector.x, vector.y);
+	std::cout << "PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
 }
 
 void ObjBumper::draw(sf::RenderWindow& window)

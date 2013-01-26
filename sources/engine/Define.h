@@ -3,6 +3,7 @@
 #include <Box2D/Box2D.h>
 //
 
+#define COEF_DISPLAY	(20)
 #define FORCE 50
 #define DIVIDE 9
 #define BOUNCING 80
@@ -21,5 +22,4 @@
 #define bouncingBlockTopRight 9
 #define bouncingBlockBottomLeft 10
 #define bouncingBlockBottomRight 11
-
 #endif

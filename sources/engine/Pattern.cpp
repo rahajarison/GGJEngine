@@ -171,7 +171,7 @@ void Pattern::createBar(b2Vec2 pos){
 
 //
 Pattern::Pattern(int relativeVSlide, int relativeHSlide)
-: relativeVerticalSlide(relativeVSlide)
+: relativeVerticalSlide(relativeVSlide), relativeHorizontalSlide(relativeHSlide)
 {
     //set the block into the world
 }
