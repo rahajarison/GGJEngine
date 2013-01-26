@@ -23,6 +23,7 @@ Character::Character() : bodies()
 
     bodies[0]->SetUserData((void*) type);
     isDivided = false;
+    nutris = 0;
 }
 
 void Character::update()
@@ -46,7 +47,7 @@ void Character::divide()
     float grav = bodies[0]->GetGravityScale();
     float scale = bodies[0]->GetFixtureList()->GetAABB(0).GetExtents().x * 2;
     bodies.clear();
-    if(!isDivided)
+    if(!isDivided && nutris > 0)
     {
         if(nutris <= DIVIDE)
         {
