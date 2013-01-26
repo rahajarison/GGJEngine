@@ -12,7 +12,7 @@ ObjBumper::ObjBumper(b2Body* body) : _body(body)
 	sf::Image *		image2;
 	
 	std::cout << "begin objbumper..." << std::endl;
-	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME), GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
+	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME) && GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
 	{
 		std::cout << "load..." << std::endl;
 		image = GGJ::ResourcesLoader::getImage(IMAGE_NAME);
