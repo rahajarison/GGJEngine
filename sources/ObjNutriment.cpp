@@ -12,7 +12,7 @@ ObjNutriment::ObjNutriment(b2Body* body) : _body(body)
 	sf::Image *		image2;
 	
 	std::cout << "begin..." << std::endl;
-	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME), GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
+	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME) && GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
 	{
 		std::cout << "load..." << std::endl;
 		image = GGJ::ResourcesLoader::getImage(IMAGE_NAME);
@@ -23,7 +23,7 @@ ObjNutriment::ObjNutriment(b2Body* body) : _body(body)
 		this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
 		std::cout << "Fin Load" << std::endl;
 	}
-	addTag(std::pair<std::string, std::string>("cell", "cell"));
+	addTag(std::pair<std::string, std::string>("nutriment", "nutriment"));
 }
 ObjNutriment::~ObjNutriment(void)
 {

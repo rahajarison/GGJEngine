@@ -12,7 +12,8 @@ ObjCell::ObjCell(b2Body* body) : _body(body)
 	sf::Image *		image;
 	sf::Image *		image2;
 	
-	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME), GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
+
+	if (GGJ::ResourcesLoader::loadImage(IMAGE_NAME) && GGJ::ResourcesLoader::loadImage(IMAGE2_NAME))
 	{
 		image = GGJ::ResourcesLoader::getImage(IMAGE_NAME);
 		image2 = GGJ::ResourcesLoader::getImage(IMAGE2_NAME);

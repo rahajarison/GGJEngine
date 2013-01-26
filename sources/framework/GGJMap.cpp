@@ -13,13 +13,31 @@ Map::Map(void)
 {
 	if (GGJ::ResourcesLoader::loadImage("background_rose.png"))
 	{
-		sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
-		if (iBackground_rose)
 		{
-			sf::Sprite*	background_rose = new sf::Sprite(*iBackground_rose);
-			// background_rose->SetScale(0.78f, 0.78f);
-			_sprites.push_back(background_rose);	
+			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
+			if (iBackground_rose)
+				_sprites.push_back(new sf::Sprite(*iBackground_rose));
 		}
+	
+		// {
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
+		// 	if (iBackground_rose)
+		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		// }
+	
+		// {
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
+		// 	if (iBackground_rose)
+		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		// }
+	
+		// {
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
+		// 	if (iBackground_rose)
+		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		// }
+	
+		
 	}
 	else
 		std::cerr << "Impossible d'afficher le background" << std::endl;
