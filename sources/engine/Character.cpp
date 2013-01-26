@@ -45,9 +45,9 @@ void Character::divide()
     b2Vec2 speed = bodies[0]->GetLinearVelocity();
     float grav = bodies[0]->GetGravityScale();
     float scale = bodies[0]->GetFixtureList()->GetAABB(0).GetExtents().x * 2;
-    bodies.clear();
     if(!isDivided && nutris > 0)
     {
+        bodies.clear();
         if(nutris <= DIVIDE)
         {
             for(int i = 0; i < nutris; ++i)
