@@ -36,6 +36,7 @@ void Character::update()
             force =  FORCE;
 
         bodies[i]->ApplyForce( b2Vec2(force,0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
+        bodies[i]->SetAngularVelocity(0.01f);
     }
 }
 
