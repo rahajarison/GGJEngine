@@ -68,6 +68,7 @@ endif()
 file(
 	GLOB#_RECURSE
 	source_files
+	../sources/engine/*.cpp
 	../sources/framework/*
 	../sources/*.cpp
 )
@@ -80,6 +81,7 @@ add_executable(
 
 #Configuration de l'édition de liens
 target_link_libraries( Exe sfml-audio )
+target_link_libraries( Exe  Box2D )
 target_link_libraries( Exe sfml-network )
 target_link_libraries( Exe sfml-window )
 target_link_libraries( Exe sfml-graphics )

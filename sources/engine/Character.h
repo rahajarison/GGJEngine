@@ -3,6 +3,7 @@
 //
 #include <Box2D/Box2D.h>
 #include <vector>
+#include "Define.h"
 
 class Character
 {
@@ -25,6 +26,11 @@ class Character
         double getRotation(){return 0;}
         int getMaxSpeed(){return 0;}
         int getMaxAngularRotation(){return 0;}
+        static bool isCharacter(b2Body* body){
+            void* userData = body->GetUserData();
+            types* type=static_cast<types*>(userData);
+            return *type==character;
+        }
         void update();
         void divide();
 };
