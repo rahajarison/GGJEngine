@@ -24,6 +24,8 @@ class Pattern
         void createJump2(b2Vec2);
         void createJump3(b2Vec2);
         void createBar(b2Vec2);
+        void createSensor(b2Vec2 pos, bool);
+        void createBubbles();
         ~Pattern(){}
 };
 
