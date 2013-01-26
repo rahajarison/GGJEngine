@@ -131,7 +131,7 @@ void Character::beat()
 {
     for(int i = 0; i < bodies.size(); ++i)
     {
-        bodies[i]->ApplyLinearImpulse( b2Vec2(0,50), bodies[i]->GetWorldCenter() );
+        bodies[i]->ApplyLinearImpulse( b2Vec2(IMPULSE,0), bodies[i]->GetWorldCenter() );
     }   
 }
 
