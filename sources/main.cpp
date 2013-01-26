@@ -18,6 +18,7 @@ int			main(int ac, char *av[])
 
 	registerAll();
 	test();
+	test("cellule.png");
 	context.run();
 	return (EXIT_SUCCESS);
 }
