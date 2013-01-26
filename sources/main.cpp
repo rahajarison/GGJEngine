@@ -10,6 +10,7 @@
 #include	"ObjBumper.hpp"
 #include	"Gameplay.hpp"
 #include	"ObjMusic.hpp"
+#include	"ObjPattern.hpp"
 
 void		registerAll(void)
 {
@@ -34,6 +35,7 @@ void		initDebug(void)
 
 	context.attachObject(*(new ObjMusic()));
 	context.accessView().Zoom(0.3f);
+	context.attachObject(*(new ObjPattern("Untitled.png", 0, 0)));
 	// reloadCells(&context);
 	// loadLevelDesign();
 	
