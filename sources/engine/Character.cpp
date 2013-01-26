@@ -23,7 +23,7 @@ Character::Character() : bodies()
     bodies[0]->SetGravityScale(500);
     isDivided = false;
     nutris = 0;
-    MaxSpeed = 5;
+    MaxSpeed = 2;
 }
 
 void Character::update()
