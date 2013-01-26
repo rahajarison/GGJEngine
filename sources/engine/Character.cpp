@@ -18,9 +18,8 @@ Character::Character() : bodies()
     b2FixtureDef myFixtureDef;
     myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
     bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
-
+    bodies[0]->SetLinearVelocity(b2Vec2(0.0f, 0.0f));
     bodies[0]->SetUserData((void*) type);
-    bodies[0]->SetGravityScale(500);
     isDivided = false;
     nutris = 0;
     MaxSpeed = 2;
