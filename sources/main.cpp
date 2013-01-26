@@ -28,7 +28,7 @@ void		initDebug(void)
 	while (body != NULL)
 	{
 		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjDebug(body)));
+			context.attachObject(*(new ObjBumper(body)));
 		else
 			context.attachObject(*(new ObjCell(body)));
 		body = body->GetNext();
