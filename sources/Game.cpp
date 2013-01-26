@@ -1,5 +1,6 @@
 #include		<iostream>
 #include		<GGJContext.hpp>
+#include		"Cell.hpp"
 #include		"Game.hpp"
 
 void				Box2DCallback(void*)
@@ -16,8 +17,21 @@ void				OnDivideEvent(void* params)
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 
 	std::cout << "Event !" << std::endl;
-	context._world.car->divide();
-	
+	context->removeObjectsWithTag("cell");
+	context->_world.car->divide();	
+	b2Body*	body = context->_world.m_world->GetBodyList();
+
+	while (body != NULL)
+	{
+		context->attachObject(*(new Cell(body)));
+		body = body->GetNext();
+	}
+}
+void				OnImpulseEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+
+	context->_world.car->beat();
 }
 void				mainCallback(void*)
 {

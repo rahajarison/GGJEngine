@@ -17,10 +17,12 @@ public:
 	~Map(void); // desallocate every objects
 
 	const std::vector<Object*>& getObjects(void) const;
+	void		removeObjectsWithTag(const std::string& tag);
 
 	void		attachObject(Object& object);
 	void		detachObject(Object& object);
 
+	void		drawBackground(sf::RenderWindow& window);
 	void		drawObjects(sf::RenderWindow& window);
 private:
 	// std::string	_file;
@@ -31,7 +33,7 @@ private:
 	double		_endAPosY;
 	double		_endBPosY;
 
-	std::vector<sf::Sprite*>		_sprites;
+	std::vector<sf::Sprite*>	_sprites;
 	std::vector<Object*>		_objects;
 	sf::Music					_music;
 

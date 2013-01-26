@@ -3,6 +3,7 @@
 
 void				Box2DCallback(void*);
 void				OnDivideEvent(void* params);
+void				OnImpulseEvent(void* params);
 void				mainCallback(void*);
 
 #endif /* !GAME_H_ */
