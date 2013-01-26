@@ -6,7 +6,7 @@
 #include	"testJohnny.hpp"
 #include	"engine/Character.h"
 #include	"ObjDebug.hpp"
-#include	"Cell.hpp"
+#include	"ObjCell.hpp"
 
 void		registerAll(void)
 {
