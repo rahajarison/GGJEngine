@@ -9,9 +9,8 @@ Nutrient::Nutrient(int point, double x, double y)
     bodyDef.type = b2_dynamicBody;
     bodyDef.position.Set(x, y);   // the body's origin position.
     bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
-    bodyDef.linearDamping = 0.0f;
-    bodyDef.angularDamping = 0.01f;
     body = World::m_world->CreateBody(&bodyDef);
+    body->SetGravityScale(0.0);
 
     b2CircleShape circleShape;
     circleShape.m_p.Set(0, 0);          //position, relative to body position
