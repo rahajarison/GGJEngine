@@ -4,7 +4,7 @@
 //
 
 #define FORCE 50
-#define DIVIDE 10
+#define DIVIDE 9
 #define BOUNCING 13
 
 enum types 

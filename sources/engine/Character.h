@@ -31,8 +31,10 @@ class Character
             types* type=static_cast<types*>(userData);
             return *type==character;
         }
+        
         void update();
         void divide();
+        void fusion();
 };
 
 #endif

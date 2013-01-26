@@ -21,6 +21,7 @@ Character::Character()
     bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
 
     bodies[0]->SetUserData(&type);
+    isDivided = false;
 }
 
 void Character::update()
@@ -38,25 +39,89 @@ void Character::update()
 
 void Character::divide()
 {
+    types type = character;
+    b2Vec2 posIni = bodies[0]->GetPosition();
+    b2Vec2 speed = bodies[0]->GetLinearVelocity();
+    float grav = bodies[0]->GetGravityScale();
+    float scale = bodies[0]->GetFixtureList()->GetAABB(0).GetExtents().x * 2;
     if(!isDivided)
     {
         if(nutris <= DIVIDE)
         {
-            b2Vec2 posIni = bodies[0]->GetPosition();
-            b2Vec2 speed = bodies[0]->GetLinearVelocity();
             for(int i = 0; i < nutris; ++i)
             {
+                b2BodyDef bodyDef;
+                bodyDef.type = b2_dynamicBody;
+                bodyDef.position.Set(posIni.x, posIni.y);   // the body's origin position.
+                bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
+                bodyDef.linearDamping = 0.0f;
+                bodyDef.angularDamping = 0.01f;
+                bodies[i] = World::m_world->CreateBody(&bodyDef);
 
+                b2CircleShape circleShape;
+                circleShape.m_p.Set(0, 0);          //position, relative to body position
+                circleShape.m_radius = scale/nutris;           //radius
+                b2FixtureDef myFixtureDef;
+                myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
+                bodies[i]->CreateFixture(&myFixtureDef); //add a fixture to the body
+
+                bodies[i]->SetUserData(&type);
             }
         }
         else
         {
             for(int i = 0; i < DIVIDE; ++i)
             {
+                b2BodyDef bodyDef;
+                bodyDef.type = b2_dynamicBody;
+                bodyDef.position.Set(posIni.x, posIni.y);   // the body's origin position.
+                bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
+                bodyDef.linearDamping = 0.0f;
+                bodyDef.angularDamping = 0.01f;
+                bodies[i] = World::m_world->CreateBody(&bodyDef);
 
+                b2CircleShape circleShape;
+                circleShape.m_p.Set(0, 0);          //position, relative to body position
+                circleShape.m_radius = scale/DIVIDE;           //radius
+                b2FixtureDef myFixtureDef;
+                myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
+                bodies[i]->CreateFixture(&myFixtureDef); //add a fixture to the body
+
+                bodies[i]->SetUserData(&type);
             }
         }
+        isDivided = !isDivided;
     }   
+}
+
+void Character::fusion()
+{
+    types type = character;
+    b2Vec2 posIni = bodies[0]->GetPosition();
+    b2Vec2 speed = bodies[0]->GetLinearVelocity();
+    
+    if(isDivided)
+    {
+        bodies.clear();
+        b2BodyDef bodyDef;
+        bodyDef.type = b2_dynamicBody;
+        bodyDef.position.Set(posIni.x, posIni.y);   // the body's origin position.
+        bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
+        bodyDef.linearDamping = 0.0f;
+        bodyDef.angularDamping = 0.01f;
+        bodies[0] = World::m_world->CreateBody(&bodyDef);
+
+        b2CircleShape circleShape;
+        circleShape.m_p.Set(0, 0);          //position, relative to body position
+        circleShape.m_radius = nutris * 0.025f + 1;           //radius
+        b2FixtureDef myFixtureDef;
+        myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
+        bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
+
+        bodies[0]->SetUserData(&type);
+
+        isDivided = !isDivided;
+    }
 }
 
 
