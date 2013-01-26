@@ -48,11 +48,11 @@ void Character::divide()
     if(!isDivided && nutris > 0)
     {
         bodies.clear();
+        b2BodyDef bodyDef;
         if(nutris <= DIVIDE)
         {
             for(int i = 0; i < nutris; ++i)
             {
-                b2BodyDef bodyDef;
                 bodyDef.type = b2_dynamicBody;
                 bodyDef.position.Set(posIni.x, posIni.y);   // the body's origin position.
                 bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
@@ -74,7 +74,6 @@ void Character::divide()
         {
             for(int i = 0; i < DIVIDE; ++i)
             {
-                b2BodyDef bodyDef;
                 bodyDef.type = b2_dynamicBody;
                 bodyDef.position.Set(posIni.x, posIni.y);   // the body's origin position.
                 bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
@@ -111,7 +110,7 @@ void Character::fusion()
         bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
         bodyDef.linearDamping = 0.0f;
         bodyDef.angularDamping = 0.01f;
-        bodies[0] = World::m_world->CreateBody(&bodyDef);
+        bodies.push_Back(World::m_world->CreateBody(&bodyDef));
 
         b2CircleShape circleShape;
         circleShape.m_p.Set(0, 0);          //position, relative to body position
