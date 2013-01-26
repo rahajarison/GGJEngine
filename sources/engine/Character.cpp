@@ -22,6 +22,7 @@ Character::Character() : bodies()
     bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body
 
     bodies[0]->SetUserData((void*) type);
+    bodies[0]->SetGravityScale(500);
     isDivided = false;
     nutris = 0;
 }
@@ -36,7 +37,7 @@ void Character::update()
             force =  FORCE;
 
         bodies[i]->ApplyForce( b2Vec2(force,0), bodies[i]->GetWorldPoint(b2Vec2(0,1)) );
-        bodies[i]->ApplyTorque( 10 );
+        bodies[i]->ApplyTorque( 60 );
     }
 }
 
