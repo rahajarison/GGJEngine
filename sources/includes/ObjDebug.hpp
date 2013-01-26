@@ -3,11 +3,12 @@
 
 # include		<GGJObject.hpp>
 # include		<SFML/Graphics.hpp>
+# include		"engine/Character.h"
 
 class			ObjDebug : public GGJ::Object
 {
 public:
-	//ObjDebug(b2body*) // TODO changer le constructeur
+	ObjDebug(b2Body* body);
 	ObjDebug(void);
 	virtual ~ObjDebug(void);
 
@@ -18,6 +19,7 @@ public:
 
 private:
 	sf::Shape		_sprite;
+	b2Body*			_body;
 };
 
 #endif

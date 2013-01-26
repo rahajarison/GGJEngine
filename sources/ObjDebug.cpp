@@ -2,7 +2,9 @@
 #include			<GGJResourcesLoader.hpp>
 #include			"ObjDebug.hpp"
 
-
+ObjDebug::ObjDebug(b2Body* body) : _body(body)
+{
+}
 ObjDebug::ObjDebug(void) : _sprite(sf::Shape::Rectangle(0, 40, 40, 40, sf::Color::Red))
 {
 }
