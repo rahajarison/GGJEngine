@@ -17,7 +17,7 @@ Context::Context(void) : _map(0), _isRunning(false), _isPaused(false), _isInGame
 		{
 			sf::Sprite*		sprite = new sf::Sprite(*iContours_noirs);
 
-			sprite->SetScale(0.78f, 0.78f);
+			sprite->SetScale(0.79f, 0.79f);
 			_hudElements.push_back(sprite);
 		}
 	}
@@ -53,7 +53,8 @@ void		Context::menuCycle(void)
         	stop();
         	return;
         }
-        else if (event.Type == sf::Event::KeyPressed)
+        else if (event.Type == sf::Event::KeyPressed &&
+        		event.Key.Code == sf::Key::Return)
         	_isInGame = true;
     }
     _menu.draw(_window.accessRenderWindow());
