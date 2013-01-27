@@ -20,13 +20,13 @@ void PatternCassis::create(){
     myBodyDef.position.Set(x+512,0);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
-    polygonShape.SetAsBox( 1, 512);//ground
+    polygonShape.SetAsBox(512, 1 );//ground
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(x+512,800);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
-    polygonShape.SetAsBox(1, 512);//ground
+    polygonShape.SetAsBox(512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
     int radius=100;
     b2CircleShape circleShape;
