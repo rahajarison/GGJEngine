@@ -8,6 +8,7 @@ Menu::Menu(void)
 	if (ResourcesLoader::loadImage("home.png"))
 	{
 		sf::Image*	image = ResourcesLoader::getImage("home.png");
+		_sprite.SetPosition(0, 0);
 		_sprite.SetImage(*image);
 	}
 }
