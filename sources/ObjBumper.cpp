@@ -17,8 +17,9 @@ ObjBumper::ObjBumper(b2Body* body) : _body(body)
 		image2 = GGJ::ResourcesLoader::getImage(IMAGE2_NAME);
 		this->skin.SetImage(*image); 
 		this->light.SetImage(*image2);
+		// this->skin.Scale(0.78125f, 0.78125f);
 		this->skin.SetCenter(image->GetWidth() / 2, image->GetHeight() / 2);
-		this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
+		// this->light.SetCenter(image2->GetWidth() / 2, image2->GetHeight() / 2);
 	}
 	else
 		std::cerr << "Impossible d afficher Bumper" << std::endl;
@@ -35,8 +36,9 @@ void ObjBumper::update(void)
 	const b2Vec2& vector = _body->GetPosition();
 	// 	std::cerr << "Bumper[" << vector.x << ", " << vector.y << "]" << std::endl;
 	skin.SetPosition(vector.x, vector.y);
+	// std::cout << "Affichage"
 	// light.SetPosition(vector.x, vector.y);
-	// std::cout << "PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
+	std::cout << "[Object] PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
 }
 
 void ObjBumper::draw(sf::RenderWindow& window)
