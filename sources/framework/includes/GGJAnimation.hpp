@@ -21,7 +21,7 @@ public:
 	virtual void	draw(sf::RenderWindow& window) = 0;
 
 protected:
-	static std::vector<Animation*>	_animations;
+	// static std::vector<Animation*>	_animations;
 	float							_length;
 	float							_cursor;
 	bool							_launched;

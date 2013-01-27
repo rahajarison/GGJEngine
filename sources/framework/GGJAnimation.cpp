@@ -6,7 +6,7 @@ namespace GGJ
 
 Animation::Animation(float length) : _length(length), _cursor(length), _launched(false)
 {
-	Animation::_animations.push_back(this);
+	// Animation::_animations.push_back(this);
 }
 
 void		Animation::update(float sinceLastFrame)
@@ -36,6 +36,6 @@ void		Animation::launch(void)
 // void		Animation::draw(sf::RenderWindow& window)
 // {
 // }
-void		Animation::isTerminated(void)	{	return (_launched);	}
+bool		Animation::isTerminated(void) const	{	return (_launched);	}
 
 };
