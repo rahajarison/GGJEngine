@@ -39,7 +39,7 @@ void		initDebug(void)
 	b2Body*	body = context._world.m_world->GetBodyList();
 
 	context.attachObject(*(new ObjMusic()));
-	context.accessView().Zoom(0.3f);
+	// context.accessView().Zoom(0.3f);
 	context.attachObject(*(new ObjPattern("bumper.png", 0, 0)));
 	// loadLevelDesign();
 	
