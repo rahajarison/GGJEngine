@@ -1,7 +1,9 @@
 #include		<iostream>
 #include		<GGJContext.hpp>
 #include		<GGJResourcesLoader.hpp>
+#include		<GGJAnimation.hpp>
 #include		"engine/Define.h"
+#include		"FadeAnim.hpp"
 
 namespace GGJ
 {
@@ -31,19 +33,16 @@ void		Context::gameCycle(void)
 	update();
 	if (_isRunning)
 	{
-		_window.clear();
 		dispatchEvents();
 		drawBackground();
 		drawObjects();
 		drawHUD();
-		_window.display();
 	}
 }
 void		Context::menuCycle(void)
 {
 	sf::Event 	event;
 
-	_window.clear();
 	_window.accessRenderWindow().SetView(_window.
 		accessRenderWindow().GetDefaultView());
 	while (_window.accessRenderWindow().GetEvent(event))
@@ -55,10 +54,18 @@ void		Context::menuCycle(void)
         }
         else if (event.Type == sf::Event::KeyPressed &&
         		event.Key.Code == sf::Key::Return)
-        	_isInGame = true;
+        {
+        	static bool	alreadyPassed = false;
+        	if (alreadyPassed == false)
+        	{
+        		_isInGame = true;
+        		alreadyPassed = true;
+        		Animation* anim = new FadeAnim();
+        		anim->launch();
+        	}
+        }
     }
     _menu.draw(_window.accessRenderWindow());
-	_window.display();
 }
 
 void		Context::run(void)
@@ -66,10 +73,13 @@ void		Context::run(void)
 	_isRunning = true;
 	while (_isRunning)
 	{
+		_window.clear();
 		if (_isInGame)
 			gameCycle();
 		else
 			menuCycle();
+		Animation::updateAll(getFrameTime());
+		_window.display();
 	}
 }
 void		Context::stop(void)

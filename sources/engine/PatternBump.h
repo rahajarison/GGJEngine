@@ -6,9 +6,9 @@
 class PatternBump : public Pattern
 {
 public:
-    PatternBump(int x) : Pattern(x) {}
-    virtual void create();
-    ~PatternBump(){}
+	PatternBump(int x) : Pattern(x) { }
+	virtual void create(void);
+	~PatternBump(void) { }
 };
 
 #endif

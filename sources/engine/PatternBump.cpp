@@ -14,13 +14,13 @@ void PatternBump::create(){
 
     myBodyDef.type = b2_staticBody;
     myBodyDef.position.Set(x+512,TOP);
-    b2Body* staticBody = m_world->CreateBody(&myBodyDef);
+    b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
     staticBody->SetUserData((void*)block);
 
     myBodyDef.position.Set(x+512,DOWN/10);
-    staticBody = m_world->CreateBody(&myBodyDef);
+    staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
     staticBody->SetUserData((void*)block);
@@ -29,14 +29,14 @@ void PatternBump::create(){
         int xp=i*200;
         //bas
         myBodyDef.position.Set(x+xp-100, DOWN/10-2);
-        staticBody = m_world->CreateBody(&myBodyDef);
+        staticBody = World::m_world->CreateBody(&myBodyDef);
         polygonShape.SetAsBox(100, 1);//ground
         myFixtureDef.isSensor=true;
         staticBody->SetUserData((void*)bouncingBlockTop);
         staticBody->CreateFixture(&myFixtureDef);
         //haut
         myBodyDef.position.Set(x+xp-100, TOP+2);
-        staticBody = m_world->CreateBody(&myBodyDef);
+        staticBody = World::m_world->CreateBody(&myBodyDef);
         polygonShape.SetAsBox(100, 1);//ground
         myFixtureDef.isSensor=true;
         staticBody->SetUserData((void*)bouncingBlockBottom);

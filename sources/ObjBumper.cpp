@@ -33,10 +33,7 @@ void ObjBumper::update(void)
 {
 	// std::cout << "update cell" << std::endl;
 	const b2Vec2& vector = _body->GetPosition();
-	if (_body->GetUserData() != (void*)3)
-		std::cerr << "Caca" << std::endl;
-	else
-		std::cerr << "Bumper[" << vector.x << ", " << vector.y << "]" << std::endl;
+	// 	std::cerr << "Bumper[" << vector.x << ", " << vector.y << "]" << std::endl;
 	skin.SetPosition(vector.x, vector.y);
 	// light.SetPosition(vector.x, vector.y);
 	// std::cout << "PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
