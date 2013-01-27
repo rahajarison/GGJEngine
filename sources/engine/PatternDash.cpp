@@ -29,13 +29,13 @@ void PatternDash::create(){
     staticBody->SetUserData((void*)block);
 
     int xp=300;
-    myBodyDef.position.Set(x+xp+(480/2), DOWN+329/2);
+    myBodyDef.position.Set(x+xp+(480/2), TOP+329/2);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 480/2, 329/2);
     staticBody->CreateFixture(&myFixtureDef);
     staticBody->SetUserData((void*)grosRect);
 
-    myBodyDef.position.Set(x+xp-100, DOWN);
+    myBodyDef.position.Set(x+xp-100, TOP);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox(100, 1);//ground
     myFixtureDef.isSensor=true;
