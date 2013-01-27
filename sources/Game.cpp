@@ -62,7 +62,6 @@ void				OnLeftEvent(void* params)
 void				OnFrontEvent(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
-	std::cout << "Call" << std::endl;
 	context->_world.car->up();
 }
 void				OnBackEvent(void* params)
