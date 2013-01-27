@@ -3,7 +3,7 @@
 
 #include "Pattern.h"
 
-class PatternVide : Pattern
+class Pattern1 : public Pattern
 {
 public:
     PatternVide();
@@ -43,4 +43,6 @@ public:
     }
     ~PatternVide();
 };
+
+#endif
 
