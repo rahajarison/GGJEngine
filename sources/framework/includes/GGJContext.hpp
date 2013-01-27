@@ -63,7 +63,8 @@ namespace GGJ
 		std::vector<registeringCallback>			_callbacksUpdate;
 		sf::View						_view;
 		std::vector<sf::Sprite*>		_hudElements;
-		// Clock		_clock;
+		// Menu							_menu;
+		
 	public:
 		static const unsigned int 	NB_POOL_OBJECTS;
 	};

@@ -33,3 +33,4 @@ public:
     ~PatternVide();
 };
 
+#endif

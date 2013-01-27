@@ -5,11 +5,8 @@
 #include "Character.h"
 #include <vector>
 #include <Box2D/Box2D.h>
-<<<<<<< HEAD
 #include "Pattern.h"
 #include "PatternVide.h"
-=======
->>>>>>> 527133814271543d669011332939aa0d0cd26704
 
 using namespace std;
 
