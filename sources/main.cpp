@@ -11,6 +11,7 @@
 #include	"Gameplay.hpp"
 #include	"ObjMusic.hpp"
 #include	"ObjPattern.hpp"
+#include	"ObjBackground.hpp"
 
 void		registerAll(void)
 {
@@ -39,8 +40,9 @@ void		initDebug(void)
 	b2Body*	body = context._world.m_world->GetBodyList();
 
 	context.attachObject(*(new ObjMusic()));
+	context.attachObject(*(new ObjBackground()));
 	// context.accessView().Zoom(0.3f);
-	context.attachObject(*(new ObjPattern("bumper.png", 0, 0)));
+	// context.attachObject(*(new ObjPattern("bumper.png", 0, 0)));
 	// loadLevelDesign();
 	
 	while (body != NULL)

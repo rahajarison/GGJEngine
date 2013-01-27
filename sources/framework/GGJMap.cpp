@@ -11,9 +11,9 @@ namespace GGJ
 // }
 Map::Map(void)
 {
-	if (GGJ::ResourcesLoader::loadImage("background_rose.png") &&
-			GGJ::ResourcesLoader::loadImage("pattern1.png") &&
-			GGJ::ResourcesLoader::loadImage("pattern2.png"))
+	if (GGJ::ResourcesLoader::loadImage("background_rose.png"))
+			// GGJ::ResourcesLoader::loadImage("pattern1.png") &&
+			// GGJ::ResourcesLoader::loadImage("pattern2.png"))
 	{
 		{
 			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
@@ -21,19 +21,19 @@ Map::Map(void)
 				_sprites.push_back(new sf::Sprite(*iBackground_rose));
 		}
 	
-		{
-			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern1.png");
-			if (iBackground_rose)
-				_sprites.push_back(new sf::Sprite(*iBackground_rose));
-			// else
-				// std::cerr << "Fuck" << std::endl;
-		}
+		// {
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern1.png");
+		// 	if (iBackground_rose)
+		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		// 	// else
+		// 		// std::cerr << "Fuck" << std::endl;
+		// }
 	
-		{
-			sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern2.png");
-			if (iBackground_rose)
-				_sprites.push_back(new sf::Sprite(*iBackground_rose));
-		}
+		// {
+		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("pattern2.png");
+		// 	if (iBackground_rose)
+		// 		_sprites.push_back(new sf::Sprite(*iBackground_rose));
+		// }
 	
 		// {
 		// 	sf::Image*	iBackground_rose = GGJ::ResourcesLoader::getImage("background_rose.png");
