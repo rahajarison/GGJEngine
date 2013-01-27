@@ -19,7 +19,7 @@ ObjDebug::~ObjDebug(void)
 void			ObjDebug::update(void)
 { 
 	const b2Vec2& vector = _body->GetPosition();
-	_sprite.SetPosition(vector.x * COEF_DISPLAY, vector.y * COEF_DISPLAY);
+	_sprite.SetPosition(vector.x, vector.y);
 }
 void			ObjDebug::draw(sf::RenderWindow& window)
 { 

@@ -7,7 +7,7 @@ namespace GGJ
 {
 Context* Context::_instance = 0;
 const unsigned int Context::NB_POOL_OBJECTS = 20;
-Context::Context(void) : _map(0), _isRunning(false), _isPaused(false)
+Context::Context(void) : _map(0), _isRunning(false), _isPaused(false), _isInGame(false)
 {
 	_map = new Map();
 	if (GGJ::ResourcesLoader::loadImage("contours_noirs.png"))
@@ -26,21 +26,49 @@ Context::~Context(void)
 {
 }
 
+void		Context::gameCycle(void)
+{
+	update();
+	if (_isRunning)
+	{
+		_window.clear();
+		dispatchEvents();
+		drawBackground();
+		drawObjects();
+		drawHUD();
+		_window.display();
+	}
+}
+void		Context::menuCycle(void)
+{
+	sf::Event 	event;
+
+	_window.clear();
+	_window.accessRenderWindow().SetView(_window.
+		accessRenderWindow().GetDefaultView());
+	while (_window.accessRenderWindow().GetEvent(event))
+	{
+		if (event.Type == sf::Event::Closed)
+		{
+        	stop();
+        	return;
+        }
+        else if (event.Type == sf::Event::KeyPressed)
+        	_isInGame = true;
+    }
+    _menu.draw(_window.accessRenderWindow());
+	_window.display();
+}
+
 void		Context::run(void)
 {
 	_isRunning = true;
 	while (_isRunning)
 	{
-		update();
-		if (_isRunning)
-		{
-			_window.clear();
-			dispatchEvents();
-			drawBackground();
-			drawObjects();
-			drawHUD();
-			_window.display();
-		}
+		if (_isInGame)
+			gameCycle();
+		else
+			menuCycle();
 	}
 }
 void		Context::stop(void)
