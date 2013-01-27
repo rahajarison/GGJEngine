@@ -30,6 +30,8 @@ public:
         polygonShape.SetAsBox( 1, 512;//ground
         staticBody->CreateFixture(&myFixtureDef);
     }
-    ~PatternVide();
+
+    ~PatternVide(){}
 };
 
+#endif
