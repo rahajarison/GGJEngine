@@ -5,12 +5,8 @@
 #include "Character.h"
 #include <vector>
 #include <Box2D/Box2D.h>
-#include "PatternFall1.h"
-#include "PatternFall2.h"
-#include "PatternFall3.h"
-#include "PatternFall4.h"
-#include "PatternFall5.h"
-#include "PatternFall6.h"
+#include "Pattern.h"
+#include "PatternVide.h"
 
 using namespace std;
 
@@ -27,12 +23,12 @@ class World
         */
         World()
         {
-            patternList.push_back(new PatternFall1(0, 0));
-            patternList.push_back(new PatternFall2(40, 0));
-            patternList.push_back(new PatternFall3(80, 0));
-            patternList.push_back(new PatternFall4(80, 40));
-            patternList.push_back(new PatternFall5(80, 80));
-            patternList.push_back(new PatternFall6(80, 120));
+            patternList.push_back(new PatternVide(0));
+            patternList.push_back(new PatternVide(0));
+            patternList.push_back(new PatternVide(0));
+            patternList.push_back(new PatternVide(0));
+            patternList.push_back(new PatternVide(0));
+            patternList.push_back(new PatternVide(0));
             patternList[0]->create();
             patternList[1]->create();
             patternList[2]->create();

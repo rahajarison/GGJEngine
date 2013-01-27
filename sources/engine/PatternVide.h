@@ -6,7 +6,7 @@
 class PatternVide : Pattern
 {
 public:
-    PatternVide();
+    PatternVide(int x) : Pattern(x);
     void create(){
         b2BodyDef myBodyDef;
 
