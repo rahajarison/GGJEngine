@@ -8,7 +8,7 @@ Character::Character() : bodies()
     long int type = character;
     b2BodyDef bodyDef;
     bodyDef.type = b2_dynamicBody;
-    bodyDef.position.Set(7.0f, 0.0f);   // the body's origin position.
+    bodyDef.position.Set(100, 400);   // the body's origin position.
     bodyDef.angle = 0.25f * b2_pi;      // the body's angle in radians.
     bodies.push_back(World::m_world->CreateBody(&bodyDef));
 
