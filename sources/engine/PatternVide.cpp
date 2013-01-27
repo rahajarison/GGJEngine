@@ -4,7 +4,7 @@
 
 PatternVide::PatternVide(int x)  : Pattern(x) { }
 PatternVide::~PatternVide(void) { }
-void		PatternVide::create(void)
+void PatternVide::create(void)
 {
     b2BodyDef myBodyDef;
 
@@ -19,11 +19,11 @@ void		PatternVide::create(void)
     myBodyDef.type = b2_staticBody;
     myBodyDef.position.Set(x+512,0);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 1, 512);//ground
+    polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(x+512,800);
     staticBody = World::m_world->CreateBody(&myBodyDef);
-    polygonShape.SetAsBox( 1, 512);//ground
+    polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
 }
