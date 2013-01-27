@@ -33,7 +33,7 @@ void PatternDash::create(){
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 480/2, 329/2);
     staticBody->CreateFixture(&myFixtureDef);
-    staticBody->SetUserData((void*)block);
+    staticBody->SetUserData((void*)grosRect);
 
     myBodyDef.position.Set(x+xp-100, DOWN);
     staticBody = World::m_world->CreateBody(&myBodyDef);
