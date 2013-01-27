@@ -44,13 +44,39 @@ void				OnFusionEvent(void* params)
 	context->_world.car->fusion();
 	reloadCells(context);
 }
+
+void				OnRightEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+
+	context->_world.car->right();
+}
+void				OnLeftEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+
+	context->_world.car->left();
+}
+void				OnFrontEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+	context->_world.car->up();
+}
+void				OnBackEvent(void* params)
+{
+	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
+	context->_world.car->down();
+}
+
+
 void				cameraCallback(void* params)
 {
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 	b2Body* body = context->_world.car->bodies[0];
 	sf::View& camera =	context->accessView();
 
-	camera.SetCenter(body->GetPosition().x * COEF_DISPLAY, camera.GetCenter().y);
+	// camera.SetCenter(body->GetPosition().x * COEF_DISPLAY + 400, camera.GetCenter().y);
+
 	// std::cout << "Position: " << body->GetPosition().y * COEF_DISPLAY << " et Camera: " << camera.GetCenter().y << std::endl;
 	// if (body->GetPosition().y * COEF_DISPLAY >= camera.GetCenter().y - 200)
 	// {
@@ -63,5 +89,6 @@ void				mainCallback(void*)
 {
 	GGJ::Context* context =	&GGJ::Context::getSingleton();
 
+	context->_world.car->right();
 	// context->_world.car->update();
 }

@@ -22,6 +22,11 @@ void		registerAll(void)
 	registerImpulse();
 	registerDivide();
 	registerFusion();
+
+	// registerFront();
+	// registerBack();
+	// registerLeft();
+	// registerRight();
 }
 
 // void		loadLevelDesign(void)
@@ -35,13 +40,12 @@ void		initDebug(void)
 
 	context.attachObject(*(new ObjMusic()));
 	context.accessView().Zoom(0.3f);
-	context.attachObject(*(new ObjPattern("Untitled.png", 0, 0)));
-	// reloadCells(&context);
+	context.attachObject(*(new ObjPattern("bumper.png", 0, 0)));
 	// loadLevelDesign();
 	
 	while (body != NULL)
 	{
-		if (Character::isCharacter(body))
+		if (!Character::isCharacter(body))
 			context.attachObject(*(new ObjBumper(body)));
 		else
 			context.attachObject(*(new ObjCell(body)));
