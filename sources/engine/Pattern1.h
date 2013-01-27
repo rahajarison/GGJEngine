@@ -2,11 +2,12 @@
 #define PATTERN_UN_H
 
 #include "Pattern.h"
+#include "World.h"
 
 class Pattern1 : public Pattern
 {
 public:
-    Pattern1();
+    Pattern1(int x) : Pattern(x) {}
     void create(){
         b2BodyDef myBodyDef;
 
@@ -59,7 +60,7 @@ public:
         staticBody->CreateFixture(&myFixtureDef);
         staticBody->SetUserData((void*)bouncingBlockBottomRight);
     }
-    ~PatternVide();
+    ~Pattern1();
 };
 
 #endif
