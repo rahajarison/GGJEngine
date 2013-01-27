@@ -37,5 +37,6 @@ void PatternVide::create(void)
         circleShape.m_radius = 15;           //radius
         myFixtureDef;
         myFixtureDef.shape = &circleShape; 
+        staticBody->CreateFixture(&myFixtureDef);
     }
 }
