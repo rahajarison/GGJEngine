@@ -8,7 +8,8 @@ Obj::Obj(const std::string & fileName, b2Body* body) : _body(body)
 		if (GGJ::ResourcesLoader::loadImage(fileName))
 	{
 		image = GGJ::ResourcesLoader::getImage(fileName);
-		_skin.SetImage(*image); 
+		_skin.SetImage(*image);
+		_skin.SetCenter(image->GetWidth() / 2, image->GetHeight() / 2);
 		update();
 	}
 
