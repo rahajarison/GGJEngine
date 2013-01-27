@@ -9,7 +9,7 @@ namespace GGJ
 {
 Context* Context::_instance = 0;
 const unsigned int Context::NB_POOL_OBJECTS = 20;
-Context::Context(void) : _map(0), _isRunning(false), _isPaused(false), _isInGame(false)
+Context::Context(void) : _map(0), _isRunning(false), _isPaused(false), _isInGame(false), _isInIntro(false)
 {
 	_map = new Map();
 	if (GGJ::ResourcesLoader::loadImage("contours_noirs.png"))
@@ -58,16 +58,36 @@ void		Context::menuCycle(void)
         	static bool	alreadyPassed = false;
         	if (alreadyPassed == false)
         	{
-        		_isInGame = true;
+        		// _isInGame = true;
         		alreadyPassed = true;
         		Animation* anim = new FadeAnim();
         		anim->launch();
+        		_isInIntro = true;
         	}
         }
     }
     _menu.draw(_window.accessRenderWindow());
 }
 
+void		Context::introCycle(void)
+{
+	sf::Event 	event;
+
+	_window.accessRenderWindow().SetView(_window.
+		accessRenderWindow().GetDefaultView());
+	while (_window.accessRenderWindow().GetEvent(event))
+	{
+		if (event.Type == sf::Event::Closed)
+		{
+        	stop();
+        	return;
+        }
+    }
+    _intro.update(); // TODO set _isInGame a true et c est good
+    if (_intro.isTerminated())
+    	_isInGame = true;
+    // _intro.draw(_window.accessRenderWindow());
+}
 void		Context::run(void)
 {
 	_isRunning = true;
@@ -76,6 +96,8 @@ void		Context::run(void)
 		_window.clear();
 		if (_isInGame)
 			gameCycle();
+		else if (_isInIntro)
+			introCycle();
 		else
 			menuCycle();
 		Animation::updateAll(getFrameTime());

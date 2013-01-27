@@ -9,6 +9,7 @@
 #include		<GGJMap.hpp>
 #include		<GGJMenu.hpp>
 #include		"engine/World.h"
+#include		"Intro.hpp"
 
 namespace GGJ
 {
@@ -53,12 +54,14 @@ namespace GGJ
 		void			update(void);
 		void			gameCycle(void);
 		void			menuCycle(void);
+		void			introCycle(void);
 
 		static Context*					_instance;
 		Window							_window;
 		Map*							_map;
 		bool							_isPaused;
 		bool							_isInGame;
+		bool							_isInIntro;
 		bool							_isRunning;
 		std::map<std::string, void*>	_ram;
 		std::vector<std::pair<sf::Event, registeringCallback> > _callbacksEvent;
@@ -67,7 +70,8 @@ namespace GGJ
 		sf::View						_view;
 		std::vector<sf::Sprite*>		_hudElements;
 		Menu							_menu;
-		
+		Intro							_intro;
+
 	public:
 		static const unsigned int 	NB_POOL_OBJECTS;
 	};
