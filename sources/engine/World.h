@@ -25,18 +25,11 @@ class World
         {
 
             patternList.push_back(new PatternVide(0));
-            patternList.push_back(new PatternVide(0));
-            patternList.push_back(new PatternVide(0));
-            patternList.push_back(new PatternVide(0));
-            patternList.push_back(new PatternVide(0));
-            patternList.push_back(new PatternVide(0));
+            patternList.push_back(new PatternVide(1024));
+            patternList.push_back(new PatternVide(2048));
             patternList[0]->create();
             patternList[1]->create();
             patternList[2]->create();
-            patternList[3]->create();
-            patternList[4]->create();
-            patternList[5]->create();
-
         }
         ~World() { }
 };
