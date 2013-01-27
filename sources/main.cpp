@@ -62,8 +62,14 @@ void		initDebug(void)
 		if (!Character::isCharacter(body))
 			context.attachObject(*(new ObjBumper(body)));
 		else
+		{
 			context.attachObject(*(new ObjCell(body)));
-		std::cout << "user data: " << (int) body->GetUserData() << std::endl;
+			// switch ((long int)body->GetUserData())
+			// {
+			// }
+		}
+			
+		// std::cout << "user data: " << (int) body->GetUserData() << std::endl;
 		body = body->GetNext();
 	}
 }
