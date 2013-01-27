@@ -18,7 +18,7 @@ public:
 	void			onTerminate(void);
 
 	static void		updateAll(float sinceLastFrame);
-	// virtual void	draw(sf::RenderWindow& window);
+	virtual void	draw(sf::RenderWindow& window) = 0;
 
 protected:
 	static std::vector<Animation*>	_animations;

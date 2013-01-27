@@ -33,9 +33,9 @@ void		Animation::launch(void)
 	_launched = true;
 }
 
-void		Animation::draw(sf::RenderWindow& window)
-{
-}
+// void		Animation::draw(sf::RenderWindow& window)
+// {
+// }
 void		Animation::isTerminated(void)	{	return (_launched);	}
 
 };
