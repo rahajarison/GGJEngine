@@ -5,6 +5,7 @@ class Pattern
 {
 public:
     Pattern();
+    virtual void create(){}
     ~Pattern();
 
 };
