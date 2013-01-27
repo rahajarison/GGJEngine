@@ -10,8 +10,8 @@
 #define IMPULSE 60
 #define DEGTORAD 0.0174532925199432957f
 #define RADTODEG 57.295779513082320876f
-#define TOP 800
-#define DOWN 0
+#define TOP 0
+#define DOWN 800
 
 #define character 1
 #define nutrient 2
@@ -24,7 +24,8 @@
 #define bouncingBlockTopRight 9
 #define bouncingBlockBottomLeft 10
 #define bouncingBlockBottomRight 11
-#define nutrisPoints 1
 #define sensor 12
+#define grosRect 13
 
+#define nutrisPoints 1
 #endif

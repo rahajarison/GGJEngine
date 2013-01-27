@@ -28,4 +28,14 @@ void PatternVide::create(void)
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
     staticBody->SetUserData((void*)block);
+
+    for (int i=0; i<10; ++i){
+        myBodyDef.position.Set(i+1*100,DOWN);
+        staticBody = World::m_world->CreateBody(&myBodyDef);
+        b2CircleShape circleShape;
+        circleShape.m_p.Set(0, 0);          //position, relative to body position
+        circleShape.m_radius = 15;           //radius
+        myFixtureDef;
+        myFixtureDef.shape = &circleShape; 
+    }
 }
