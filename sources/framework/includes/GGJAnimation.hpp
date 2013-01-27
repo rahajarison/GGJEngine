@@ -10,18 +10,22 @@ class 				Animation
 {
 public:
 	Animation(float length);
+	virtual ~Animation(void);
 
 	void			update(float sinceLastFrame);
 	void			launch(void);
 	bool			isTerminated(void) const;
-	void			callbackUpdate(float sinceLastFrame);
+	virtual void	callbackUpdate(float sinceLastFrame);
 	void			onTerminate(void);
 
 	static void		updateAll(float sinceLastFrame);
+	static void		removeFromList(Animation* anim);
+
 	virtual void	draw(sf::RenderWindow& window) = 0;
 
 protected:
-	// static std::vector<Animation*>	_animations;
+	static std::vector<Animation*>	_animations;
+
 	float							_length;
 	float							_cursor;
 	bool							_launched;

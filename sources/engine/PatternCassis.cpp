@@ -16,13 +16,13 @@ void PatternCassis::create(){
 
     myBodyDef.type = b2_staticBody;
     myBodyDef.position.Set(x+512,TOP);
-    b2Body* staticBody = m_world->CreateBody(&myBodyDef);
+    b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
     polygonShape.SetAsBox(512, 1 );//ground
     staticBody->CreateFixture(&myFixtureDef);
 
     myBodyDef.position.Set(x+512,DOWN);
-    staticBody = m_world->CreateBody(&myBodyDef);
+    staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
     polygonShape.SetAsBox(512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
@@ -32,7 +32,7 @@ void PatternCassis::create(){
     circleShape.m_p.Set(0, 0);          //position, relative to body position
     circleShape.m_radius = radius;
     myBodyDef.position.Set(x+512, -radius*8/10);
-    staticBody = m_world->CreateBody(&myBodyDef);
+    staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
     staticBody->CreateFixture(&myFixtureDef);
 

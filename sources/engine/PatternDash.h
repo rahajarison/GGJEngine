@@ -1,7 +1,9 @@
 #ifndef PATTERN_DASH_H
 #define PATTERN_DASH_H
 
-class PatternDash
+#include	"Pattern.h"
+
+class PatternDash : public Pattern
 {
 public:
     PatternDash(int x) : Pattern(x){}
