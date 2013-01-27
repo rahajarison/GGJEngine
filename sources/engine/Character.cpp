@@ -14,7 +14,7 @@ Character::Character() : bodies()
 
     b2CircleShape circleShape;
     circleShape.m_p.Set(0, 0);          //position, relative to body position
-    circleShape.m_radius = 1;           //radius
+    circleShape.m_radius = 15;           //radius
     b2FixtureDef myFixtureDef;
     myFixtureDef.shape = &circleShape; //this is a pointer to the shape above
     bodies[0]->CreateFixture(&myFixtureDef); //add a fixture to the body

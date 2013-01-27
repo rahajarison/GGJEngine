@@ -3,9 +3,11 @@
 
 class Pattern
 {
-public:
-    Pattern();
-    virtual void create(){}
-    ~Pattern();
+    public:
+
+        int x;
+        Pattern();
+        virtual void create(){}
+        ~Pattern();
 
 };
