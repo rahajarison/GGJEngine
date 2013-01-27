@@ -16,7 +16,7 @@ class World
     public:
 
         static b2World* m_world;
-        // vector<Pattern*> patternList;
+        vector<Pattern*> patternList;
         static Character* car;
         /**
         * Generate pattern order

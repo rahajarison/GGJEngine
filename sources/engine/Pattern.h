@@ -8,7 +8,7 @@ class Pattern
         int x;
         Pattern(int x) : x(x) {} 
         virtual void create(){}
-        ~Pattern();
+        ~Pattern() {}
 
 };
 
