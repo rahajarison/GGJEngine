@@ -13,6 +13,7 @@
 #include	"ObjPattern.hpp"
 #include	"ObjBackground.hpp"
 #include	"engine/Define.h"
+#include	"Obj.hpp"
 
 void		registerAll(void)
 {
@@ -25,10 +26,10 @@ void		registerAll(void)
 	registerDivide();
 	registerFusion();
 
-	// registerFront();
-	// registerBack();
-	// registerLeft();
-	// registerRight();
+	registerFront();
+	registerBack();
+	registerLeft();
+	registerRight();
 }
 
 // void		loadLevelDesign(void)
@@ -60,17 +61,18 @@ void		initDebug(void)
 	
 	while (body != NULL)
 	{
-		if (!Character::isCharacter(body))
-			context.attachObject(*(new ObjBumper(body)));
+		if (Character::isCharacter(body))
+			context.attachObject(*(new ObjCell(body)));
 		else
 		{
-			context.attachObject(*(new ObjCell(body)));
 			switch ((long int)body->GetUserData())
 			{
-				// case grosRect:
-					// context.attachObject(*(new ))
-				// break;
-				default:				break;
+				case grosRect:
+					context.attachObject(*(new Obj("element_gros_rectangle.png", body)));
+				break;
+				default:
+					context.attachObject(*(new ObjBumper(body)));
+				break;
 			}
 		}
 			
