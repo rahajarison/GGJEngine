@@ -6,10 +6,12 @@
 #define COEF_DISPLAY	(20)
 #define FORCE 40
 #define DIVIDE 9
-#define BOUNCING 80
+#define BOUNCING 8000000
 #define IMPULSE 60
 #define DEGTORAD 0.0174532925199432957f
 #define RADTODEG 57.295779513082320876f
+#define TOP 800
+#define DOWN 0
 
 #define character 1
 #define nutrient 2

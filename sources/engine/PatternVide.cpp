@@ -17,13 +17,13 @@ void PatternVide::create(void)
     myFixtureDef.density = 1;
 
     myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(x+512,0);
+    myBodyDef.position.Set(x+512,TOP);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
     staticBody->SetUserData((void*)block);
 
-    myBodyDef.position.Set(x+512,800);
+    myBodyDef.position.Set(x+512,DOWN);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);

@@ -17,13 +17,13 @@ void PatternCassis::create(){
     myFixtureDef.density = 1;
 
     myBodyDef.type = b2_staticBody;
-    myBodyDef.position.Set(x+512,0);
+    myBodyDef.position.Set(x+512,TOP);
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
     polygonShape.SetAsBox(512, 1 );//ground
     staticBody->CreateFixture(&myFixtureDef);
 
-    myBodyDef.position.Set(x+512,800);
+    myBodyDef.position.Set(x+512,DOWN);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     staticBody->SetUserData((void*)block);
     polygonShape.SetAsBox(512, 1);//ground
