@@ -22,7 +22,7 @@ Character::Character() : bodies()
     bodies[0]->SetUserData((void*) type);
     isDivided = false;
     nutris = 0;
-    MaxSpeed = 10;
+    MaxSpeed = 30;
 }
 
 void Character::up()

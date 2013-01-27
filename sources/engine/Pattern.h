@@ -1,6 +1,8 @@
 #ifndef PATTERN_H
 #define PATTERN_H
 
+#include "Define.h"
+
 class Pattern
 {
     public:
