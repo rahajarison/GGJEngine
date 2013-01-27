@@ -5,8 +5,11 @@
 #include "Character.h"
 #include <vector>
 #include <Box2D/Box2D.h>
+<<<<<<< HEAD
 #include "Pattern.h"
 #include "PatternVide.h"
+=======
+>>>>>>> 527133814271543d669011332939aa0d0cd26704
 
 using namespace std;
 
@@ -16,13 +19,14 @@ class World
     public:
 
         static b2World* m_world;
-        vector<Pattern*> patternList;
+        // vector<Pattern*> patternList;
         static Character* car;
         /**
         * Generate pattern order
         */
         World()
         {
+
             patternList.push_back(new PatternVide(0));
             patternList.push_back(new PatternVide(0));
             patternList.push_back(new PatternVide(0));
@@ -35,6 +39,7 @@ class World
             patternList[3]->create();
             patternList[4]->create();
             patternList[5]->create();
+
         }
         ~World() { }
 };
