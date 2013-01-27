@@ -12,6 +12,7 @@
 #include	"AudioManager.hpp"
 #include	"ObjPattern.hpp"
 #include	"ObjBackground.hpp"
+#include	"engine/Define.h"
 
 void		registerAll(void)
 {
@@ -64,9 +65,13 @@ void		initDebug(void)
 		else
 		{
 			context.attachObject(*(new ObjCell(body)));
-			// switch ((long int)body->GetUserData())
-			// {
-			// }
+			switch ((long int)body->GetUserData())
+			{
+				// case grosRect:
+					// context.attachObject(*(new ))
+				// break;
+				default:				break;
+			}
 		}
 			
 		// std::cout << "user data: " << (int) body->GetUserData() << std::endl;

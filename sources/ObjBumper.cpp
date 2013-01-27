@@ -38,7 +38,7 @@ void ObjBumper::update(void)
 	skin.SetPosition(vector.x, vector.y);
 	// std::cout << "Affichage"
 	// light.SetPosition(vector.x, vector.y);
-	std::cout << "[Object] PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
+	// std::cout << "[Object] PosX: " << vector.x << ", " << "posY: " << vector.y << std::endl;
 }
 
 void ObjBumper::draw(sf::RenderWindow& window)

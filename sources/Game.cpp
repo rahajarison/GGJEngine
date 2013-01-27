@@ -2,6 +2,7 @@
 #include		<GGJContext.hpp>
 #include		"ObjCell.hpp"
 #include		"Game.hpp"
+#include		"BoomBoomAnim.hpp"
 
 void				Box2DCallback(void*)
 {
@@ -35,6 +36,7 @@ void				OnImpulseEvent(void* params)
 	GGJ::Context*		context = reinterpret_cast<GGJ::Context*>(params);
 
 	context->_world.car->beat();
+	// (new BoomBoomAnim())->launch();
 }
 void				OnFusionEvent(void* params)
 {
