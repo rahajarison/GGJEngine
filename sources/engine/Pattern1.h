@@ -24,22 +24,25 @@ public:
         b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
         polygonShape.SetAsBox( 512, 1);//ground
         staticBody->CreateFixture(&myFixtureDef);
+        staticBody->SetUserData(block);
 
         myBodyDef.position.Set(x+512,800);
         staticBody = World::m_world->CreateBody(&myBodyDef);
         polygonShape.SetAsBox( 512, 1);//ground
         staticBody->CreateFixture(&myFixtureDef);
+        staticBody->SetUserData(block);
 
         myBodyDef.position.Set(x+512,150);
         staticBody = World::m_world->CreateBody(&myBodyDef);
         polygonShape.SetAsBox( 30, 150);//ground
         staticBody->CreateFixture(&myFixtureDef);
+        staticBody->SetUserData(block);
 
-        myBodyDef.position.Set(x+512,800);
+        myBodyDef.position.Set(x+542,200);
         staticBody = World::m_world->CreateBody(&myBodyDef);
-        polygonShape.SetAsBox(  );//ground
+        polygonShape.SetAsBox(2,10);//ground
         staticBody->CreateFixture(&myFixtureDef);
-
+        staticBody->SetUserData(bouncingBlockLeft);
     }
     ~PatternVide();
 };
