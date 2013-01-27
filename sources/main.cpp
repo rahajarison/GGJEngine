@@ -9,7 +9,7 @@
 #include	"ObjCell.hpp"
 #include	"ObjBumper.hpp"
 #include	"Gameplay.hpp"
-#include	"ObjMusic.hpp"
+#include	"AudioManager.hpp"
 #include	"ObjPattern.hpp"
 #include	"ObjBackground.hpp"
 
@@ -38,8 +38,20 @@ void		initDebug(void)
 {
 	GGJ::Context&	context = GGJ::Context::getSingleton();	
 	b2Body*	body = context._world.m_world->GetBodyList();
+	std::list<std::string> soundNames;
+	std::list<std::string> musicNames;
 
-	context.attachObject(*(new ObjMusic()));
+	soundNames.push_back("absorption_nutrient.ogg");
+	soundNames.push_back("bumper.ogg");
+	soundNames.push_back("Divide.ogg");
+	soundNames.push_back("heartbeat.ogg");
+	soundNames.push_back("heartbeat_leo(level_ending).ogg");
+	soundNames.push_back("Regroup.ogg");
+
+	musicNames.push_back("Devolute1-.ogg");
+	musicNames.push_back("music.ogg");
+
+	AudioManager* audio_manager = new AudioManager(musicNames, soundNames, "Devolute1-.ogg");
 	context.attachObject(*(new ObjBackground()));
 	// context.accessView().Zoom(0.3f);
 	// context.attachObject(*(new ObjPattern("bumper.png", 0, 0)));

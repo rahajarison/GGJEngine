@@ -2,7 +2,6 @@
 #include	<string>
 #include	<GGJContext.hpp>
 #include	"testJohnny.hpp"
-#include	"objMusic.hpp"
 #include	"ObjCell.hpp"
 
 // void			test(void)
