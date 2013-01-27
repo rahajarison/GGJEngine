@@ -3,11 +3,12 @@
 
 #include "Pattern.h"
 
-class PatternCassis : Pattern
+class PatternCassis : public Pattern
 {
 public:
     PatternCassis(int x) : Pattern(x){}
     void create();
-    ~PatternVide();
+    ~PatternCassis();
 };
 
+#endif

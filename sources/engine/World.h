@@ -7,6 +7,7 @@
 #include <Box2D/Box2D.h>
 #include "Pattern.h"
 #include "PatternVide.h"
+#include "PatternCassis.h"
 
 using namespace std;
 
@@ -25,7 +26,7 @@ class World
         {
 
             patternList.push_back(new PatternVide(0));
-            patternList.push_back(new PatternVide(1024));
+            patternList.push_back(new PatternCassis(1024));
             patternList.push_back(new PatternVide(2048));
             patternList[0]->create();
             patternList[1]->create();

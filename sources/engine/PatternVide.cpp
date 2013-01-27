@@ -21,11 +21,11 @@ void PatternVide::create(void)
     b2Body* staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
-    staticBody->SetUserData(block);
+    staticBody->SetUserData((void*)block);
 
     myBodyDef.position.Set(x+512,800);
     staticBody = World::m_world->CreateBody(&myBodyDef);
     polygonShape.SetAsBox( 512, 1);//ground
     staticBody->CreateFixture(&myFixtureDef);
-    staticBody->SetUserData(block);
+    staticBody->SetUserData((void*)block);
 }

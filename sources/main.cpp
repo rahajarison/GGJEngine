@@ -49,6 +49,7 @@ void		initDebug(void)
 			context.attachObject(*(new ObjBumper(body)));
 		else
 			context.attachObject(*(new ObjCell(body)));
+		std::cout << "user data: " << (int) body->GetUserData() << std::endl;
 		body = body->GetNext();
 	}
 }
