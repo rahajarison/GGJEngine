@@ -75,7 +75,7 @@ void				cameraCallback(void* params)
 	b2Body* body = context->_world.car->bodies[0];
 	sf::View& camera =	context->accessView();
 
-	camera.SetCenter(body->GetPosition().x * COEF_DISPLAY + 400, camera.GetCenter().y);
+	camera.SetCenter(body->GetPosition().x + 400, camera.GetCenter().y);
 
 	// std::cout << "Position: " << body->GetPosition().y * COEF_DISPLAY << " et Camera: " << camera.GetCenter().y << std::endl;
 	// if (body->GetPosition().y * COEF_DISPLAY >= camera.GetCenter().y - 200)

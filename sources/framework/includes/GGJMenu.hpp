@@ -1,8 +1,8 @@
 #ifndef				GGJ_MENU_H_
 # define			GGJ_MENU_H_
 
-#include		<vector>
-#include		<SFML/Graphics.hpp>
+#include			<vector>
+#include			<SFML/Graphics.hpp>
 
 namespace	GGJ
 {
@@ -13,6 +13,7 @@ public:
 	Menu(void);
 	~Menu(void);
 
+	void			draw(sf::RenderWindow& window);
 private:
 	sf::Sprite		_sprite;
 };

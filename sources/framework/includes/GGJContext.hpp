@@ -7,6 +7,7 @@
 #include		<GGJCallback.hpp>
 #include		<GGJObject.hpp>
 #include		<GGJMap.hpp>
+#include		<GGJMenu.hpp>
 #include		"engine/World.h"
 
 namespace GGJ
@@ -50,12 +51,14 @@ namespace GGJ
 		void			drawObjects(void);
 		void			drawHUD(void);
 		void			update(void);
+		void			gameCycle(void);
+		void			menuCycle(void);
 
 		static Context*					_instance;
 		Window							_window;
 		Map*							_map;
 		bool							_isPaused;
-		// bool							_isInGame;
+		bool							_isInGame;
 		bool							_isRunning;
 		std::map<std::string, void*>	_ram;
 		std::vector<std::pair<sf::Event, registeringCallback> > _callbacksEvent;
@@ -63,7 +66,7 @@ namespace GGJ
 		std::vector<registeringCallback>			_callbacksUpdate;
 		sf::View						_view;
 		std::vector<sf::Sprite*>		_hudElements;
-		// Menu							_menu;
+		Menu							_menu;
 		
 	public:
 		static const unsigned int 	NB_POOL_OBJECTS;
